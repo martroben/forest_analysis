@@ -12,7 +12,7 @@ from polars import col
 root_dir = "age_group_trends"
 age_group_all_raw_path = "data/raw/1.11.X Vanuseklassid + uuend_kõik.csv"
 age_group_production_raw_path = "data/raw/1.11.X Vanuseklassid + uuend_majandatav.csv"
-cutting_raw_path = "data/raw/3.2.2.X Raiete ajalugu_data.csv"
+cutting_raw_path = "data/raw/3.2.2.X Raiete ajalugu.csv"
 
 age_group_save_path = "data/clean/age_group.csv"
 regeneration_cutting_save_path = "data/clean/regeneration_cutting.csv"
