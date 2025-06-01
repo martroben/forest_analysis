@@ -27,9 +27,20 @@ translations = {
 # Read data #
 #############
 
-age_group_all_raw = pl.read_csv(os.path.join(root_dir, age_group_all_raw_path), encoding="utf-8", separator=";")
-age_group_production_raw = pl.read_csv(os.path.join(root_dir, age_group_production_raw_path), encoding="utf-8", separator=";")
-cutting_raw = pl.read_csv(os.path.join(root_dir, cutting_raw_path), encoding="utf-8", separator=";")
+age_group_all_raw = pl.read_csv(
+    os.path.join(root_dir, age_group_all_raw_path),
+    encoding="utf-8",
+    separator=";")
+
+age_group_production_raw = pl.read_csv(
+    os.path.join(root_dir, age_group_production_raw_path),
+    encoding="utf-8",
+    separator=";")
+
+cutting_raw = pl.read_csv(
+    os.path.join(root_dir, cutting_raw_path),
+    encoding="utf-8",
+    separator=";")
 
 age_group_all = (
     age_group_all_raw
@@ -154,12 +165,25 @@ regeneration_cutting = (
 # Save data #
 #############
 
+age_group_save_path_full = os.path.join(root_dir, age_group_save_path)
+
+os.makedirs(
+    os.path.dirname(age_group_save_path_full),
+    exist_ok=True)
+
 age_group.write_csv(
-    os.path.join(root_dir, age_group_save_path),
+    age_group_save_path_full,
     separator=","
 )
 
+
+regeneration_cutting_save_path_full = os.path.join(root_dir, regeneration_cutting_save_path)
+
+os.makedirs(
+    os.path.dirname(regeneration_cutting_save_path_full),
+    exist_ok=True)
+
 regeneration_cutting.write_csv(
-    os.path.join(root_dir, regeneration_cutting_save_path),
+    regeneration_cutting_save_path_full,
     separator=","
 )
