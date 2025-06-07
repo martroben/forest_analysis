@@ -15,6 +15,8 @@ regeneration_cutting_path = "data/clean/regeneration_cutting.csv"
 
 production_areas_save_path = "data/plot/production_areas.csv"
 protected_areas_save_path = "data/plot/protected_areas.csv"
+production_regeneration_cutting_save_path = "data/plot/production_regeneration_cutting.csv"
+protected_regeneration_cutting_save_path = "data/plot/protected_regeneration_cutting.csv"
 
 age_group_aggregated = {
     "clearcut":     "0...20",
@@ -24,16 +26,18 @@ age_group_aggregated = {
     "31...40":      "21...40",
     "41...50":      "41...60",
     "51...60":      "41...60",
-    "61...70":      "61...",
-    "71...80":      "61...",
-    "81...90":      "61...",
-    "91...100":     "61...",
-    "101...110":    "61...",
-    "111...120":    "61...",
-    "121...130":    "61...",
-    "131...140":    "61...",
-    "141...":       "61..."
+    "61...70":      "61...80",
+    "71...80":      "61...80",
+    "81...90":      "81...",
+    "91...100":     "81...",
+    "101...110":    "81...",
+    "111...120":    "81...",
+    "121...130":    "81...",
+    "131...140":    "81...",
+    "141...":       "81..."
 }
+
+regeneration_cutting_age_threshold = 60
 
 
 #############
@@ -55,71 +59,69 @@ regeneration_cutting = pl.read_csv(
 # Process data #
 ################
 
-regeneration_cutting_prepared = (
-    regeneration_cutting
+production_regeneration_cutting = (
+    # Use the same year range as age_group
+    age_group
+    .select(col("YEAR"))
+    .unique()
+    .join(
+        regeneration_cutting,
+        on=col("YEAR"),
+        how="left"
+    )
     .with_columns(
         TYPE=pl.lit("production"),
-        CATEGORY=pl.lit("regeneration cutting")
+        AREA=col("AREA").fill_null(0),
+        UNIT=col("UNIT").fill_null("kha")
     )
     .select(
         col("YEAR"),
         col("TYPE"),
-        col("CATEGORY"),
         col("AREA"),
         col("UNIT")
     )
+    .sort(col("YEAR"))
 )
 
-regeneration_cutting_protected = (
-    regeneration_cutting
+protected_regeneration_cutting = (
+    # Use the same year range as age_group
+    age_group
+    .select(col("YEAR"))
+    .unique()
+    .join(
+        regeneration_cutting,
+        on=col("YEAR"),
+        how="left"
+    )
     .with_columns(
         TYPE=pl.lit("protected"),
-        CATEGORY=pl.lit("regeneration cutting"),
-        AREA=pl.lit(0.0)
+        # Assume negligible regeneration cutting in protected forests
+        AREA=pl.lit(0.0),
+        UNIT=col("UNIT").fill_null("kha")
     )
     .select(
         col("YEAR"),
         col("TYPE"),
-        col("CATEGORY"),
         col("AREA"),
         col("UNIT")
     )
+    .sort(col("YEAR"))
 )
 
-regeneration_cutting_prepared = (
-    pl.concat([
-        regeneration_cutting_prepared,
-        regeneration_cutting_protected
-    ])
-)
-
-
+# Add unknown area to the age group area proportionately
 age_group_unknown = (
     age_group
     .filter(col("AGE_GROUP") == "unknown")
 )
 
-age_group_totals = (
+age_group_unknown_added = (
     age_group
     .filter(col("AGE_GROUP") != "unknown")
-    .group_by([
-        col("YEAR"),
-        col("TYPE")
-    ])
-    .agg(
-        pl.col("AREA").sum().alias("AREA"),
+    .with_columns(
+        AREA_YEAR_TYPE_TOTAL=pl.sum("AREA").over("YEAR", "TYPE")
     )
-)
-
-age_group_prepared = (
-    age_group
-    # Add unknown area to the age group area proportionately
-    .filter(col("AGE_GROUP") != "unknown")
-    .join(
-        age_group_totals,
-        on=["YEAR", "TYPE"],
-        how="left",
-        suffix="_TOTAL"
+    .with_columns(
+        AREA_PROPORTION=col("AREA") / col("AREA_YEAR_TYPE_TOTAL")
     )
     .join(
         age_group_unknown,
@@ -128,68 +130,83 @@ age_group_prepared = (
         suffix="_UNKNOWN"
     )
     .with_columns(
-        AREA=col("AREA") + (col("AREA") / col("AREA_TOTAL") * col("AREA_UNKNOWN"))
+        AREA=col("AREA") + (col("AREA_PROPORTION") * col("AREA_UNKNOWN"))
     )
-    # Aggregate age groups into broader categories
+    .select(
+        col("YEAR"),
+        col("TYPE"),
+        col("AGE_GROUP"),
+        col("AREA"),
+        col("UNIT")
+    )
+)
+
+# Aggregate age groups into broader categories
+age_group_aggregated = (
+    age_group_unknown_added
     .with_columns(
-        CATEGORY=col("AGE_GROUP").replace(age_group_aggregated)
+        AGE_GROUP=col("AGE_GROUP").replace(age_group_aggregated)
     )
     .group_by([
         col("YEAR"),
         col("TYPE"),
-        col("CATEGORY")
+        col("AGE_GROUP")
     ])
     .agg(
         col("AREA").sum().alias("AREA"),
         col("UNIT").first().alias("UNIT")
     )
-    .select(
-        col("YEAR"),
-        col("TYPE"),
-        col("CATEGORY"),
-        col("AREA"),
-        col("UNIT")
-    )
 )
 
-# Add regeneration cutting areas
-# Subtract regeneration cutting areas from highest age group production area
-prepared_data = (
-    pl.concat([
-        age_group_prepared,
-        regeneration_cutting_prepared
-    ])
+# Subtract regeneration cutting areas from eligible areas
+age_group_regeneration_subtracted = (
+    age_group_aggregated
+    .with_columns(
+        AGE_GROUP_START=col("AGE_GROUP").str.split("...").list.get(0).str.strip_chars().cast(pl.Int32)
+    )
+    .with_columns(
+        IS_REGENERATION_CUTTING_ELIGIBLE=(col("AGE_GROUP_START") > regeneration_cutting_age_threshold)
+    )
+    .with_columns(
+        REGENERATION_CUTTING_AREA_PROPORTION=(
+            pl.when(
+                col("IS_REGENERATION_CUTTING_ELIGIBLE")
+            )
+            .then(col("AREA") / pl.sum("AREA").over("YEAR", "AGE_GROUP", "IS_REGENERATION_CUTTING_ELIGIBLE"))
+            .otherwise(0)
+        )
+    )
     .join(
-        regeneration_cutting_prepared,
+        pl.concat([
+            production_regeneration_cutting,
+            protected_regeneration_cutting
+        ]),
         on=["YEAR", "TYPE"],
         how="left",
         suffix="_REGENERATION_CUTTING"
     )
     .with_columns(
-        AREA_REGENERATION_CUTTING=col("AREA_REGENERATION_CUTTING").fill_null(0)
-    )
-    .with_columns(
-        AREA=pl.when(
-            (col("TYPE") == "production") & (col("CATEGORY") == list(age_group_aggregated.values())[-1]))
-            .then(col("AREA") - col("AREA_REGENERATION_CUTTING"))
-            .otherwise(col("AREA"))
-            .round(2)
+        # Subtract regeneration cutting are proportionately from eligible age groups
+        AREA=(
+            col("AREA") - col("REGENERATION_CUTTING_AREA_PROPORTION") * col("AREA_REGENERATION_CUTTING")
+        ).round(2)
     )
     .select(
         col("YEAR"),
         col("TYPE"),
-        col("CATEGORY"),
+        col("AGE_GROUP"),
         col("AREA"),
         col("UNIT")
     )
 )
 
+# Divide to production and protected areas
 production_areas = (
-    prepared_data
+    age_group_regeneration_subtracted
     .filter(col("TYPE") == "production")
     .pivot(
         index=["YEAR", "UNIT", "TYPE"],
-        on="CATEGORY",
+        on="AGE_GROUP",
         values="AREA",
         sort_columns=True
     )
@@ -198,11 +215,11 @@ production_areas = (
 )
 
 protected_areas = (
-    prepared_data
+    age_group_regeneration_subtracted
     .filter(col("TYPE") == "protected")
     .pivot(
         index=["YEAR", "UNIT", "TYPE"],
-        on="CATEGORY",
+        on="AGE_GROUP",
         values="AREA",
         sort_columns=True
     )
@@ -216,7 +233,6 @@ protected_areas = (
 #############
 
 production_areas_save_path_full = os.path.join(root_dir, production_areas_save_path)
-
 os.makedirs(
     os.path.dirname(production_areas_save_path_full),
     exist_ok=True)
@@ -228,12 +244,31 @@ production_areas.write_csv(
 
 
 protected_areas_save_path_full = os.path.join(root_dir, protected_areas_save_path)
-
 os.makedirs(
     os.path.dirname(protected_areas_save_path_full),
     exist_ok=True)
 
 protected_areas.write_csv(
     protected_areas_save_path_full,
+    separator=","
+)
+
+production_regeneration_cutting_save_path_full = os.path.join(root_dir, production_regeneration_cutting_save_path)
+os.makedirs(
+    os.path.dirname(production_regeneration_cutting_save_path_full),
+    exist_ok=True)
+
+production_regeneration_cutting.write_csv(
+    production_regeneration_cutting_save_path_full,
+    separator=","
+)
+
+protected_regeneration_cutting_save_path_full = os.path.join(root_dir, protected_regeneration_cutting_save_path)
+os.makedirs(
+    os.path.dirname(protected_regeneration_cutting_save_path_full),
+    exist_ok=True)
+
+protected_regeneration_cutting.write_csv(
+    protected_regeneration_cutting_save_path_full,
     separator=","
 )
