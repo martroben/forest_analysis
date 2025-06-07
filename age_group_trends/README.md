@@ -52,3 +52,4 @@ python -m src/prepare_plot_data.py
 - Production forest category also includes semi-restricted production areas. Source data does not allow for different grouping.
 - Only regeneration cutting areas are included in analysis. Other types of cutting (thinning etc.) are not.
 - Regeneration cutting statistics are only available from 2014 onwards.
+- It is assumed that regeneration cutting in protected forests is negligible (taken to be 0 on the plot). Source data does not allow separating by protection status.
