@@ -7,7 +7,7 @@ This project analyzes Estonian forest areas by age groups using [Estonian Nation
 - Cutting areas: [Forest Cutting Statistics](https://tableau.envir.ee/views/SMI/28Raieaegrida?%3Aembed=y)
 
 ## Example Output
-![Age group trends](age_group_trends/metsamaa_pindala_muutus.png)
+![Age group trends](/age_group_trends/metsamaa_pindala_muutus.png)
 
 ## Project Structure
 ```
@@ -39,8 +39,6 @@ pip install -r requirements.txt
 
 3. Generate visualisation:
 ```shell
-cd 
-
 python -m src/clean_data.py
 python -m src/plot_data.py
 python -m src/prepare_plot_data.py
