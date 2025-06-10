@@ -1,4 +1,4 @@
-# Age Group Forest Analysis
+# Age Group Trend Analysis
 
 This project analyzes Estonian forest areas by age groups using [Estonian National Forest Inventory](https://keskkonnaportaal.ee/et/teemad/mets/metsastatistika-sh-smi) data. It visualises the distribution between protected and production forests across different age categories.
 
@@ -7,7 +7,16 @@ This project analyzes Estonian forest areas by age groups using [Estonian Nation
 - Cutting areas: [Forest Cutting Statistics](https://tableau.envir.ee/views/SMI/28Raieaegrida?%3Aembed=y)
 
 ## Example Output
-![Age group trends](/age_group_trends/metsamaa_pindala_muutus.png)
+![Age group trends](age_group_trends/metsamaa_pindala_kokku.png)
+
+Results by tree species:
+- [aspen](age_group_trends/metsamaa_pindala_haab.png)
+- [birch](age_group_trends/metsamaa_pindala_kask.png)
+- [black alder](age_group_trends/metsamaa_pindala_sanglepp.png)
+- [grey alder](age_group_trends/metsamaa_pindala_hall_lepp.png)
+- [pine](age_group_trends/metsamaa_pindala_mänd.png)
+- [spruce](age_group_trends/metsamaa_pindala_kuusk.png)
+- [other tree species](age_group_trends/metsamaa_pindala_muu.png)
 
 ## Project Structure
 ```
@@ -18,9 +27,11 @@ This project analyzes Estonian forest areas by age groups using [Estonian Nation
 │   ├── clean/    # Processed data
 │   └── plot/     # Visualisation data
 └── src/
+    ├── __init__.py           # System file for Python module system
     ├── clean_data.py         # Data cleaning
-    ├── prepare_plot_data.py  # Data formatting
-    └── plot_data.py          # Visualisation
+    ├── prepare_data.py       # Data formatting
+    ├── plot_data.py          # Visualisation
+    └── main.py               # Main
 ```
 
 ## Installation
@@ -34,14 +45,18 @@ pip install -r requirements.txt
 ```
 
 2. Optional: Update source data
-   - Download latest data from sources to `data/raw/`
-   - Update filenames in `clean_data.py`
+    - Download latest data from sources to `data/raw/`
+    - Update input filenames in `src/main.py`
 
-3. Generate visualisation:
+3. Optional: Set tree species in `src/main.py`. Update parameters:
+    - `TREE_SPECIES`
+    - `PLOT_SAVE_PATH`
+    - `PLOT_TITLE`
+
+4. Generate visualisation:
 ```shell
-python -m src/clean_data.py
-python -m src/plot_data.py
-python -m src/prepare_plot_data.py
+cd age_group_trends
+python -m src/main.py
 ```
 
 ## Libraries

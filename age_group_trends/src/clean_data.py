@@ -1,189 +1,130 @@
-# standard
-import os
 # external
 import polars as pl
 from polars import col
 
 
-#########
-# Input #
-#########
-
-root_dir = "age_group_trends"
-age_group_all_raw_path = "data/raw/1.11.X Vanuseklassid + uuend_kõik.csv"
-age_group_production_raw_path = "data/raw/1.11.X Vanuseklassid + uuend_majandatav.csv"
-cutting_raw_path = "data/raw/3.2.2.X Raiete ajalugu.csv"
-
-age_group_save_path = "data/clean/age_group.csv"
-regeneration_cutting_save_path = "data/clean/regeneration_cutting.csv"
-
-translations = {
-    "Selguseta ala": "unknown",
-    "Lage ala": "clearcut"
-}
-
-
-#############
-# Read data #
-#############
-
-age_group_all_raw = pl.read_csv(
-    os.path.join(root_dir, age_group_all_raw_path),
-    encoding="utf-8",
-    separator=";")
-
-age_group_production_raw = pl.read_csv(
-    os.path.join(root_dir, age_group_production_raw_path),
-    encoding="utf-8",
-    separator=";")
-
-cutting_raw = pl.read_csv(
-    os.path.join(root_dir, cutting_raw_path),
-    encoding="utf-8",
-    separator=";")
-
-age_group_all = (
-    age_group_all_raw
-    .with_columns(
-        AREA = (
-            col("Meetriku väärtus")
-            .str.replace(r"\s", "")
-            .str.replace(",", ".")
-            .fill_null(0)
-            .cast(pl.Decimal(10, 2))
-        ),
-        UNIT = pl.when(col("Meetrik") == "Pindala (tuhat ha)").then(pl.lit("kha")),
-        AGE_GROUP = (
-            col("Kaitsepõhjus")
-            .str.strip_chars()
-            .replace(translations)
-        ),
-        TYPE = pl.lit("all")
-    )
-    .filter(
-        col("AGE_GROUP") != pl.lit("Kokku")
-    )
-    .select(
-        col("Aasta").alias("YEAR"),
-        col("TYPE"),
-        col("AGE_GROUP"),
-        col("AREA"),
-        col("UNIT")
-    )
-)
-
-age_group_production = (
-    age_group_production_raw
-    .with_columns(
-        AREA = (
-            col("Meetriku väärtus")
-            .str.replace(r"\s", "")
-            .str.replace(",", ".")
-            .fill_null(0)
-            .cast(pl.Decimal(10, 2))
-        ),
-        UNIT = pl.when(col("Meetrik") == "Pindala (tuhat ha)").then(pl.lit("kha")),
-        AGE_GROUP = (
-            col("Kaitsepõhjus")
-            .str.strip_chars()
-            .replace(translations)
-        ),
-        TYPE = pl.lit("production")
-    )
-    .filter(
-        col("AGE_GROUP") != pl.lit("Kokku")
-    )
-    .select(
-        col("Aasta").alias("YEAR"),
-        col("TYPE"),
-        col("AGE_GROUP"),
-        col("AREA"),
-        col("UNIT")
-    )
-)
-
-age_group = (
-    age_group_all
-    .rename({"AREA": "AREA_ALL"})
-    .drop("TYPE")
-    .join(
-        age_group_production.rename({"AREA": "AREA_PRODUCTION"}).drop("TYPE"),
-        on=["YEAR", "AGE_GROUP", "UNIT"],
-        how="left"
-    )
-    .with_columns(
-        AREA_PROTECTED = col("AREA_ALL") - col("AREA_PRODUCTION")
-    )
-    .unpivot(
-        index=["YEAR", "AGE_GROUP", "UNIT"],
-        on=["AREA_PRODUCTION", "AREA_PROTECTED"],
-        value_name="AREA",
-        variable_name="TYPE"
-    )
-    .with_columns(
-        TYPE=(
-            col("TYPE")
-            .str.replace("AREA_", "")
-            .str.to_lowercase()
+def clean_age_group_data(data: pl.DataFrame, type_name: str, translations: dict) -> pl.DataFrame:
+    """
+    Discard age group totals (Kaitsepõhjus: Kokku).
+    Convert Meetriku väärtus to float and rename to AREA.
+    Set UNIT value to kha.
+    Map translations to Kaitsepõhjus and rename to AGE_GROUP.
+    Set TYPE to type_name.
+    """
+    out = (
+        data
+        .filter(
+            col("Kaitsepõhjus").str.strip_chars() != pl.lit("Kokku")
+        )
+        .with_columns(
+            AREA = (
+                col("Meetriku väärtus")
+                .str.replace(r"\s", "")
+                .str.replace(",", ".")
+                .fill_null(0)
+                .cast(pl.Float64)
+            ),
+            UNIT = (
+                pl.when(col("Meetrik") == "Pindala (tuhat ha)")
+                .then(pl.lit("kha"))
+            ),
+            DOMINANT_SPECIES = (
+                col("Enamuspuuliik")
+                .str.strip_chars()
+                .replace(translations)
+            ),
+            AGE_GROUP = (
+                col("Kaitsepõhjus")
+                .str.strip_chars()
+                .replace(translations)
+            ),
+            TYPE = pl.lit(type_name)
+        )
+        .select(
+            col("Aasta").alias("YEAR"),
+            col("TYPE"),
+            col("DOMINANT_SPECIES"),
+            col("AGE_GROUP"),
+            col("AREA"),
+            col("UNIT")
         )
     )
-    .select(
-        col("YEAR"),
-        col("AGE_GROUP"),
-        col("TYPE"),
-        col("AREA"),
-        col("UNIT")
+    return out
+
+
+def combine_all_and_production_data(all_data: pl.DataFrame, production_data: pl.DataFrame) -> pl.DataFrame:
+    """
+    Get protected areas by subtracting production areas from all economic areas.
+    Round areas to 2 decimals.
+    Return data frame with TYPE values "production" and "protected".
+    """
+    out = (
+        all_data
+        .rename({"AREA": "AREA_ALL"})
+        .drop("TYPE")
+        .join(
+            production_data.rename({"AREA": "AREA_PRODUCTION"}).drop("TYPE"),
+            on=["YEAR", "DOMINANT_SPECIES", "AGE_GROUP", "UNIT"],
+            how="left"
+        )
+        .with_columns(
+            AREA_PROTECTED = col("AREA_ALL") - col("AREA_PRODUCTION")
+        )
+        .unpivot(
+            index=["YEAR", "DOMINANT_SPECIES", "AGE_GROUP", "UNIT"],
+            on=["AREA_PRODUCTION", "AREA_PROTECTED"],
+            value_name="AREA",
+            variable_name="TYPE"
+        )
+        .with_columns(
+            TYPE=(
+                col("TYPE")
+                .str.replace("AREA_", "")
+                .str.to_lowercase()
+            ),
+            AREA=col("AREA").round(2)
+        )
+        .select(
+            col("YEAR"),
+            col("DOMINANT_SPECIES"),
+            col("AGE_GROUP"),
+            col("TYPE"),
+            col("AREA"),
+            col("UNIT")
+        )
+        .sort(col("YEAR"), col("DOMINANT_SPECIES"), col("TYPE"), col("AGE_GROUP"))
     )
-    .sort(col("YEAR"))
-)
+    return out
 
-regeneration_cutting = (
-    cutting_raw
-    .with_columns(
-        AREA = (
-            col("Meetriku väärtus")
-            .str.replace(r"\s", "")
-            .str.replace(",", ".")
-            .cast(pl.Decimal(10, 2))
-        ),
-        UNIT = pl.when(col("Meetrik") == "Pindala (tuhat ha)").then(pl.lit("kha"))
+
+def clean_regeneration_cutting_data(data: pl.DataFrame) -> pl.DataFrame:
+    """
+    Filter records of annual regeneration cutting total areas.
+    Convert Meetriku väärtus to float and rename to AREA. Round to 2 decimals.
+    Set UNIT value to kha.
+    Rename Raie aasta to YEAR.
+    """
+    out = (
+        data
+        .filter(
+            col("Meetrik") == pl.lit("Pindala (tuhat ha)"),
+            col("Kaitsepõhjus") == pl.lit("Uuendusraie kokku")
+        )
+        .with_columns(
+            AREA = (
+                col("Meetriku väärtus")
+                .str.replace(r"\s", "")
+                .str.replace(",", ".")
+                .cast(pl.Float64)
+                .round(2)
+            ),
+            UNIT = pl.when(col("Meetrik") == "Pindala (tuhat ha)").then(pl.lit("kha"))
+        )
+        .select(
+            col("Raie aasta").alias("YEAR"),
+            col("AREA"),
+            col("UNIT")
+        )
+        .sort(col("YEAR"))
     )
-    .filter(
-        col("UNIT") == pl.lit("kha"),
-        col("Kaitsepõhjus") == pl.lit("Uuendusraie kokku")
-    )
-    .select(
-        col("Raie aasta").alias("YEAR"),
-        col("AREA"),
-        col("UNIT")
-    )
-    .sort(col("YEAR"))
-)
-
-
-#############
-# Save data #
-#############
-
-age_group_save_path_full = os.path.join(root_dir, age_group_save_path)
-
-os.makedirs(
-    os.path.dirname(age_group_save_path_full),
-    exist_ok=True)
-
-age_group.write_csv(
-    age_group_save_path_full,
-    separator=","
-)
-
-
-regeneration_cutting_save_path_full = os.path.join(root_dir, regeneration_cutting_save_path)
-
-os.makedirs(
-    os.path.dirname(regeneration_cutting_save_path_full),
-    exist_ok=True)
-
-regeneration_cutting.write_csv(
-    regeneration_cutting_save_path_full,
-    separator=","
-)
+    return out
