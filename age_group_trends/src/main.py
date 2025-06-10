@@ -14,7 +14,7 @@ import plot_data
 #########
 
 TREE_SPECIES = "all"    # available values: all, aspen, birch, black alder, grey alder, other, pine, spruce
-PLOT_SAVE_PATH = "metsamaa_pindala_kokku.png"
+PLOT_SAVE_PATH = "result/metsamaa_pindala_kokku.png"
 PLOT_TITLE = {
     "text": "Mittemajandatava ja majandatava metsamaa pindalad vanusegruppide kaupa",
     # Define parts of title string that should have different colours:
