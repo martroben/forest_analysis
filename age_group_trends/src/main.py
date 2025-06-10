@@ -293,8 +293,7 @@ production_age_group = (
 )
 production_areas_plot = prepare_data.get_areas(production_age_group)
 
-
-# Save prepared regeneration cutting data
+# Save prepared age group data
 os.makedirs(
     os.path.dirname(os.path.join(ROOT_DIR, PROTECTED_AREAS_PLOT_PATH)),
     exist_ok=True
@@ -352,7 +351,6 @@ traces += plot_data.get_area_traces(
     protected_colours_by_age_group
 )
 
-
 # Add production areas traces
 production_areas_dict = production_areas_plot.to_dict(as_series=False)
 # ^ Convert data frames to dicts of lists (each field name is a key and values are a list)
@@ -368,7 +366,6 @@ traces += plot_data.get_area_traces(
     production_areas_by_age_group,
     production_colours_by_age_group
 )
-
 
 # Add regeneration cutting traces
 if IS_REGENERATION_CUTTING_DATA_AVAILABLE:
@@ -442,7 +439,3 @@ plot_data.save_plot(
     figure,
     os.path.join(ROOT_DIR, PLOT_SAVE_PATH)
 )
-
-# TODO: analyse by species
-# TODO: update readme (add species results)
-# TODO: test full deployment
