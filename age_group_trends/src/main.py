@@ -4,9 +4,9 @@ import os
 import polars as pl
 from polars import col
 # local
-from age_group_trends.src import clean_data
-from age_group_trends.src import prepare_data
-from age_group_trends.src import plot_data
+import clean_data
+import prepare_data
+import plot_data
 
 
 #########
