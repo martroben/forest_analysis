@@ -42,7 +42,7 @@ Results by tree species:
 git clone https://github.com/martroben/forest_analysis/
 ```
 
-2. Setup virtual environment
+2. Set up virtual environment
 ```shell
 cd forest_analysis
 python -m venv .venv
@@ -67,6 +67,8 @@ pip install -r requirements.txt
 ```shell
 python age_group_trends/src/main.py
 ```
+
+Result is saved to `age_group_trends/result`
 
 ## Libraries
 - [`plotly`](https://plotly.com/python/) for visualisation
