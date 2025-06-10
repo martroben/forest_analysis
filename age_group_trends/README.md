@@ -7,16 +7,16 @@ This project analyzes Estonian forest areas by age groups using [Estonian Nation
 - Cutting areas: [Forest Cutting Statistics](https://tableau.envir.ee/views/SMI/28Raieaegrida?%3Aembed=y)
 
 ## Example Output
-![Age group trends](age_group_trends/metsamaa_pindala_kokku.png)
+![Age group trends](result/metsamaa_pindala_kokku.png)
 
 Results by tree species:
-- [aspen](age_group_trends/metsamaa_pindala_haab.png)
-- [birch](age_group_trends/metsamaa_pindala_kask.png)
-- [black alder](age_group_trends/metsamaa_pindala_sanglepp.png)
-- [grey alder](age_group_trends/metsamaa_pindala_hall_lepp.png)
-- [pine](age_group_trends/metsamaa_pindala_mänd.png)
-- [spruce](age_group_trends/metsamaa_pindala_kuusk.png)
-- [other tree species](age_group_trends/metsamaa_pindala_muu.png)
+- [aspen](result/metsamaa_pindala_haab.png)
+- [birch](result/metsamaa_pindala_kask.png)
+- [black alder](result/metsamaa_pindala_sanglepp.png)
+- [grey alder](result/metsamaa_pindala_hall_lepp.png)
+- [pine](result/metsamaa_pindala_mänd.png)
+- [spruce](result/metsamaa_pindala_kuusk.png)
+- [other tree species](result/metsamaa_pindala_muu.png)
 
 ## Project Structure
 ```
@@ -26,6 +26,7 @@ Results by tree species:
 │   ├── raw/      # Source data files
 │   ├── clean/    # Processed data
 │   └── plot/     # Visualisation data
+├── result/       # Sample result plots
 └── src/
     ├── __init__.py           # System file for Python module system
     ├── clean_data.py         # Data cleaning
