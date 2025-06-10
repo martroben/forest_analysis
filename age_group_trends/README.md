@@ -37,27 +37,35 @@ Results by tree species:
 
 ## Installation
 
-1. Clone and install dependencies:
+1. Clone repo:
 ```shell
 git clone https://github.com/martroben/forest_analysis/
+```
 
+2. Setup virtual environment
+```shell
 cd forest_analysis
+python -m venv .venv
+source .venv/bin/activate
+```
+
+3. Install dependencies
+```shell
 pip install -r requirements.txt
 ```
 
-2. Optional: Update source data
+4. Optional: Update source data
     - Download latest data from sources to `data/raw/`
     - Update input filenames in `src/main.py`
 
-3. Optional: Set tree species in `src/main.py`. Update parameters:
+5. Optional: Set tree species in `src/main.py`. Update parameters:
     - `TREE_SPECIES`
     - `PLOT_SAVE_PATH`
     - `PLOT_TITLE`
 
-4. Generate visualisation:
+6. Generate visualisation:
 ```shell
-cd age_group_trends
-python -m src/main.py
+python age_group_trends/src/main.py
 ```
 
 ## Libraries
