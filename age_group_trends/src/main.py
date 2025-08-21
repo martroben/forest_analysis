@@ -1,5 +1,6 @@
 # standard
 import os
+import re
 # external
 import polars as pl
 from polars import col
@@ -320,10 +321,13 @@ production_areas_plot.write_csv(
 traces = []
 
 non_age_group_fields = ["YEAR", "UNIT", "TYPE", "DOMINANT_SPECIES"]
-age_group_names = sorted([
-    name for name in set(production_areas_plot.columns + protected_areas_plot.columns) 
-    if name not in non_age_group_fields
-])
+age_group_names = sorted(
+    [
+        name for name in set(production_areas_plot.columns + protected_areas_plot.columns) 
+        if name not in non_age_group_fields
+    ],
+    key=lambda x: int(re.search(r"\d+", x).group())
+)
 
 # Add dummy traces to display legend
 legend_colours = plot_data.get_colours(len(age_group_names), LEGEND_COLORSCALE)
@@ -442,7 +446,3 @@ plot_data.save_plot(
     figure,
     os.path.join(ROOT_DIR, PLOT_SAVE_PATH)
 )
-
-# TODO: analyse by species
-# TODO: update readme (add species results)
-# TODO: test full deployment
