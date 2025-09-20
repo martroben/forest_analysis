@@ -1,0 +1,417 @@
+YEAR,TYPE,DOMINANT_SPECIES,CUTTING_AGE
+1999,production,all,67.29247713838225
+1999,protected,all,0.0
+1999,production,aspen,40.0
+1999,protected,aspen,
+1999,production,birch,60.0
+1999,protected,birch,
+1999,production,black alder,60.0
+1999,protected,black alder,
+1999,production,grey alder,30.0
+1999,protected,grey alder,
+1999,production,other,90.0
+1999,protected,other,
+1999,production,pine,90.0
+1999,protected,pine,
+1999,production,spruce,70.0
+1999,protected,spruce,
+2000,production,all,68.17064175067618
+2000,protected,all,0.0
+2000,production,aspen,40.0
+2000,protected,aspen,
+2000,production,birch,60.0
+2000,protected,birch,
+2000,production,black alder,60.0
+2000,protected,black alder,
+2000,production,grey alder,30.0
+2000,protected,grey alder,
+2000,production,other,90.0
+2000,protected,other,
+2000,production,pine,90.0
+2000,protected,pine,
+2000,production,spruce,70.0
+2000,protected,spruce,
+2001,production,all,67.6826467282412
+2001,protected,all,0.0
+2001,production,aspen,40.0
+2001,protected,aspen,
+2001,production,birch,60.0
+2001,protected,birch,
+2001,production,black alder,60.0
+2001,protected,black alder,
+2001,production,grey alder,30.0
+2001,protected,grey alder,
+2001,production,other,90.0
+2001,protected,other,
+2001,production,pine,90.0
+2001,protected,pine,
+2001,production,spruce,70.0
+2001,protected,spruce,
+2002,production,all,67.51947923858368
+2002,protected,all,0.0
+2002,production,aspen,40.0
+2002,protected,aspen,
+2002,production,birch,60.0
+2002,protected,birch,
+2002,production,black alder,60.0
+2002,protected,black alder,
+2002,production,grey alder,30.0
+2002,protected,grey alder,
+2002,production,other,90.0
+2002,protected,other,
+2002,production,pine,90.0
+2002,protected,pine,
+2002,production,spruce,70.0
+2002,protected,spruce,
+2003,production,all,67.16567932407499
+2003,protected,all,0.0
+2003,production,aspen,40.0
+2003,protected,aspen,
+2003,production,birch,60.0
+2003,protected,birch,
+2003,production,black alder,60.0
+2003,protected,black alder,
+2003,production,grey alder,30.0
+2003,protected,grey alder,
+2003,production,other,90.0
+2003,protected,other,
+2003,production,pine,90.0
+2003,protected,pine,
+2003,production,spruce,70.0
+2003,protected,spruce,
+2004,production,all,67.32173072274595
+2004,protected,all,0.0
+2004,production,aspen,40.0
+2004,protected,aspen,
+2004,production,birch,60.0
+2004,protected,birch,
+2004,production,black alder,60.0
+2004,protected,black alder,
+2004,production,grey alder,30.0
+2004,protected,grey alder,
+2004,production,other,90.0
+2004,protected,other,
+2004,production,pine,90.0
+2004,protected,pine,
+2004,production,spruce,70.0
+2004,protected,spruce,
+2005,production,all,67.16892749097298
+2005,protected,all,0.0
+2005,production,aspen,40.0
+2005,protected,aspen,
+2005,production,birch,60.0
+2005,protected,birch,
+2005,production,black alder,60.0
+2005,protected,black alder,
+2005,production,grey alder,30.0
+2005,protected,grey alder,
+2005,production,other,90.0
+2005,protected,other,
+2005,production,pine,90.0
+2005,protected,pine,
+2005,production,spruce,70.0
+2005,protected,spruce,
+2006,production,all,67.44773348964439
+2006,protected,all,0.0
+2006,production,aspen,40.0
+2006,protected,aspen,
+2006,production,birch,60.0
+2006,protected,birch,
+2006,production,black alder,60.0
+2006,protected,black alder,
+2006,production,grey alder,30.0
+2006,protected,grey alder,
+2006,production,other,90.0
+2006,protected,other,
+2006,production,pine,90.0
+2006,protected,pine,
+2006,production,spruce,70.0
+2006,protected,spruce,
+2007,production,all,67.99852724594993
+2007,protected,all,0.0
+2007,production,aspen,40.0
+2007,protected,aspen,
+2007,production,birch,60.0
+2007,protected,birch,
+2007,production,black alder,60.0
+2007,protected,black alder,
+2007,production,grey alder,30.0
+2007,protected,grey alder,
+2007,production,other,90.0
+2007,protected,other,
+2007,production,pine,90.0
+2007,protected,pine,
+2007,production,spruce,70.0
+2007,protected,spruce,
+2008,production,all,68.12151116427435
+2008,protected,all,0.0
+2008,production,aspen,40.0
+2008,protected,aspen,
+2008,production,birch,60.0
+2008,protected,birch,
+2008,production,black alder,60.0
+2008,protected,black alder,
+2008,production,grey alder,30.0
+2008,protected,grey alder,
+2008,production,other,90.0
+2008,protected,other,
+2008,production,pine,90.0
+2008,protected,pine,
+2008,production,spruce,70.0
+2008,protected,spruce,
+2009,production,all,67.9838588400421
+2009,protected,all,0.0
+2009,production,aspen,40.0
+2009,protected,aspen,
+2009,production,birch,60.0
+2009,protected,birch,
+2009,production,black alder,60.0
+2009,protected,black alder,
+2009,production,grey alder,30.0
+2009,protected,grey alder,
+2009,production,other,90.0
+2009,protected,other,
+2009,production,pine,90.0
+2009,protected,pine,
+2009,production,spruce,70.0
+2009,protected,spruce,
+2010,production,all,67.85255612524266
+2010,protected,all,0.0
+2010,production,aspen,40.0
+2010,protected,aspen,
+2010,production,birch,60.0
+2010,protected,birch,
+2010,production,black alder,60.0
+2010,protected,black alder,
+2010,production,grey alder,30.0
+2010,protected,grey alder,
+2010,production,other,90.0
+2010,protected,other,
+2010,production,pine,90.0
+2010,protected,pine,
+2010,production,spruce,70.0
+2010,protected,spruce,
+2011,production,all,67.49800796812748
+2011,protected,all,0.0
+2011,production,aspen,40.0
+2011,protected,aspen,
+2011,production,birch,60.0
+2011,protected,birch,
+2011,production,black alder,60.0
+2011,protected,black alder,
+2011,production,grey alder,30.0
+2011,protected,grey alder,
+2011,production,other,90.0
+2011,protected,other,
+2011,production,pine,90.0
+2011,protected,pine,
+2011,production,spruce,70.0
+2011,protected,spruce,
+2012,production,all,67.14584787159805
+2012,protected,all,0.0
+2012,production,aspen,40.0
+2012,protected,aspen,
+2012,production,birch,60.0
+2012,protected,birch,
+2012,production,black alder,60.0
+2012,protected,black alder,
+2012,production,grey alder,30.0
+2012,protected,grey alder,
+2012,production,other,90.0
+2012,protected,other,
+2012,production,pine,90.0
+2012,protected,pine,
+2012,production,spruce,70.0
+2012,protected,spruce,
+2013,production,all,67.16772781536012
+2013,protected,all,0.0
+2013,production,aspen,40.0
+2013,protected,aspen,
+2013,production,birch,60.0
+2013,protected,birch,
+2013,production,black alder,60.0
+2013,protected,black alder,
+2013,production,grey alder,30.0
+2013,protected,grey alder,
+2013,production,other,90.0
+2013,protected,other,
+2013,production,pine,90.0
+2013,protected,pine,
+2013,production,spruce,70.0
+2013,protected,spruce,
+2014,production,all,67.23660297657057
+2014,protected,all,0.0
+2014,production,aspen,40.0
+2014,protected,aspen,
+2014,production,birch,60.0
+2014,protected,birch,
+2014,production,black alder,60.0
+2014,protected,black alder,
+2014,production,grey alder,30.0
+2014,protected,grey alder,
+2014,production,other,90.0
+2014,protected,other,
+2014,production,pine,90.0
+2014,protected,pine,
+2014,production,spruce,70.0
+2014,protected,spruce,
+2015,production,all,67.0618480249172
+2015,protected,all,0.0
+2015,production,aspen,40.0
+2015,protected,aspen,
+2015,production,birch,60.0
+2015,protected,birch,
+2015,production,black alder,60.0
+2015,protected,black alder,
+2015,production,grey alder,30.0
+2015,protected,grey alder,
+2015,production,other,90.0
+2015,protected,other,
+2015,production,pine,90.0
+2015,protected,pine,
+2015,production,spruce,70.0
+2015,protected,spruce,
+2016,production,all,67.00125093820364
+2016,protected,all,0.0
+2016,production,aspen,40.0
+2016,protected,aspen,
+2016,production,birch,60.0
+2016,protected,birch,
+2016,production,black alder,60.0
+2016,protected,black alder,
+2016,production,grey alder,30.0
+2016,protected,grey alder,
+2016,production,other,90.0
+2016,protected,other,
+2016,production,pine,90.0
+2016,protected,pine,
+2016,production,spruce,70.0
+2016,protected,spruce,
+2017,production,all,66.78438099081828
+2017,protected,all,0.0
+2017,production,aspen,40.0
+2017,protected,aspen,
+2017,production,birch,60.0
+2017,protected,birch,
+2017,production,black alder,60.0
+2017,protected,black alder,
+2017,production,grey alder,30.0
+2017,protected,grey alder,
+2017,production,other,90.0
+2017,protected,other,
+2017,production,pine,90.0
+2017,protected,pine,
+2017,production,spruce,70.0
+2017,protected,spruce,
+2018,production,all,66.80304377902954
+2018,protected,all,0.0
+2018,production,aspen,40.0
+2018,protected,aspen,
+2018,production,birch,60.0
+2018,protected,birch,
+2018,production,black alder,60.0
+2018,protected,black alder,
+2018,production,grey alder,30.0
+2018,protected,grey alder,
+2018,production,other,90.0
+2018,protected,other,
+2018,production,pine,90.0
+2018,protected,pine,
+2018,production,spruce,70.0
+2018,protected,spruce,
+2019,production,all,66.68778370828552
+2019,protected,all,0.0
+2019,production,aspen,40.0
+2019,protected,aspen,
+2019,production,birch,60.0
+2019,protected,birch,
+2019,production,black alder,60.0
+2019,protected,black alder,
+2019,production,grey alder,30.0
+2019,protected,grey alder,
+2019,production,other,90.0
+2019,protected,other,
+2019,production,pine,90.0
+2019,protected,pine,
+2019,production,spruce,70.0
+2019,protected,spruce,
+2020,production,all,66.38456877398505
+2020,protected,all,0.0
+2020,production,aspen,40.0
+2020,protected,aspen,
+2020,production,birch,60.0
+2020,protected,birch,
+2020,production,black alder,60.0
+2020,protected,black alder,
+2020,production,grey alder,30.0
+2020,protected,grey alder,
+2020,production,other,90.0
+2020,protected,other,
+2020,production,pine,90.0
+2020,protected,pine,
+2020,production,spruce,70.0
+2020,protected,spruce,
+2021,production,all,65.89072519680934
+2021,protected,all,0.0
+2021,production,aspen,40.0
+2021,protected,aspen,
+2021,production,birch,60.0
+2021,protected,birch,
+2021,production,black alder,60.0
+2021,protected,black alder,
+2021,production,grey alder,30.0
+2021,protected,grey alder,
+2021,production,other,90.0
+2021,protected,other,
+2021,production,pine,90.0
+2021,protected,pine,
+2021,production,spruce,70.0
+2021,protected,spruce,
+2022,production,all,65.73139974779318
+2022,protected,all,0.0
+2022,production,aspen,40.0
+2022,protected,aspen,
+2022,production,birch,60.0
+2022,protected,birch,
+2022,production,black alder,60.0
+2022,protected,black alder,
+2022,production,grey alder,30.0
+2022,protected,grey alder,
+2022,production,other,90.0
+2022,protected,other,
+2022,production,pine,90.0
+2022,protected,pine,
+2022,production,spruce,70.0
+2022,protected,spruce,
+2023,production,all,65.48603821121142
+2023,protected,all,0.0
+2023,production,aspen,40.0
+2023,protected,aspen,
+2023,production,birch,60.0
+2023,protected,birch,
+2023,production,black alder,60.0
+2023,protected,black alder,
+2023,production,grey alder,30.0
+2023,protected,grey alder,
+2023,production,other,90.0
+2023,protected,other,
+2023,production,pine,90.0
+2023,protected,pine,
+2023,production,spruce,70.0
+2023,protected,spruce,
+2024,production,all,65.16846789574062
+2024,protected,all,0.0
+2024,production,aspen,40.0
+2024,protected,aspen,
+2024,production,birch,60.0
+2024,protected,birch,
+2024,production,black alder,60.0
+2024,protected,black alder,
+2024,production,grey alder,30.0
+2024,protected,grey alder,
+2024,production,other,90.0
+2024,protected,other,
+2024,production,pine,90.0
+2024,protected,pine,
+2024,production,spruce,70.0
+2024,protected,spruce,
