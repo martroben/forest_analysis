@@ -33,7 +33,8 @@ Results by tree species:
     ├── plot/
     │   ├── __init__.py         # Marks 'plot' as a Python module
     │   └── plot.py             # Plotting and visualization functions
-    └── 01_plot_age_groups.py   # Main script for age group trend analysis
+    ├── 01_clean_age_groups.py  # Clean age group raw data and save it to clean
+    └── 02_plot_age_groups.py   # Plot age group data and save png plots to results
 ```
 
 ## Installation
@@ -55,9 +56,10 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-6. Generate age group plots:
+4. Generate age group plots:
 ```shell
-python elf_smi/src/01_plot_age_groups.py
+python elf_smi/src/01_clean_age_groups.py
+python elf_smi/src/02_plot_age_groups.py
 ```
 
 Result is saved to `elf_smi/result`
@@ -69,5 +71,5 @@ Result is saved to `elf_smi/result`
 ## Limitations
 - Production forest category also includes semi-restricted production areas. Source data does not allow for different grouping.
 - Only regeneration cutting areas are included in analysis. Other types of cutting (thinning etc.) are not.
-- Regeneration cutting statistics are only available from 2014 onwards.
+- Regeneration cutting statistics are only available from 2015 onwards.
 - It is assumed that regeneration cutting in protected forests is negligible (taken to be 0 on the plot). Source data does not allow separating by protection status.
