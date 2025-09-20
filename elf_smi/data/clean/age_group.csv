@@ -15,7 +15,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,all,81...90,production,92.5,kha
 1999,all,91...100,production,44.8,kha
 1999,all,clearcut,production,48.7,kha
-1999,all,renewal not yet achieved,production,79.4,kha
+1999,all,renewal not complete,production,79.4,kha
 1999,all,...10,protected,8.0,kha
 1999,all,101...110,protected,5.7,kha
 1999,all,11...20,protected,8.1,kha
@@ -32,7 +32,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,all,81...90,protected,14.4,kha
 1999,all,91...100,protected,9.2,kha
 1999,all,clearcut,protected,3.5,kha
-1999,all,renewal not yet achieved,protected,7.1,kha
+1999,all,renewal not complete,protected,7.1,kha
 1999,aspen,...10,production,4.9,kha
 1999,aspen,101...110,production,0.0,kha
 1999,aspen,11...20,production,4.4,kha
@@ -49,7 +49,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,aspen,81...90,production,5.7,kha
 1999,aspen,91...100,production,1.1,kha
 1999,aspen,clearcut,production,0.0,kha
-1999,aspen,renewal not yet achieved,production,13.5,kha
+1999,aspen,renewal not complete,production,13.5,kha
 1999,aspen,...10,protected,0.0,kha
 1999,aspen,101...110,protected,0.0,kha
 1999,aspen,11...20,protected,0.0,kha
@@ -66,7 +66,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,aspen,81...90,protected,0.0,kha
 1999,aspen,91...100,protected,0.0,kha
 1999,aspen,clearcut,protected,1.1,kha
-1999,aspen,renewal not yet achieved,protected,0.0,kha
+1999,aspen,renewal not complete,protected,0.0,kha
 1999,birch,...10,production,60.0,kha
 1999,birch,101...110,production,0.0,kha
 1999,birch,11...20,production,31.2,kha
@@ -83,7 +83,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,birch,81...90,production,4.6,kha
 1999,birch,91...100,production,1.1,kha
 1999,birch,clearcut,production,13.9,kha
-1999,birch,renewal not yet achieved,production,11.9,kha
+1999,birch,renewal not complete,production,11.9,kha
 1999,birch,...10,protected,6.8,kha
 1999,birch,101...110,protected,0.0,kha
 1999,birch,11...20,protected,2.3,kha
@@ -100,7 +100,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,birch,81...90,protected,0.0,kha
 1999,birch,91...100,protected,0.0,kha
 1999,birch,clearcut,protected,0.0,kha
-1999,birch,renewal not yet achieved,protected,4.2,kha
+1999,birch,renewal not complete,protected,4.2,kha
 1999,black alder,...10,production,0.0,kha
 1999,black alder,101...110,production,1.1,kha
 1999,black alder,11...20,production,4.6,kha
@@ -117,7 +117,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,black alder,81...90,production,0.0,kha
 1999,black alder,91...100,production,0.0,kha
 1999,black alder,clearcut,production,0.0,kha
-1999,black alder,renewal not yet achieved,production,2.3,kha
+1999,black alder,renewal not complete,production,2.3,kha
 1999,black alder,...10,protected,0.0,kha
 1999,black alder,101...110,protected,0.0,kha
 1999,black alder,11...20,protected,2.8,kha
@@ -134,7 +134,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,black alder,81...90,protected,0.0,kha
 1999,black alder,91...100,protected,0.0,kha
 1999,black alder,clearcut,protected,0.0,kha
-1999,black alder,renewal not yet achieved,protected,1.1,kha
+1999,black alder,renewal not complete,protected,1.1,kha
 1999,grey alder,...10,production,22.1,kha
 1999,grey alder,101...110,production,0.0,kha
 1999,grey alder,11...20,production,20.9,kha
@@ -151,7 +151,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,grey alder,81...90,production,0.0,kha
 1999,grey alder,91...100,production,0.0,kha
 1999,grey alder,clearcut,production,2.0,kha
-1999,grey alder,renewal not yet achieved,production,4.0,kha
+1999,grey alder,renewal not complete,production,4.0,kha
 1999,grey alder,...10,protected,0.0,kha
 1999,grey alder,101...110,protected,0.0,kha
 1999,grey alder,11...20,protected,0.2,kha
@@ -168,7 +168,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,grey alder,81...90,protected,0.0,kha
 1999,grey alder,91...100,protected,0.0,kha
 1999,grey alder,clearcut,protected,0.0,kha
-1999,grey alder,renewal not yet achieved,protected,0.0,kha
+1999,grey alder,renewal not complete,protected,0.0,kha
 1999,other,...10,production,3.6,kha
 1999,other,101...110,production,0.0,kha
 1999,other,11...20,production,2.1,kha
@@ -185,7 +185,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,other,81...90,production,0.0,kha
 1999,other,91...100,production,1.1,kha
 1999,other,clearcut,production,0.0,kha
-1999,other,renewal not yet achieved,production,0.0,kha
+1999,other,renewal not complete,production,0.0,kha
 1999,other,...10,protected,0.0,kha
 1999,other,101...110,protected,0.0,kha
 1999,other,11...20,protected,0.0,kha
@@ -202,7 +202,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,other,81...90,protected,0.0,kha
 1999,other,91...100,protected,1.2,kha
 1999,other,clearcut,protected,1.1,kha
-1999,other,renewal not yet achieved,protected,0.0,kha
+1999,other,renewal not complete,protected,0.0,kha
 1999,pine,...10,production,12.0,kha
 1999,pine,101...110,production,18.5,kha
 1999,pine,11...20,production,33.6,kha
@@ -219,7 +219,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,pine,81...90,production,59.1,kha
 1999,pine,91...100,production,29.9,kha
 1999,pine,clearcut,production,10.1,kha
-1999,pine,renewal not yet achieved,production,22.3,kha
+1999,pine,renewal not complete,production,22.3,kha
 1999,pine,...10,protected,0.5,kha
 1999,pine,101...110,protected,4.6,kha
 1999,pine,11...20,protected,1.2,kha
@@ -236,7 +236,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,pine,81...90,protected,13.3,kha
 1999,pine,91...100,protected,8.0,kha
 1999,pine,clearcut,protected,1.2,kha
-1999,pine,renewal not yet achieved,protected,0.5,kha
+1999,pine,renewal not complete,protected,0.5,kha
 1999,spruce,...10,production,1.1,kha
 1999,spruce,101...110,production,9.1,kha
 1999,spruce,11...20,production,22.7,kha
@@ -253,7 +253,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,spruce,81...90,production,23.1,kha
 1999,spruce,91...100,production,11.5,kha
 1999,spruce,clearcut,production,22.7,kha
-1999,spruce,renewal not yet achieved,production,25.5,kha
+1999,spruce,renewal not complete,production,25.5,kha
 1999,spruce,...10,protected,0.7,kha
 1999,spruce,101...110,protected,1.2,kha
 1999,spruce,11...20,protected,1.8,kha
@@ -270,7 +270,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 1999,spruce,81...90,protected,1.2,kha
 1999,spruce,91...100,protected,0.0,kha
 1999,spruce,clearcut,protected,0.0,kha
-1999,spruce,renewal not yet achieved,protected,1.1,kha
+1999,spruce,renewal not complete,protected,1.1,kha
 2000,all,...10,production,90.3,kha
 2000,all,101...110,production,25.7,kha
 2000,all,11...20,production,132.7,kha
@@ -287,7 +287,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,all,81...90,production,106.7,kha
 2000,all,91...100,production,65.0,kha
 2000,all,clearcut,production,55.4,kha
-2000,all,renewal not yet achieved,production,83.4,kha
+2000,all,renewal not complete,production,83.4,kha
 2000,all,...10,protected,8.0,kha
 2000,all,101...110,protected,6.7,kha
 2000,all,11...20,protected,6.9,kha
@@ -304,7 +304,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,all,81...90,protected,16.1,kha
 2000,all,91...100,protected,10.1,kha
 2000,all,clearcut,protected,2.8,kha
-2000,all,renewal not yet achieved,protected,5.7,kha
+2000,all,renewal not complete,protected,5.7,kha
 2000,aspen,...10,production,10.1,kha
 2000,aspen,101...110,production,0.0,kha
 2000,aspen,11...20,production,5.0,kha
@@ -321,7 +321,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,aspen,81...90,production,2.8,kha
 2000,aspen,91...100,production,0.6,kha
 2000,aspen,clearcut,production,0.6,kha
-2000,aspen,renewal not yet achieved,production,8.5,kha
+2000,aspen,renewal not complete,production,8.5,kha
 2000,aspen,...10,protected,0.5,kha
 2000,aspen,101...110,protected,0.0,kha
 2000,aspen,11...20,protected,0.0,kha
@@ -338,7 +338,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,aspen,81...90,protected,0.0,kha
 2000,aspen,91...100,protected,0.5,kha
 2000,aspen,clearcut,protected,0.6,kha
-2000,aspen,renewal not yet achieved,protected,0.0,kha
+2000,aspen,renewal not complete,protected,0.0,kha
 2000,birch,...10,production,47.3,kha
 2000,birch,101...110,production,0.6,kha
 2000,birch,11...20,production,43.6,kha
@@ -355,7 +355,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,birch,81...90,production,10.4,kha
 2000,birch,91...100,production,2.8,kha
 2000,birch,clearcut,production,17.7,kha
-2000,birch,renewal not yet achieved,production,16.0,kha
+2000,birch,renewal not complete,production,16.0,kha
 2000,birch,...10,protected,6.2,kha
 2000,birch,101...110,protected,1.1,kha
 2000,birch,11...20,protected,1.6,kha
@@ -372,7 +372,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,birch,81...90,protected,1.1,kha
 2000,birch,91...100,protected,1.7,kha
 2000,birch,clearcut,protected,0.6,kha
-2000,birch,renewal not yet achieved,protected,2.7,kha
+2000,birch,renewal not complete,protected,2.7,kha
 2000,black alder,...10,production,0.7,kha
 2000,black alder,101...110,production,0.6,kha
 2000,black alder,11...20,production,3.6,kha
@@ -389,7 +389,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,black alder,81...90,production,0.6,kha
 2000,black alder,91...100,production,0.0,kha
 2000,black alder,clearcut,production,1.1,kha
-2000,black alder,renewal not yet achieved,production,1.7,kha
+2000,black alder,renewal not complete,production,1.7,kha
 2000,black alder,...10,protected,0.2,kha
 2000,black alder,101...110,protected,0.0,kha
 2000,black alder,11...20,protected,1.3,kha
@@ -406,7 +406,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,black alder,81...90,protected,0.0,kha
 2000,black alder,91...100,protected,0.0,kha
 2000,black alder,clearcut,protected,0.0,kha
-2000,black alder,renewal not yet achieved,protected,0.5,kha
+2000,black alder,renewal not complete,protected,0.5,kha
 2000,grey alder,...10,production,17.0,kha
 2000,grey alder,101...110,production,0.0,kha
 2000,grey alder,11...20,production,23.9,kha
@@ -423,7 +423,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,grey alder,81...90,production,0.0,kha
 2000,grey alder,91...100,production,0.0,kha
 2000,grey alder,clearcut,production,2.1,kha
-2000,grey alder,renewal not yet achieved,production,6.1,kha
+2000,grey alder,renewal not complete,production,6.1,kha
 2000,grey alder,...10,protected,0.0,kha
 2000,grey alder,101...110,protected,0.0,kha
 2000,grey alder,11...20,protected,0.7,kha
@@ -440,7 +440,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,grey alder,81...90,protected,0.0,kha
 2000,grey alder,91...100,protected,0.0,kha
 2000,grey alder,clearcut,protected,0.0,kha
-2000,grey alder,renewal not yet achieved,protected,0.0,kha
+2000,grey alder,renewal not complete,protected,0.0,kha
 2000,other,...10,production,2.6,kha
 2000,other,101...110,production,0.0,kha
 2000,other,11...20,production,2.2,kha
@@ -457,7 +457,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,other,81...90,production,0.0,kha
 2000,other,91...100,production,0.6,kha
 2000,other,clearcut,production,0.0,kha
-2000,other,renewal not yet achieved,production,0.6,kha
+2000,other,renewal not complete,production,0.6,kha
 2000,other,...10,protected,0.0,kha
 2000,other,101...110,protected,0.0,kha
 2000,other,11...20,protected,0.0,kha
@@ -474,7 +474,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,other,81...90,protected,0.0,kha
 2000,other,91...100,protected,0.5,kha
 2000,other,clearcut,protected,0.6,kha
-2000,other,renewal not yet achieved,protected,0.0,kha
+2000,other,renewal not complete,protected,0.0,kha
 2000,pine,...10,production,8.1,kha
 2000,pine,101...110,production,17.1,kha
 2000,pine,11...20,production,28.4,kha
@@ -491,7 +491,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,pine,81...90,production,64.0,kha
 2000,pine,91...100,production,42.5,kha
 2000,pine,clearcut,production,13.4,kha
-2000,pine,renewal not yet achieved,production,24.6,kha
+2000,pine,renewal not complete,production,24.6,kha
 2000,pine,...10,protected,0.8,kha
 2000,pine,101...110,protected,4.5,kha
 2000,pine,11...20,protected,2.4,kha
@@ -508,7 +508,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,pine,81...90,protected,12.7,kha
 2000,pine,91...100,protected,6.7,kha
 2000,pine,clearcut,protected,1.1,kha
-2000,pine,renewal not yet achieved,protected,1.3,kha
+2000,pine,renewal not complete,protected,1.3,kha
 2000,spruce,...10,production,4.5,kha
 2000,spruce,101...110,production,7.4,kha
 2000,spruce,11...20,production,26.0,kha
@@ -525,7 +525,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,spruce,81...90,production,28.9,kha
 2000,spruce,91...100,production,18.5,kha
 2000,spruce,clearcut,production,20.4,kha
-2000,spruce,renewal not yet achieved,production,26.0,kha
+2000,spruce,renewal not complete,production,26.0,kha
 2000,spruce,...10,protected,0.3,kha
 2000,spruce,101...110,protected,1.1,kha
 2000,spruce,11...20,protected,0.9,kha
@@ -542,7 +542,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2000,spruce,81...90,protected,2.3,kha
 2000,spruce,91...100,protected,0.6,kha
 2000,spruce,clearcut,protected,0.0,kha
-2000,spruce,renewal not yet achieved,protected,1.1,kha
+2000,spruce,renewal not complete,protected,1.1,kha
 2001,all,...10,production,82.7,kha
 2001,all,101...110,production,23.6,kha
 2001,all,11...20,production,129.9,kha
@@ -559,7 +559,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,all,81...90,production,100.7,kha
 2001,all,91...100,production,61.5,kha
 2001,all,clearcut,production,63.8,kha
-2001,all,renewal not yet achieved,production,89.9,kha
+2001,all,renewal not complete,production,89.9,kha
 2001,all,...10,protected,5.8,kha
 2001,all,101...110,protected,7.0,kha
 2001,all,11...20,protected,5.7,kha
@@ -576,7 +576,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,all,81...90,protected,13.0,kha
 2001,all,91...100,protected,8.9,kha
 2001,all,clearcut,protected,2.1,kha
-2001,all,renewal not yet achieved,protected,4.6,kha
+2001,all,renewal not complete,protected,4.6,kha
 2001,aspen,...10,production,8.7,kha
 2001,aspen,101...110,production,0.0,kha
 2001,aspen,11...20,production,3.9,kha
@@ -593,7 +593,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,aspen,81...90,production,2.8,kha
 2001,aspen,91...100,production,0.4,kha
 2001,aspen,clearcut,production,0.8,kha
-2001,aspen,renewal not yet achieved,production,9.4,kha
+2001,aspen,renewal not complete,production,9.4,kha
 2001,aspen,...10,protected,0.4,kha
 2001,aspen,101...110,protected,0.0,kha
 2001,aspen,11...20,protected,0.0,kha
@@ -610,7 +610,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,aspen,81...90,protected,0.0,kha
 2001,aspen,91...100,protected,0.3,kha
 2001,aspen,clearcut,protected,0.4,kha
-2001,aspen,renewal not yet achieved,protected,0.0,kha
+2001,aspen,renewal not complete,protected,0.0,kha
 2001,birch,...10,production,41.1,kha
 2001,birch,101...110,production,0.4,kha
 2001,birch,11...20,production,46.6,kha
@@ -627,7 +627,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,birch,81...90,production,10.9,kha
 2001,birch,91...100,production,3.0,kha
 2001,birch,clearcut,production,22.8,kha
-2001,birch,renewal not yet achieved,production,19.7,kha
+2001,birch,renewal not complete,production,19.7,kha
 2001,birch,...10,protected,4.4,kha
 2001,birch,101...110,protected,0.8,kha
 2001,birch,11...20,protected,1.5,kha
@@ -644,7 +644,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,birch,81...90,protected,0.7,kha
 2001,birch,91...100,protected,1.1,kha
 2001,birch,clearcut,protected,0.4,kha
-2001,birch,renewal not yet achieved,protected,2.2,kha
+2001,birch,renewal not complete,protected,2.2,kha
 2001,black alder,...10,production,0.6,kha
 2001,black alder,101...110,production,0.4,kha
 2001,black alder,11...20,production,2.7,kha
@@ -661,7 +661,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,black alder,81...90,production,1.5,kha
 2001,black alder,91...100,production,0.7,kha
 2001,black alder,clearcut,production,1.5,kha
-2001,black alder,renewal not yet achieved,production,1.5,kha
+2001,black alder,renewal not complete,production,1.5,kha
 2001,black alder,...10,protected,0.2,kha
 2001,black alder,101...110,protected,0.0,kha
 2001,black alder,11...20,protected,0.9,kha
@@ -678,7 +678,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,black alder,81...90,protected,0.4,kha
 2001,black alder,91...100,protected,0.0,kha
 2001,black alder,clearcut,protected,0.0,kha
-2001,black alder,renewal not yet achieved,protected,0.4,kha
+2001,black alder,renewal not complete,protected,0.4,kha
 2001,grey alder,...10,production,18.5,kha
 2001,grey alder,101...110,production,0.0,kha
 2001,grey alder,11...20,production,23.6,kha
@@ -695,7 +695,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,grey alder,81...90,production,0.0,kha
 2001,grey alder,91...100,production,0.0,kha
 2001,grey alder,clearcut,production,2.3,kha
-2001,grey alder,renewal not yet achieved,production,10.0,kha
+2001,grey alder,renewal not complete,production,10.0,kha
 2001,grey alder,...10,protected,0.0,kha
 2001,grey alder,101...110,protected,0.0,kha
 2001,grey alder,11...20,protected,0.5,kha
@@ -712,7 +712,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,grey alder,81...90,protected,0.0,kha
 2001,grey alder,91...100,protected,0.0,kha
 2001,grey alder,clearcut,protected,0.0,kha
-2001,grey alder,renewal not yet achieved,protected,0.0,kha
+2001,grey alder,renewal not complete,protected,0.0,kha
 2001,other,...10,production,2.5,kha
 2001,other,101...110,production,0.4,kha
 2001,other,11...20,production,2.9,kha
@@ -729,7 +729,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,other,81...90,production,0.7,kha
 2001,other,91...100,production,0.4,kha
 2001,other,clearcut,production,0.0,kha
-2001,other,renewal not yet achieved,production,0.4,kha
+2001,other,renewal not complete,production,0.4,kha
 2001,other,...10,protected,0.0,kha
 2001,other,101...110,protected,0.0,kha
 2001,other,11...20,protected,0.0,kha
@@ -746,7 +746,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,other,81...90,protected,0.4,kha
 2001,other,91...100,protected,0.3,kha
 2001,other,clearcut,protected,0.4,kha
-2001,other,renewal not yet achieved,protected,0.0,kha
+2001,other,renewal not complete,protected,0.0,kha
 2001,pine,...10,production,7.0,kha
 2001,pine,101...110,production,15.5,kha
 2001,pine,11...20,production,25.0,kha
@@ -763,7 +763,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,pine,81...90,production,58.2,kha
 2001,pine,91...100,production,41.8,kha
 2001,pine,clearcut,production,13.1,kha
-2001,pine,renewal not yet achieved,production,25.4,kha
+2001,pine,renewal not complete,production,25.4,kha
 2001,pine,...10,protected,0.6,kha
 2001,pine,101...110,protected,5.1,kha
 2001,pine,11...20,protected,1.9,kha
@@ -780,7 +780,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,pine,81...90,protected,10.0,kha
 2001,pine,91...100,protected,6.0,kha
 2001,pine,clearcut,protected,0.9,kha
-2001,pine,renewal not yet achieved,protected,1.3,kha
+2001,pine,renewal not complete,protected,1.3,kha
 2001,spruce,...10,production,4.3,kha
 2001,spruce,101...110,production,6.9,kha
 2001,spruce,11...20,production,25.1,kha
@@ -797,7 +797,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,spruce,81...90,production,26.7,kha
 2001,spruce,91...100,production,15.1,kha
 2001,spruce,clearcut,production,23.3,kha
-2001,spruce,renewal not yet achieved,production,23.5,kha
+2001,spruce,renewal not complete,production,23.5,kha
 2001,spruce,...10,protected,0.2,kha
 2001,spruce,101...110,protected,1.1,kha
 2001,spruce,11...20,protected,0.9,kha
@@ -814,7 +814,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2001,spruce,81...90,protected,1.5,kha
 2001,spruce,91...100,protected,1.1,kha
 2001,spruce,clearcut,protected,0.0,kha
-2001,spruce,renewal not yet achieved,protected,0.7,kha
+2001,spruce,renewal not complete,protected,0.7,kha
 2002,all,...10,production,84.1,kha
 2002,all,101...110,production,27.4,kha
 2002,all,11...20,production,133.5,kha
@@ -831,7 +831,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,all,81...90,production,98.9,kha
 2002,all,91...100,production,56.1,kha
 2002,all,clearcut,production,65.6,kha
-2002,all,renewal not yet achieved,production,90.7,kha
+2002,all,renewal not complete,production,90.7,kha
 2002,all,...10,protected,4.6,kha
 2002,all,101...110,protected,8.5,kha
 2002,all,11...20,protected,4.5,kha
@@ -848,7 +848,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,all,81...90,protected,13.8,kha
 2002,all,91...100,protected,9.1,kha
 2002,all,clearcut,protected,2.1,kha
-2002,all,renewal not yet achieved,protected,4.8,kha
+2002,all,renewal not complete,protected,4.8,kha
 2002,aspen,...10,production,9.5,kha
 2002,aspen,101...110,production,0.0,kha
 2002,aspen,11...20,production,3.9,kha
@@ -865,7 +865,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,aspen,81...90,production,2.1,kha
 2002,aspen,91...100,production,0.3,kha
 2002,aspen,clearcut,production,0.6,kha
-2002,aspen,renewal not yet achieved,production,10.7,kha
+2002,aspen,renewal not complete,production,10.7,kha
 2002,aspen,...10,protected,0.3,kha
 2002,aspen,101...110,protected,0.0,kha
 2002,aspen,11...20,protected,0.0,kha
@@ -882,7 +882,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,aspen,81...90,protected,0.0,kha
 2002,aspen,91...100,protected,0.3,kha
 2002,aspen,clearcut,protected,0.3,kha
-2002,aspen,renewal not yet achieved,protected,0.2,kha
+2002,aspen,renewal not complete,protected,0.2,kha
 2002,birch,...10,production,43.6,kha
 2002,birch,101...110,production,0.3,kha
 2002,birch,11...20,production,52.1,kha
@@ -899,7 +899,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,birch,81...90,production,11.0,kha
 2002,birch,91...100,production,2.9,kha
 2002,birch,clearcut,production,25.3,kha
-2002,birch,renewal not yet achieved,production,21.2,kha
+2002,birch,renewal not complete,production,21.2,kha
 2002,birch,...10,protected,3.6,kha
 2002,birch,101...110,protected,0.6,kha
 2002,birch,11...20,protected,1.3,kha
@@ -916,7 +916,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,birch,81...90,protected,0.8,kha
 2002,birch,91...100,protected,0.9,kha
 2002,birch,clearcut,protected,0.6,kha
-2002,birch,renewal not yet achieved,protected,1.9,kha
+2002,birch,renewal not complete,protected,1.9,kha
 2002,black alder,...10,production,1.2,kha
 2002,black alder,101...110,production,0.3,kha
 2002,black alder,11...20,production,2.7,kha
@@ -933,7 +933,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,black alder,81...90,production,1.4,kha
 2002,black alder,91...100,production,0.6,kha
 2002,black alder,clearcut,production,1.4,kha
-2002,black alder,renewal not yet achieved,production,1.4,kha
+2002,black alder,renewal not complete,production,1.4,kha
 2002,black alder,...10,protected,0.1,kha
 2002,black alder,101...110,protected,0.0,kha
 2002,black alder,11...20,protected,0.7,kha
@@ -950,7 +950,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,black alder,81...90,protected,0.3,kha
 2002,black alder,91...100,protected,0.0,kha
 2002,black alder,clearcut,protected,0.0,kha
-2002,black alder,renewal not yet achieved,protected,0.3,kha
+2002,black alder,renewal not complete,protected,0.3,kha
 2002,grey alder,...10,production,16.9,kha
 2002,grey alder,101...110,production,0.0,kha
 2002,grey alder,11...20,production,26.3,kha
@@ -967,7 +967,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,grey alder,81...90,production,0.0,kha
 2002,grey alder,91...100,production,0.0,kha
 2002,grey alder,clearcut,production,2.3,kha
-2002,grey alder,renewal not yet achieved,production,9.5,kha
+2002,grey alder,renewal not complete,production,9.5,kha
 2002,grey alder,...10,protected,0.0,kha
 2002,grey alder,101...110,protected,0.0,kha
 2002,grey alder,11...20,protected,0.3,kha
@@ -984,7 +984,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,grey alder,81...90,protected,0.0,kha
 2002,grey alder,91...100,protected,0.0,kha
 2002,grey alder,clearcut,protected,0.0,kha
-2002,grey alder,renewal not yet achieved,protected,0.0,kha
+2002,grey alder,renewal not complete,protected,0.0,kha
 2002,other,...10,production,1.8,kha
 2002,other,101...110,production,0.3,kha
 2002,other,11...20,production,2.7,kha
@@ -1001,7 +1001,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,other,81...90,production,0.6,kha
 2002,other,91...100,production,0.6,kha
 2002,other,clearcut,production,0.0,kha
-2002,other,renewal not yet achieved,production,0.3,kha
+2002,other,renewal not complete,production,0.3,kha
 2002,other,...10,protected,0.0,kha
 2002,other,101...110,protected,0.3,kha
 2002,other,11...20,protected,0.0,kha
@@ -1018,7 +1018,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,other,81...90,protected,0.2,kha
 2002,other,91...100,protected,0.5,kha
 2002,other,clearcut,protected,0.3,kha
-2002,other,renewal not yet achieved,protected,0.0,kha
+2002,other,renewal not complete,protected,0.0,kha
 2002,pine,...10,production,6.8,kha
 2002,pine,101...110,production,19.2,kha
 2002,pine,11...20,production,21.5,kha
@@ -1035,7 +1035,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,pine,81...90,production,58.4,kha
 2002,pine,91...100,production,38.8,kha
 2002,pine,clearcut,production,12.9,kha
-2002,pine,renewal not yet achieved,production,25.9,kha
+2002,pine,renewal not complete,production,25.9,kha
 2002,pine,...10,protected,0.4,kha
 2002,pine,101...110,protected,6.3,kha
 2002,pine,11...20,protected,1.5,kha
@@ -1052,7 +1052,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,pine,81...90,protected,10.4,kha
 2002,pine,91...100,protected,6.2,kha
 2002,pine,clearcut,protected,0.9,kha
-2002,pine,renewal not yet achieved,protected,1.2,kha
+2002,pine,renewal not complete,protected,1.2,kha
 2002,spruce,...10,production,4.3,kha
 2002,spruce,101...110,production,7.3,kha
 2002,spruce,11...20,production,24.2,kha
@@ -1069,7 +1069,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,spruce,81...90,production,25.5,kha
 2002,spruce,91...100,production,12.9,kha
 2002,spruce,clearcut,production,23.1,kha
-2002,spruce,renewal not yet achieved,production,21.8,kha
+2002,spruce,renewal not complete,production,21.8,kha
 2002,spruce,...10,protected,0.2,kha
 2002,spruce,101...110,protected,1.4,kha
 2002,spruce,11...20,protected,0.7,kha
@@ -1086,7 +1086,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2002,spruce,81...90,protected,2.0,kha
 2002,spruce,91...100,protected,1.4,kha
 2002,spruce,clearcut,protected,0.0,kha
-2002,spruce,renewal not yet achieved,protected,1.1,kha
+2002,spruce,renewal not complete,protected,1.1,kha
 2003,all,...10,production,92.3,kha
 2003,all,101...110,production,28.6,kha
 2003,all,11...20,production,134.8,kha
@@ -1103,7 +1103,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,all,81...90,production,97.9,kha
 2003,all,91...100,production,58.5,kha
 2003,all,clearcut,production,66.4,kha
-2003,all,renewal not yet achieved,production,90.3,kha
+2003,all,renewal not complete,production,90.3,kha
 2003,all,...10,protected,4.3,kha
 2003,all,101...110,protected,8.6,kha
 2003,all,11...20,protected,4.5,kha
@@ -1120,7 +1120,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,all,81...90,protected,14.9,kha
 2003,all,91...100,protected,10.7,kha
 2003,all,clearcut,protected,1.9,kha
-2003,all,renewal not yet achieved,protected,4.9,kha
+2003,all,renewal not complete,protected,4.9,kha
 2003,aspen,...10,production,12.5,kha
 2003,aspen,101...110,production,0.0,kha
 2003,aspen,11...20,production,4.3,kha
@@ -1137,7 +1137,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,aspen,81...90,production,2.5,kha
 2003,aspen,91...100,production,0.2,kha
 2003,aspen,clearcut,production,2.4,kha
-2003,aspen,renewal not yet achieved,production,11.0,kha
+2003,aspen,renewal not complete,production,11.0,kha
 2003,aspen,...10,protected,0.2,kha
 2003,aspen,101...110,protected,0.0,kha
 2003,aspen,11...20,protected,0.0,kha
@@ -1154,7 +1154,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,aspen,81...90,protected,0.0,kha
 2003,aspen,91...100,protected,0.2,kha
 2003,aspen,clearcut,protected,0.2,kha
-2003,aspen,renewal not yet achieved,protected,0.2,kha
+2003,aspen,renewal not complete,protected,0.2,kha
 2003,birch,...10,production,45.1,kha
 2003,birch,101...110,production,0.3,kha
 2003,birch,11...20,production,51.4,kha
@@ -1171,7 +1171,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,birch,81...90,production,11.3,kha
 2003,birch,91...100,production,2.7,kha
 2003,birch,clearcut,production,23.7,kha
-2003,birch,renewal not yet achieved,production,24.1,kha
+2003,birch,renewal not complete,production,24.1,kha
 2003,birch,...10,protected,3.5,kha
 2003,birch,101...110,protected,0.6,kha
 2003,birch,11...20,protected,2.0,kha
@@ -1188,7 +1188,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,birch,81...90,protected,1.3,kha
 2003,birch,91...100,protected,0.6,kha
 2003,birch,clearcut,protected,0.4,kha
-2003,birch,renewal not yet achieved,protected,2.0,kha
+2003,birch,renewal not complete,protected,2.0,kha
 2003,black alder,...10,production,0.9,kha
 2003,black alder,101...110,production,0.2,kha
 2003,black alder,11...20,production,2.6,kha
@@ -1205,7 +1205,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,black alder,81...90,production,1.1,kha
 2003,black alder,91...100,production,0.5,kha
 2003,black alder,clearcut,production,1.2,kha
-2003,black alder,renewal not yet achieved,production,2.6,kha
+2003,black alder,renewal not complete,production,2.6,kha
 2003,black alder,...10,protected,0.1,kha
 2003,black alder,101...110,protected,0.0,kha
 2003,black alder,11...20,protected,0.5,kha
@@ -1222,7 +1222,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,black alder,81...90,protected,0.4,kha
 2003,black alder,91...100,protected,0.0,kha
 2003,black alder,clearcut,protected,0.0,kha
-2003,black alder,renewal not yet achieved,protected,0.2,kha
+2003,black alder,renewal not complete,protected,0.2,kha
 2003,grey alder,...10,production,19.1,kha
 2003,grey alder,101...110,production,0.0,kha
 2003,grey alder,11...20,production,29.6,kha
@@ -1239,7 +1239,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,grey alder,81...90,production,0.0,kha
 2003,grey alder,91...100,production,0.0,kha
 2003,grey alder,clearcut,production,2.9,kha
-2003,grey alder,renewal not yet achieved,production,9.0,kha
+2003,grey alder,renewal not complete,production,9.0,kha
 2003,grey alder,...10,protected,0.0,kha
 2003,grey alder,101...110,protected,0.0,kha
 2003,grey alder,11...20,protected,0.2,kha
@@ -1256,7 +1256,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,grey alder,81...90,protected,0.0,kha
 2003,grey alder,91...100,protected,0.0,kha
 2003,grey alder,clearcut,protected,0.0,kha
-2003,grey alder,renewal not yet achieved,protected,0.0,kha
+2003,grey alder,renewal not complete,protected,0.0,kha
 2003,other,...10,production,2.9,kha
 2003,other,101...110,production,0.2,kha
 2003,other,11...20,production,3.0,kha
@@ -1273,7 +1273,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,other,81...90,production,1.1,kha
 2003,other,91...100,production,1.1,kha
 2003,other,clearcut,production,0.0,kha
-2003,other,renewal not yet achieved,production,0.4,kha
+2003,other,renewal not complete,production,0.4,kha
 2003,other,...10,protected,0.0,kha
 2003,other,101...110,protected,0.2,kha
 2003,other,11...20,protected,0.0,kha
@@ -1290,7 +1290,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,other,81...90,protected,0.2,kha
 2003,other,91...100,protected,0.4,kha
 2003,other,clearcut,protected,0.2,kha
-2003,other,renewal not yet achieved,protected,0.0,kha
+2003,other,renewal not complete,protected,0.0,kha
 2003,pine,...10,production,7.3,kha
 2003,pine,101...110,production,21.0,kha
 2003,pine,11...20,production,20.2,kha
@@ -1307,7 +1307,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,pine,81...90,production,55.6,kha
 2003,pine,91...100,production,38.3,kha
 2003,pine,clearcut,production,12.8,kha
-2003,pine,renewal not yet achieved,production,24.2,kha
+2003,pine,renewal not complete,production,24.2,kha
 2003,pine,...10,protected,0.3,kha
 2003,pine,101...110,protected,6.3,kha
 2003,pine,11...20,protected,1.2,kha
@@ -1324,7 +1324,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,pine,81...90,protected,10.5,kha
 2003,pine,91...100,protected,8.4,kha
 2003,pine,clearcut,protected,0.9,kha
-2003,pine,renewal not yet achieved,protected,1.6,kha
+2003,pine,renewal not complete,protected,1.6,kha
 2003,spruce,...10,production,4.5,kha
 2003,spruce,101...110,production,7.0,kha
 2003,spruce,11...20,production,23.7,kha
@@ -1341,7 +1341,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,spruce,81...90,production,26.3,kha
 2003,spruce,91...100,production,15.7,kha
 2003,spruce,clearcut,production,23.5,kha
-2003,spruce,renewal not yet achieved,production,19.0,kha
+2003,spruce,renewal not complete,production,19.0,kha
 2003,spruce,...10,protected,0.1,kha
 2003,spruce,101...110,protected,1.4,kha
 2003,spruce,11...20,protected,0.5,kha
@@ -1358,7 +1358,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2003,spruce,81...90,protected,2.4,kha
 2003,spruce,91...100,protected,1.1,kha
 2003,spruce,clearcut,protected,0.2,kha
-2003,spruce,renewal not yet achieved,protected,0.9,kha
+2003,spruce,renewal not complete,protected,0.9,kha
 2004,all,...10,production,101.5,kha
 2004,all,101...110,production,30.2,kha
 2004,all,11...20,production,140.5,kha
@@ -1375,7 +1375,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,all,81...90,production,98.2,kha
 2004,all,91...100,production,66.9,kha
 2004,all,clearcut,production,68.4,kha
-2004,all,renewal not yet achieved,production,89.2,kha
+2004,all,renewal not complete,production,89.2,kha
 2004,all,...10,protected,3.3,kha
 2004,all,101...110,protected,9.1,kha
 2004,all,11...20,protected,5.4,kha
@@ -1392,7 +1392,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,all,81...90,protected,15.2,kha
 2004,all,91...100,protected,13.4,kha
 2004,all,clearcut,protected,1.7,kha
-2004,all,renewal not yet achieved,protected,4.2,kha
+2004,all,renewal not complete,protected,4.2,kha
 2004,aspen,...10,production,15.4,kha
 2004,aspen,101...110,production,0.0,kha
 2004,aspen,11...20,production,4.9,kha
@@ -1409,7 +1409,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,aspen,81...90,production,2.1,kha
 2004,aspen,91...100,production,0.2,kha
 2004,aspen,clearcut,production,3.1,kha
-2004,aspen,renewal not yet achieved,production,9.5,kha
+2004,aspen,renewal not complete,production,9.5,kha
 2004,aspen,...10,protected,0.2,kha
 2004,aspen,101...110,protected,0.0,kha
 2004,aspen,11...20,protected,0.0,kha
@@ -1426,7 +1426,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,aspen,81...90,protected,0.0,kha
 2004,aspen,91...100,protected,0.2,kha
 2004,aspen,clearcut,protected,0.0,kha
-2004,aspen,renewal not yet achieved,protected,0.2,kha
+2004,aspen,renewal not complete,protected,0.2,kha
 2004,birch,...10,production,44.7,kha
 2004,birch,101...110,production,0.3,kha
 2004,birch,11...20,production,55.8,kha
@@ -1443,7 +1443,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,birch,81...90,production,12.2,kha
 2004,birch,91...100,production,2.8,kha
 2004,birch,clearcut,production,24.0,kha
-2004,birch,renewal not yet achieved,production,25.9,kha
+2004,birch,renewal not complete,production,25.9,kha
 2004,birch,...10,protected,2.2,kha
 2004,birch,101...110,protected,0.6,kha
 2004,birch,11...20,protected,3.3,kha
@@ -1460,7 +1460,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,birch,81...90,protected,1.5,kha
 2004,birch,91...100,protected,0.9,kha
 2004,birch,clearcut,protected,0.4,kha
-2004,birch,renewal not yet achieved,protected,1.2,kha
+2004,birch,renewal not complete,protected,1.2,kha
 2004,black alder,...10,production,2.0,kha
 2004,black alder,101...110,production,0.0,kha
 2004,black alder,11...20,production,2.6,kha
@@ -1477,7 +1477,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,black alder,81...90,production,1.3,kha
 2004,black alder,91...100,production,0.7,kha
 2004,black alder,clearcut,production,1.4,kha
-2004,black alder,renewal not yet achieved,production,2.3,kha
+2004,black alder,renewal not complete,production,2.3,kha
 2004,black alder,...10,protected,0.3,kha
 2004,black alder,101...110,protected,0.0,kha
 2004,black alder,11...20,protected,0.0,kha
@@ -1494,7 +1494,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,black alder,81...90,protected,0.4,kha
 2004,black alder,91...100,protected,0.0,kha
 2004,black alder,clearcut,protected,0.0,kha
-2004,black alder,renewal not yet achieved,protected,0.2,kha
+2004,black alder,renewal not complete,protected,0.2,kha
 2004,grey alder,...10,production,20.4,kha
 2004,grey alder,101...110,production,0.0,kha
 2004,grey alder,11...20,production,30.8,kha
@@ -1511,7 +1511,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,grey alder,81...90,production,0.0,kha
 2004,grey alder,91...100,production,0.0,kha
 2004,grey alder,clearcut,production,4.1,kha
-2004,grey alder,renewal not yet achieved,production,8.8,kha
+2004,grey alder,renewal not complete,production,8.8,kha
 2004,grey alder,...10,protected,0.0,kha
 2004,grey alder,101...110,protected,0.0,kha
 2004,grey alder,11...20,protected,0.4,kha
@@ -1528,7 +1528,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,grey alder,81...90,protected,0.0,kha
 2004,grey alder,91...100,protected,0.0,kha
 2004,grey alder,clearcut,protected,0.0,kha
-2004,grey alder,renewal not yet achieved,protected,0.0,kha
+2004,grey alder,renewal not complete,protected,0.0,kha
 2004,other,...10,production,3.7,kha
 2004,other,101...110,production,0.4,kha
 2004,other,11...20,production,3.1,kha
@@ -1545,7 +1545,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,other,81...90,production,1.3,kha
 2004,other,91...100,production,0.9,kha
 2004,other,clearcut,production,0.2,kha
-2004,other,renewal not yet achieved,production,0.6,kha
+2004,other,renewal not complete,production,0.6,kha
 2004,other,...10,protected,0.0,kha
 2004,other,101...110,protected,0.2,kha
 2004,other,11...20,protected,0.0,kha
@@ -1562,7 +1562,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,other,81...90,protected,0.4,kha
 2004,other,91...100,protected,0.2,kha
 2004,other,clearcut,protected,0.0,kha
-2004,other,renewal not yet achieved,protected,0.0,kha
+2004,other,renewal not complete,protected,0.0,kha
 2004,pine,...10,production,8.6,kha
 2004,pine,101...110,production,22.9,kha
 2004,pine,11...20,production,20.4,kha
@@ -1579,7 +1579,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,pine,81...90,production,53.4,kha
 2004,pine,91...100,production,44.8,kha
 2004,pine,clearcut,production,12.7,kha
-2004,pine,renewal not yet achieved,production,24.7,kha
+2004,pine,renewal not complete,production,24.7,kha
 2004,pine,...10,protected,0.4,kha
 2004,pine,101...110,protected,6.4,kha
 2004,pine,11...20,protected,1.2,kha
@@ -1596,7 +1596,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,pine,81...90,protected,10.0,kha
 2004,pine,91...100,protected,10.8,kha
 2004,pine,clearcut,protected,0.9,kha
-2004,pine,renewal not yet achieved,protected,1.7,kha
+2004,pine,renewal not complete,protected,1.7,kha
 2004,spruce,...10,production,6.7,kha
 2004,spruce,101...110,production,6.7,kha
 2004,spruce,11...20,production,23.0,kha
@@ -1613,7 +1613,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,spruce,81...90,production,28.0,kha
 2004,spruce,91...100,production,17.5,kha
 2004,spruce,clearcut,production,22.9,kha
-2004,spruce,renewal not yet achieved,production,17.3,kha
+2004,spruce,renewal not complete,production,17.3,kha
 2004,spruce,...10,protected,0.3,kha
 2004,spruce,101...110,protected,1.8,kha
 2004,spruce,11...20,protected,0.5,kha
@@ -1630,7 +1630,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2004,spruce,81...90,protected,2.8,kha
 2004,spruce,91...100,protected,1.3,kha
 2004,spruce,clearcut,protected,0.5,kha
-2004,spruce,renewal not yet achieved,protected,0.9,kha
+2004,spruce,renewal not complete,protected,0.9,kha
 2005,all,...10,production,109.1,kha
 2005,all,101...110,production,32.7,kha
 2005,all,11...20,production,134.8,kha
@@ -1647,7 +1647,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,all,81...90,production,95.8,kha
 2005,all,91...100,production,61.6,kha
 2005,all,clearcut,production,68.1,kha
-2005,all,renewal not yet achieved,production,89.8,kha
+2005,all,renewal not complete,production,89.8,kha
 2005,all,...10,protected,2.4,kha
 2005,all,101...110,protected,8.8,kha
 2005,all,11...20,protected,5.3,kha
@@ -1664,7 +1664,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,all,81...90,protected,15.7,kha
 2005,all,91...100,protected,15.0,kha
 2005,all,clearcut,protected,2.2,kha
-2005,all,renewal not yet achieved,protected,3.7,kha
+2005,all,renewal not complete,protected,3.7,kha
 2005,aspen,...10,production,14.0,kha
 2005,aspen,101...110,production,0.0,kha
 2005,aspen,11...20,production,4.4,kha
@@ -1681,7 +1681,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,aspen,81...90,production,2.7,kha
 2005,aspen,91...100,production,0.2,kha
 2005,aspen,clearcut,production,2.8,kha
-2005,aspen,renewal not yet achieved,production,10.2,kha
+2005,aspen,renewal not complete,production,10.2,kha
 2005,aspen,...10,protected,0.0,kha
 2005,aspen,101...110,protected,0.0,kha
 2005,aspen,11...20,protected,0.0,kha
@@ -1698,7 +1698,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,aspen,81...90,protected,0.0,kha
 2005,aspen,91...100,protected,0.0,kha
 2005,aspen,clearcut,protected,0.0,kha
-2005,aspen,renewal not yet achieved,protected,0.2,kha
+2005,aspen,renewal not complete,protected,0.2,kha
 2005,birch,...10,production,47.4,kha
 2005,birch,101...110,production,0.2,kha
 2005,birch,11...20,production,54.9,kha
@@ -1715,7 +1715,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,birch,81...90,production,11.8,kha
 2005,birch,91...100,production,2.8,kha
 2005,birch,clearcut,production,22.0,kha
-2005,birch,renewal not yet achieved,production,29.1,kha
+2005,birch,renewal not complete,production,29.1,kha
 2005,birch,...10,protected,1.3,kha
 2005,birch,101...110,protected,0.9,kha
 2005,birch,11...20,protected,3.5,kha
@@ -1732,7 +1732,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,birch,81...90,protected,2.5,kha
 2005,birch,91...100,protected,0.9,kha
 2005,birch,clearcut,protected,0.7,kha
-2005,birch,renewal not yet achieved,protected,1.1,kha
+2005,birch,renewal not complete,protected,1.1,kha
 2005,black alder,...10,production,2.6,kha
 2005,black alder,101...110,production,0.0,kha
 2005,black alder,11...20,production,2.8,kha
@@ -1749,7 +1749,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,black alder,81...90,production,1.7,kha
 2005,black alder,91...100,production,0.7,kha
 2005,black alder,clearcut,production,0.9,kha
-2005,black alder,renewal not yet achieved,production,2.5,kha
+2005,black alder,renewal not complete,production,2.5,kha
 2005,black alder,...10,protected,0.3,kha
 2005,black alder,101...110,protected,0.0,kha
 2005,black alder,11...20,protected,0.0,kha
@@ -1766,7 +1766,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,black alder,81...90,protected,0.6,kha
 2005,black alder,91...100,protected,0.0,kha
 2005,black alder,clearcut,protected,0.0,kha
-2005,black alder,renewal not yet achieved,protected,0.2,kha
+2005,black alder,renewal not complete,protected,0.2,kha
 2005,grey alder,...10,production,23.2,kha
 2005,grey alder,101...110,production,0.0,kha
 2005,grey alder,11...20,production,29.8,kha
@@ -1783,7 +1783,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,grey alder,81...90,production,0.0,kha
 2005,grey alder,91...100,production,0.0,kha
 2005,grey alder,clearcut,production,4.7,kha
-2005,grey alder,renewal not yet achieved,production,9.1,kha
+2005,grey alder,renewal not complete,production,9.1,kha
 2005,grey alder,...10,protected,0.0,kha
 2005,grey alder,101...110,protected,0.0,kha
 2005,grey alder,11...20,protected,0.2,kha
@@ -1800,7 +1800,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,grey alder,81...90,protected,0.0,kha
 2005,grey alder,91...100,protected,0.0,kha
 2005,grey alder,clearcut,protected,0.0,kha
-2005,grey alder,renewal not yet achieved,protected,0.0,kha
+2005,grey alder,renewal not complete,protected,0.0,kha
 2005,other,...10,production,4.5,kha
 2005,other,101...110,production,0.4,kha
 2005,other,11...20,production,2.6,kha
@@ -1817,7 +1817,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,other,81...90,production,1.7,kha
 2005,other,91...100,production,1.1,kha
 2005,other,clearcut,production,0.2,kha
-2005,other,renewal not yet achieved,production,0.9,kha
+2005,other,renewal not complete,production,0.9,kha
 2005,other,...10,protected,0.0,kha
 2005,other,101...110,protected,0.2,kha
 2005,other,11...20,protected,0.0,kha
@@ -1834,7 +1834,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,other,81...90,protected,0.4,kha
 2005,other,91...100,protected,0.2,kha
 2005,other,clearcut,protected,0.0,kha
-2005,other,renewal not yet achieved,protected,0.0,kha
+2005,other,renewal not complete,protected,0.0,kha
 2005,pine,...10,production,10.6,kha
 2005,pine,101...110,production,24.2,kha
 2005,pine,11...20,production,18.2,kha
@@ -1851,7 +1851,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,pine,81...90,production,51.6,kha
 2005,pine,91...100,production,42.0,kha
 2005,pine,clearcut,production,12.8,kha
-2005,pine,renewal not yet achieved,production,22.6,kha
+2005,pine,renewal not complete,production,22.6,kha
 2005,pine,...10,protected,0.2,kha
 2005,pine,101...110,protected,5.9,kha
 2005,pine,11...20,protected,1.2,kha
@@ -1868,7 +1868,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,pine,81...90,protected,9.5,kha
 2005,pine,91...100,protected,11.8,kha
 2005,pine,clearcut,protected,0.7,kha
-2005,pine,renewal not yet achieved,protected,1.5,kha
+2005,pine,renewal not complete,protected,1.5,kha
 2005,spruce,...10,production,6.7,kha
 2005,spruce,101...110,production,7.8,kha
 2005,spruce,11...20,production,22.1,kha
@@ -1885,7 +1885,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,spruce,81...90,production,26.4,kha
 2005,spruce,91...100,production,14.8,kha
 2005,spruce,clearcut,production,24.6,kha
-2005,spruce,renewal not yet achieved,production,15.5,kha
+2005,spruce,renewal not complete,production,15.5,kha
 2005,spruce,...10,protected,0.7,kha
 2005,spruce,101...110,protected,1.8,kha
 2005,spruce,11...20,protected,0.4,kha
@@ -1902,7 +1902,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2005,spruce,81...90,protected,2.6,kha
 2005,spruce,91...100,protected,2.1,kha
 2005,spruce,clearcut,protected,0.9,kha
-2005,spruce,renewal not yet achieved,protected,0.6,kha
+2005,spruce,renewal not complete,protected,0.6,kha
 2006,all,...10,production,120.0,kha
 2006,all,101...110,production,37.9,kha
 2006,all,11...20,production,134.4,kha
@@ -1919,7 +1919,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,all,81...90,production,97.1,kha
 2006,all,91...100,production,65.5,kha
 2006,all,clearcut,production,65.3,kha
-2006,all,renewal not yet achieved,production,83.0,kha
+2006,all,renewal not complete,production,83.0,kha
 2006,all,...10,protected,2.5,kha
 2006,all,101...110,protected,8.5,kha
 2006,all,11...20,protected,5.0,kha
@@ -1936,7 +1936,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,all,81...90,protected,15.5,kha
 2006,all,91...100,protected,16.3,kha
 2006,all,clearcut,protected,2.2,kha
-2006,all,renewal not yet achieved,protected,4.2,kha
+2006,all,renewal not complete,protected,4.2,kha
 2006,aspen,...10,production,17.3,kha
 2006,aspen,101...110,production,0.0,kha
 2006,aspen,11...20,production,4.5,kha
@@ -1953,7 +1953,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,aspen,81...90,production,2.4,kha
 2006,aspen,91...100,production,0.5,kha
 2006,aspen,clearcut,production,3.3,kha
-2006,aspen,renewal not yet achieved,production,9.5,kha
+2006,aspen,renewal not complete,production,9.5,kha
 2006,aspen,...10,protected,0.0,kha
 2006,aspen,101...110,protected,0.0,kha
 2006,aspen,11...20,protected,0.0,kha
@@ -1970,7 +1970,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,aspen,81...90,protected,0.0,kha
 2006,aspen,91...100,protected,0.0,kha
 2006,aspen,clearcut,protected,0.0,kha
-2006,aspen,renewal not yet achieved,protected,0.2,kha
+2006,aspen,renewal not complete,protected,0.2,kha
 2006,birch,...10,production,51.2,kha
 2006,birch,101...110,production,1.0,kha
 2006,birch,11...20,production,55.2,kha
@@ -1987,7 +1987,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,birch,81...90,production,11.6,kha
 2006,birch,91...100,production,2.9,kha
 2006,birch,clearcut,production,19.2,kha
-2006,birch,renewal not yet achieved,production,27.5,kha
+2006,birch,renewal not complete,production,27.5,kha
 2006,birch,...10,protected,1.0,kha
 2006,birch,101...110,protected,1.1,kha
 2006,birch,11...20,protected,3.2,kha
@@ -2004,7 +2004,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,birch,81...90,protected,2.9,kha
 2006,birch,91...100,protected,1.8,kha
 2006,birch,clearcut,protected,0.8,kha
-2006,birch,renewal not yet achieved,protected,0.9,kha
+2006,birch,renewal not complete,protected,0.9,kha
 2006,black alder,...10,production,3.8,kha
 2006,black alder,101...110,production,0.2,kha
 2006,black alder,11...20,production,3.4,kha
@@ -2021,7 +2021,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,black alder,81...90,production,1.2,kha
 2006,black alder,91...100,production,0.3,kha
 2006,black alder,clearcut,production,1.0,kha
-2006,black alder,renewal not yet achieved,production,2.2,kha
+2006,black alder,renewal not complete,production,2.2,kha
 2006,black alder,...10,protected,0.2,kha
 2006,black alder,101...110,protected,0.0,kha
 2006,black alder,11...20,protected,0.0,kha
@@ -2038,7 +2038,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,black alder,81...90,protected,0.5,kha
 2006,black alder,91...100,protected,0.0,kha
 2006,black alder,clearcut,protected,0.0,kha
-2006,black alder,renewal not yet achieved,protected,0.3,kha
+2006,black alder,renewal not complete,protected,0.3,kha
 2006,grey alder,...10,production,24.6,kha
 2006,grey alder,101...110,production,0.0,kha
 2006,grey alder,11...20,production,29.8,kha
@@ -2055,7 +2055,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,grey alder,81...90,production,0.0,kha
 2006,grey alder,91...100,production,0.0,kha
 2006,grey alder,clearcut,production,5.1,kha
-2006,grey alder,renewal not yet achieved,production,6.8,kha
+2006,grey alder,renewal not complete,production,6.8,kha
 2006,grey alder,...10,protected,0.0,kha
 2006,grey alder,101...110,protected,0.0,kha
 2006,grey alder,11...20,protected,0.4,kha
@@ -2072,7 +2072,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,grey alder,81...90,protected,0.0,kha
 2006,grey alder,91...100,protected,0.0,kha
 2006,grey alder,clearcut,protected,0.0,kha
-2006,grey alder,renewal not yet achieved,protected,0.0,kha
+2006,grey alder,renewal not complete,protected,0.0,kha
 2006,other,...10,production,4.6,kha
 2006,other,101...110,production,0.2,kha
 2006,other,11...20,production,3.2,kha
@@ -2089,7 +2089,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,other,81...90,production,1.7,kha
 2006,other,91...100,production,1.3,kha
 2006,other,clearcut,production,0.3,kha
-2006,other,renewal not yet achieved,production,1.1,kha
+2006,other,renewal not complete,production,1.1,kha
 2006,other,...10,protected,0.0,kha
 2006,other,101...110,protected,0.2,kha
 2006,other,11...20,protected,0.0,kha
@@ -2106,7 +2106,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,other,81...90,protected,0.2,kha
 2006,other,91...100,protected,0.2,kha
 2006,other,clearcut,protected,0.0,kha
-2006,other,renewal not yet achieved,protected,0.0,kha
+2006,other,renewal not complete,protected,0.0,kha
 2006,pine,...10,production,11.0,kha
 2006,pine,101...110,production,27.9,kha
 2006,pine,11...20,production,18.1,kha
@@ -2123,7 +2123,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,pine,81...90,production,52.8,kha
 2006,pine,91...100,production,42.8,kha
 2006,pine,clearcut,production,13.1,kha
-2006,pine,renewal not yet achieved,production,20.4,kha
+2006,pine,renewal not complete,production,20.4,kha
 2006,pine,...10,protected,0.6,kha
 2006,pine,101...110,protected,5.7,kha
 2006,pine,11...20,protected,1.2,kha
@@ -2140,7 +2140,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,pine,81...90,protected,9.3,kha
 2006,pine,91...100,protected,12.4,kha
 2006,pine,clearcut,protected,0.5,kha
-2006,pine,renewal not yet achieved,protected,1.9,kha
+2006,pine,renewal not complete,protected,1.9,kha
 2006,spruce,...10,production,7.6,kha
 2006,spruce,101...110,production,8.5,kha
 2006,spruce,11...20,production,20.1,kha
@@ -2157,7 +2157,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,spruce,81...90,production,27.4,kha
 2006,spruce,91...100,production,17.6,kha
 2006,spruce,clearcut,production,23.4,kha
-2006,spruce,renewal not yet achieved,production,15.5,kha
+2006,spruce,renewal not complete,production,15.5,kha
 2006,spruce,...10,protected,0.6,kha
 2006,spruce,101...110,protected,1.6,kha
 2006,spruce,11...20,protected,0.3,kha
@@ -2174,7 +2174,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2006,spruce,81...90,protected,2.6,kha
 2006,spruce,91...100,protected,2.1,kha
 2006,spruce,clearcut,protected,0.9,kha
-2006,spruce,renewal not yet achieved,protected,1.0,kha
+2006,spruce,renewal not complete,protected,1.0,kha
 2007,all,...10,production,128.8,kha
 2007,all,101...110,production,38.0,kha
 2007,all,11...20,production,135.1,kha
@@ -2191,7 +2191,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,all,81...90,production,98.0,kha
 2007,all,91...100,production,70.5,kha
 2007,all,clearcut,production,63.1,kha
-2007,all,renewal not yet achieved,production,80.2,kha
+2007,all,renewal not complete,production,80.2,kha
 2007,all,...10,protected,3.1,kha
 2007,all,101...110,protected,7.8,kha
 2007,all,11...20,protected,5.9,kha
@@ -2208,7 +2208,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,all,81...90,protected,15.6,kha
 2007,all,91...100,protected,18.2,kha
 2007,all,clearcut,protected,1.8,kha
-2007,all,renewal not yet achieved,protected,3.3,kha
+2007,all,renewal not complete,protected,3.3,kha
 2007,aspen,...10,production,18.5,kha
 2007,aspen,101...110,production,0.0,kha
 2007,aspen,11...20,production,5.2,kha
@@ -2225,7 +2225,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,aspen,81...90,production,2.6,kha
 2007,aspen,91...100,production,0.5,kha
 2007,aspen,clearcut,production,3.4,kha
-2007,aspen,renewal not yet achieved,production,7.8,kha
+2007,aspen,renewal not complete,production,7.8,kha
 2007,aspen,...10,protected,0.0,kha
 2007,aspen,101...110,protected,0.0,kha
 2007,aspen,11...20,protected,0.1,kha
@@ -2242,7 +2242,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,aspen,81...90,protected,0.2,kha
 2007,aspen,91...100,protected,0.0,kha
 2007,aspen,clearcut,protected,0.0,kha
-2007,aspen,renewal not yet achieved,protected,0.0,kha
+2007,aspen,renewal not complete,protected,0.0,kha
 2007,birch,...10,production,54.6,kha
 2007,birch,101...110,production,1.3,kha
 2007,birch,11...20,production,52.7,kha
@@ -2259,7 +2259,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,birch,81...90,production,12.1,kha
 2007,birch,91...100,production,3.9,kha
 2007,birch,clearcut,production,15.5,kha
-2007,birch,renewal not yet achieved,production,26.9,kha
+2007,birch,renewal not complete,production,26.9,kha
 2007,birch,...10,protected,1.2,kha
 2007,birch,101...110,protected,1.0,kha
 2007,birch,11...20,protected,3.4,kha
@@ -2276,7 +2276,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,birch,81...90,protected,3.4,kha
 2007,birch,91...100,protected,1.7,kha
 2007,birch,clearcut,protected,0.6,kha
-2007,birch,renewal not yet achieved,protected,0.7,kha
+2007,birch,renewal not complete,protected,0.7,kha
 2007,black alder,...10,production,4.4,kha
 2007,black alder,101...110,production,0.2,kha
 2007,black alder,11...20,production,3.2,kha
@@ -2293,7 +2293,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,black alder,81...90,production,1.2,kha
 2007,black alder,91...100,production,0.3,kha
 2007,black alder,clearcut,production,0.8,kha
-2007,black alder,renewal not yet achieved,production,2.2,kha
+2007,black alder,renewal not complete,production,2.2,kha
 2007,black alder,...10,protected,0.2,kha
 2007,black alder,101...110,protected,0.0,kha
 2007,black alder,11...20,protected,0.0,kha
@@ -2310,7 +2310,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,black alder,81...90,protected,0.4,kha
 2007,black alder,91...100,protected,0.0,kha
 2007,black alder,clearcut,protected,0.0,kha
-2007,black alder,renewal not yet achieved,protected,0.2,kha
+2007,black alder,renewal not complete,protected,0.2,kha
 2007,grey alder,...10,production,25.4,kha
 2007,grey alder,101...110,production,0.0,kha
 2007,grey alder,11...20,production,27.7,kha
@@ -2327,7 +2327,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,grey alder,81...90,production,0.0,kha
 2007,grey alder,91...100,production,0.0,kha
 2007,grey alder,clearcut,production,4.9,kha
-2007,grey alder,renewal not yet achieved,production,5.7,kha
+2007,grey alder,renewal not complete,production,5.7,kha
 2007,grey alder,...10,protected,0.3,kha
 2007,grey alder,101...110,protected,0.0,kha
 2007,grey alder,11...20,protected,0.4,kha
@@ -2344,7 +2344,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,grey alder,81...90,protected,0.0,kha
 2007,grey alder,91...100,protected,0.0,kha
 2007,grey alder,clearcut,protected,0.0,kha
-2007,grey alder,renewal not yet achieved,protected,0.0,kha
+2007,grey alder,renewal not complete,protected,0.0,kha
 2007,other,...10,production,5.4,kha
 2007,other,101...110,production,0.6,kha
 2007,other,11...20,production,3.8,kha
@@ -2361,7 +2361,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,other,81...90,production,2.1,kha
 2007,other,91...100,production,1.0,kha
 2007,other,clearcut,production,0.3,kha
-2007,other,renewal not yet achieved,production,1.1,kha
+2007,other,renewal not complete,production,1.1,kha
 2007,other,...10,protected,0.2,kha
 2007,other,101...110,protected,0.0,kha
 2007,other,11...20,protected,0.0,kha
@@ -2378,7 +2378,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,other,81...90,protected,0.2,kha
 2007,other,91...100,protected,0.0,kha
 2007,other,clearcut,protected,0.0,kha
-2007,other,renewal not yet achieved,protected,0.0,kha
+2007,other,renewal not complete,protected,0.0,kha
 2007,pine,...10,production,11.9,kha
 2007,pine,101...110,production,28.2,kha
 2007,pine,11...20,production,22.4,kha
@@ -2395,7 +2395,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,pine,81...90,production,54.4,kha
 2007,pine,91...100,production,47.0,kha
 2007,pine,clearcut,production,14.0,kha
-2007,pine,renewal not yet achieved,production,19.7,kha
+2007,pine,renewal not complete,production,19.7,kha
 2007,pine,...10,protected,0.6,kha
 2007,pine,101...110,protected,5.4,kha
 2007,pine,11...20,protected,1.5,kha
@@ -2412,7 +2412,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,pine,81...90,protected,9.0,kha
 2007,pine,91...100,protected,14.7,kha
 2007,pine,clearcut,protected,0.3,kha
-2007,pine,renewal not yet achieved,protected,1.9,kha
+2007,pine,renewal not complete,protected,1.9,kha
 2007,spruce,...10,production,8.6,kha
 2007,spruce,101...110,production,7.7,kha
 2007,spruce,11...20,production,20.1,kha
@@ -2429,7 +2429,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,spruce,81...90,production,25.5,kha
 2007,spruce,91...100,production,17.7,kha
 2007,spruce,clearcut,production,24.2,kha
-2007,spruce,renewal not yet achieved,production,16.9,kha
+2007,spruce,renewal not complete,production,16.9,kha
 2007,spruce,...10,protected,0.6,kha
 2007,spruce,101...110,protected,1.3,kha
 2007,spruce,11...20,protected,0.4,kha
@@ -2446,7 +2446,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2007,spruce,81...90,protected,2.5,kha
 2007,spruce,91...100,protected,1.8,kha
 2007,spruce,clearcut,protected,0.8,kha
-2007,spruce,renewal not yet achieved,protected,0.5,kha
+2007,spruce,renewal not complete,protected,0.5,kha
 2008,all,...10,production,139.2,kha
 2008,all,101...110,production,37.9,kha
 2008,all,11...20,production,129.6,kha
@@ -2463,7 +2463,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,all,81...90,production,99.2,kha
 2008,all,91...100,production,68.3,kha
 2008,all,clearcut,production,63.6,kha
-2008,all,renewal not yet achieved,production,78.5,kha
+2008,all,renewal not complete,production,78.5,kha
 2008,all,...10,protected,3.5,kha
 2008,all,101...110,protected,8.6,kha
 2008,all,11...20,protected,5.6,kha
@@ -2480,7 +2480,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,all,81...90,protected,15.6,kha
 2008,all,91...100,protected,19.3,kha
 2008,all,clearcut,protected,1.6,kha
-2008,all,renewal not yet achieved,protected,2.8,kha
+2008,all,renewal not complete,protected,2.8,kha
 2008,aspen,...10,production,21.5,kha
 2008,aspen,101...110,production,0.0,kha
 2008,aspen,11...20,production,6.3,kha
@@ -2497,7 +2497,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,aspen,81...90,production,2.2,kha
 2008,aspen,91...100,production,0.7,kha
 2008,aspen,clearcut,production,1.7,kha
-2008,aspen,renewal not yet achieved,production,6.6,kha
+2008,aspen,renewal not complete,production,6.6,kha
 2008,aspen,...10,protected,0.0,kha
 2008,aspen,101...110,protected,0.0,kha
 2008,aspen,11...20,protected,0.1,kha
@@ -2514,7 +2514,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,aspen,81...90,protected,0.4,kha
 2008,aspen,91...100,protected,0.0,kha
 2008,aspen,clearcut,protected,0.0,kha
-2008,aspen,renewal not yet achieved,protected,0.0,kha
+2008,aspen,renewal not complete,protected,0.0,kha
 2008,birch,...10,production,59.7,kha
 2008,birch,101...110,production,1.3,kha
 2008,birch,11...20,production,52.4,kha
@@ -2531,7 +2531,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,birch,81...90,production,12.1,kha
 2008,birch,91...100,production,4.2,kha
 2008,birch,clearcut,production,16.9,kha
-2008,birch,renewal not yet achieved,production,24.3,kha
+2008,birch,renewal not complete,production,24.3,kha
 2008,birch,...10,protected,1.5,kha
 2008,birch,101...110,protected,0.8,kha
 2008,birch,11...20,protected,3.2,kha
@@ -2548,7 +2548,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,birch,81...90,protected,2.8,kha
 2008,birch,91...100,protected,2.2,kha
 2008,birch,clearcut,protected,0.6,kha
-2008,birch,renewal not yet achieved,protected,0.4,kha
+2008,birch,renewal not complete,protected,0.4,kha
 2008,black alder,...10,production,5.4,kha
 2008,black alder,101...110,production,0.3,kha
 2008,black alder,11...20,production,3.0,kha
@@ -2565,7 +2565,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,black alder,81...90,production,1.6,kha
 2008,black alder,91...100,production,0.2,kha
 2008,black alder,clearcut,production,1.4,kha
-2008,black alder,renewal not yet achieved,production,1.6,kha
+2008,black alder,renewal not complete,production,1.6,kha
 2008,black alder,...10,protected,0.2,kha
 2008,black alder,101...110,protected,0.0,kha
 2008,black alder,11...20,protected,0.0,kha
@@ -2582,7 +2582,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,black alder,81...90,protected,0.3,kha
 2008,black alder,91...100,protected,0.0,kha
 2008,black alder,clearcut,protected,0.0,kha
-2008,black alder,renewal not yet achieved,protected,0.2,kha
+2008,black alder,renewal not complete,protected,0.2,kha
 2008,grey alder,...10,production,27.3,kha
 2008,grey alder,101...110,production,0.0,kha
 2008,grey alder,11...20,production,24.4,kha
@@ -2599,7 +2599,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,grey alder,81...90,production,0.0,kha
 2008,grey alder,91...100,production,0.0,kha
 2008,grey alder,clearcut,production,4.2,kha
-2008,grey alder,renewal not yet achieved,production,5.3,kha
+2008,grey alder,renewal not complete,production,5.3,kha
 2008,grey alder,...10,protected,0.4,kha
 2008,grey alder,101...110,protected,0.0,kha
 2008,grey alder,11...20,protected,0.4,kha
@@ -2616,7 +2616,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,grey alder,81...90,protected,0.0,kha
 2008,grey alder,91...100,protected,0.0,kha
 2008,grey alder,clearcut,protected,0.0,kha
-2008,grey alder,renewal not yet achieved,protected,0.0,kha
+2008,grey alder,renewal not complete,protected,0.0,kha
 2008,other,...10,production,4.6,kha
 2008,other,101...110,production,1.0,kha
 2008,other,11...20,production,3.6,kha
@@ -2633,7 +2633,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,other,81...90,production,1.7,kha
 2008,other,91...100,production,0.6,kha
 2008,other,clearcut,production,0.3,kha
-2008,other,renewal not yet achieved,production,1.2,kha
+2008,other,renewal not complete,production,1.2,kha
 2008,other,...10,protected,0.2,kha
 2008,other,101...110,protected,0.0,kha
 2008,other,11...20,protected,0.0,kha
@@ -2650,7 +2650,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,other,81...90,protected,0.4,kha
 2008,other,91...100,protected,0.2,kha
 2008,other,clearcut,protected,0.0,kha
-2008,other,renewal not yet achieved,protected,0.0,kha
+2008,other,renewal not complete,protected,0.0,kha
 2008,pine,...10,production,11.4,kha
 2008,pine,101...110,production,28.0,kha
 2008,pine,11...20,production,22.0,kha
@@ -2667,7 +2667,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,pine,81...90,production,56.3,kha
 2008,pine,91...100,production,47.7,kha
 2008,pine,clearcut,production,12.5,kha
-2008,pine,renewal not yet achieved,production,19.0,kha
+2008,pine,renewal not complete,production,19.0,kha
 2008,pine,...10,protected,0.7,kha
 2008,pine,101...110,protected,6.0,kha
 2008,pine,11...20,protected,1.5,kha
@@ -2684,7 +2684,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,pine,81...90,protected,9.8,kha
 2008,pine,91...100,protected,14.6,kha
 2008,pine,clearcut,protected,0.5,kha
-2008,pine,renewal not yet achieved,protected,1.7,kha
+2008,pine,renewal not complete,protected,1.7,kha
 2008,spruce,...10,production,9.1,kha
 2008,spruce,101...110,production,7.4,kha
 2008,spruce,11...20,production,17.8,kha
@@ -2701,7 +2701,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,spruce,81...90,production,25.4,kha
 2008,spruce,91...100,production,14.9,kha
 2008,spruce,clearcut,production,26.6,kha
-2008,spruce,renewal not yet achieved,production,20.5,kha
+2008,spruce,renewal not complete,production,20.5,kha
 2008,spruce,...10,protected,0.7,kha
 2008,spruce,101...110,protected,1.7,kha
 2008,spruce,11...20,protected,0.5,kha
@@ -2718,7 +2718,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2008,spruce,81...90,protected,1.8,kha
 2008,spruce,91...100,protected,2.2,kha
 2008,spruce,clearcut,protected,0.7,kha
-2008,spruce,renewal not yet achieved,protected,0.5,kha
+2008,spruce,renewal not complete,protected,0.5,kha
 2009,all,...10,production,135.7,kha
 2009,all,101...110,production,36.4,kha
 2009,all,11...20,production,127.7,kha
@@ -2735,7 +2735,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,all,81...90,production,99.2,kha
 2009,all,91...100,production,64.4,kha
 2009,all,clearcut,production,61.1,kha
-2009,all,renewal not yet achieved,production,79.6,kha
+2009,all,renewal not complete,production,79.6,kha
 2009,all,...10,protected,3.3,kha
 2009,all,101...110,protected,8.3,kha
 2009,all,11...20,protected,5.0,kha
@@ -2752,7 +2752,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,all,81...90,protected,15.5,kha
 2009,all,91...100,protected,20.4,kha
 2009,all,clearcut,protected,1.9,kha
-2009,all,renewal not yet achieved,protected,2.8,kha
+2009,all,renewal not complete,protected,2.8,kha
 2009,aspen,...10,production,20.7,kha
 2009,aspen,101...110,production,0.2,kha
 2009,aspen,11...20,production,7.2,kha
@@ -2769,7 +2769,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,aspen,81...90,production,2.8,kha
 2009,aspen,91...100,production,1.2,kha
 2009,aspen,clearcut,production,1.6,kha
-2009,aspen,renewal not yet achieved,production,7.9,kha
+2009,aspen,renewal not complete,production,7.9,kha
 2009,aspen,...10,protected,0.0,kha
 2009,aspen,101...110,protected,0.0,kha
 2009,aspen,11...20,protected,0.1,kha
@@ -2786,7 +2786,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,aspen,81...90,protected,0.4,kha
 2009,aspen,91...100,protected,0.0,kha
 2009,aspen,clearcut,protected,0.0,kha
-2009,aspen,renewal not yet achieved,protected,0.2,kha
+2009,aspen,renewal not complete,protected,0.2,kha
 2009,birch,...10,production,58.2,kha
 2009,birch,101...110,production,1.2,kha
 2009,birch,11...20,production,50.5,kha
@@ -2803,7 +2803,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,birch,81...90,production,12.6,kha
 2009,birch,91...100,production,5.0,kha
 2009,birch,clearcut,production,15.4,kha
-2009,birch,renewal not yet achieved,production,23.0,kha
+2009,birch,renewal not complete,production,23.0,kha
 2009,birch,...10,protected,1.9,kha
 2009,birch,101...110,protected,1.1,kha
 2009,birch,11...20,protected,2.2,kha
@@ -2820,7 +2820,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,birch,81...90,protected,3.4,kha
 2009,birch,91...100,protected,2.6,kha
 2009,birch,clearcut,protected,0.8,kha
-2009,birch,renewal not yet achieved,protected,0.4,kha
+2009,birch,renewal not complete,protected,0.4,kha
 2009,black alder,...10,production,6.0,kha
 2009,black alder,101...110,production,0.3,kha
 2009,black alder,11...20,production,2.6,kha
@@ -2837,7 +2837,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,black alder,81...90,production,1.9,kha
 2009,black alder,91...100,production,0.2,kha
 2009,black alder,clearcut,production,2.0,kha
-2009,black alder,renewal not yet achieved,production,2.8,kha
+2009,black alder,renewal not complete,production,2.8,kha
 2009,black alder,...10,protected,0.0,kha
 2009,black alder,101...110,protected,0.0,kha
 2009,black alder,11...20,protected,0.4,kha
@@ -2854,7 +2854,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,black alder,81...90,protected,0.6,kha
 2009,black alder,91...100,protected,0.0,kha
 2009,black alder,clearcut,protected,0.0,kha
-2009,black alder,renewal not yet achieved,protected,0.2,kha
+2009,black alder,renewal not complete,protected,0.2,kha
 2009,grey alder,...10,production,28.4,kha
 2009,grey alder,101...110,production,0.0,kha
 2009,grey alder,11...20,production,25.9,kha
@@ -2871,7 +2871,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,grey alder,81...90,production,0.0,kha
 2009,grey alder,91...100,production,0.0,kha
 2009,grey alder,clearcut,production,3.0,kha
-2009,grey alder,renewal not yet achieved,production,6.2,kha
+2009,grey alder,renewal not complete,production,6.2,kha
 2009,grey alder,...10,protected,0.4,kha
 2009,grey alder,101...110,protected,0.0,kha
 2009,grey alder,11...20,protected,0.5,kha
@@ -2888,7 +2888,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,grey alder,81...90,protected,0.0,kha
 2009,grey alder,91...100,protected,0.0,kha
 2009,grey alder,clearcut,protected,0.0,kha
-2009,grey alder,renewal not yet achieved,protected,0.0,kha
+2009,grey alder,renewal not complete,protected,0.0,kha
 2009,other,...10,production,3.6,kha
 2009,other,101...110,production,1.2,kha
 2009,other,11...20,production,4.2,kha
@@ -2905,7 +2905,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,other,81...90,production,1.6,kha
 2009,other,91...100,production,0.6,kha
 2009,other,clearcut,production,0.1,kha
-2009,other,renewal not yet achieved,production,1.2,kha
+2009,other,renewal not complete,production,1.2,kha
 2009,other,...10,protected,0.2,kha
 2009,other,101...110,protected,0.0,kha
 2009,other,11...20,protected,0.0,kha
@@ -2922,7 +2922,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,other,81...90,protected,0.3,kha
 2009,other,91...100,protected,0.6,kha
 2009,other,clearcut,protected,0.0,kha
-2009,other,renewal not yet achieved,protected,0.0,kha
+2009,other,renewal not complete,protected,0.0,kha
 2009,pine,...10,production,11.0,kha
 2009,pine,101...110,production,26.9,kha
 2009,pine,11...20,production,20.7,kha
@@ -2939,7 +2939,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,pine,81...90,production,58.1,kha
 2009,pine,91...100,production,45.1,kha
 2009,pine,clearcut,production,12.4,kha
-2009,pine,renewal not yet achieved,production,17.8,kha
+2009,pine,renewal not complete,production,17.8,kha
 2009,pine,...10,protected,0.4,kha
 2009,pine,101...110,protected,6.2,kha
 2009,pine,11...20,protected,1.5,kha
@@ -2956,7 +2956,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,pine,81...90,protected,9.1,kha
 2009,pine,91...100,protected,13.7,kha
 2009,pine,clearcut,protected,0.4,kha
-2009,pine,renewal not yet achieved,protected,1.6,kha
+2009,pine,renewal not complete,protected,1.6,kha
 2009,spruce,...10,production,7.9,kha
 2009,spruce,101...110,production,6.5,kha
 2009,spruce,11...20,production,16.6,kha
@@ -2973,7 +2973,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,spruce,81...90,production,22.3,kha
 2009,spruce,91...100,production,12.4,kha
 2009,spruce,clearcut,production,26.6,kha
-2009,spruce,renewal not yet achieved,production,20.8,kha
+2009,spruce,renewal not complete,production,20.8,kha
 2009,spruce,...10,protected,0.4,kha
 2009,spruce,101...110,protected,1.1,kha
 2009,spruce,11...20,protected,0.3,kha
@@ -2990,7 +2990,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2009,spruce,81...90,protected,1.6,kha
 2009,spruce,91...100,protected,3.5,kha
 2009,spruce,clearcut,protected,0.6,kha
-2009,spruce,renewal not yet achieved,protected,0.3,kha
+2009,spruce,renewal not complete,protected,0.3,kha
 2010,all,...10,production,138.6,kha
 2010,all,101...110,production,37.6,kha
 2010,all,11...20,production,134.9,kha
@@ -3007,7 +3007,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,all,81...90,production,101.0,kha
 2010,all,91...100,production,70.1,kha
 2010,all,clearcut,production,58.5,kha
-2010,all,renewal not yet achieved,production,78.4,kha
+2010,all,renewal not complete,production,78.4,kha
 2010,all,...10,protected,3.0,kha
 2010,all,101...110,protected,8.4,kha
 2010,all,11...20,protected,5.6,kha
@@ -3024,7 +3024,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,all,81...90,protected,13.9,kha
 2010,all,91...100,protected,19.9,kha
 2010,all,clearcut,protected,1.3,kha
-2010,all,renewal not yet achieved,protected,2.7,kha
+2010,all,renewal not complete,protected,2.7,kha
 2010,aspen,...10,production,21.8,kha
 2010,aspen,101...110,production,0.2,kha
 2010,aspen,11...20,production,8.0,kha
@@ -3041,7 +3041,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,aspen,81...90,production,2.2,kha
 2010,aspen,91...100,production,1.1,kha
 2010,aspen,clearcut,production,2.0,kha
-2010,aspen,renewal not yet achieved,production,9.4,kha
+2010,aspen,renewal not complete,production,9.4,kha
 2010,aspen,...10,protected,0.0,kha
 2010,aspen,101...110,protected,0.0,kha
 2010,aspen,11...20,protected,0.1,kha
@@ -3058,7 +3058,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,aspen,81...90,protected,0.4,kha
 2010,aspen,91...100,protected,0.0,kha
 2010,aspen,clearcut,protected,0.0,kha
-2010,aspen,renewal not yet achieved,protected,0.4,kha
+2010,aspen,renewal not complete,protected,0.4,kha
 2010,birch,...10,production,60.8,kha
 2010,birch,101...110,production,1.2,kha
 2010,birch,11...20,production,51.6,kha
@@ -3075,7 +3075,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,birch,81...90,production,12.8,kha
 2010,birch,91...100,production,6.4,kha
 2010,birch,clearcut,production,16.1,kha
-2010,birch,renewal not yet achieved,production,18.0,kha
+2010,birch,renewal not complete,production,18.0,kha
 2010,birch,...10,protected,1.8,kha
 2010,birch,101...110,protected,1.1,kha
 2010,birch,11...20,protected,2.2,kha
@@ -3092,7 +3092,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,birch,81...90,protected,3.0,kha
 2010,birch,91...100,protected,2.4,kha
 2010,birch,clearcut,protected,0.6,kha
-2010,birch,renewal not yet achieved,protected,0.5,kha
+2010,birch,renewal not complete,protected,0.5,kha
 2010,black alder,...10,production,6.7,kha
 2010,black alder,101...110,production,0.3,kha
 2010,black alder,11...20,production,2.5,kha
@@ -3109,7 +3109,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,black alder,81...90,production,2.3,kha
 2010,black alder,91...100,production,0.6,kha
 2010,black alder,clearcut,production,2.4,kha
-2010,black alder,renewal not yet achieved,production,3.9,kha
+2010,black alder,renewal not complete,production,3.9,kha
 2010,black alder,...10,protected,0.0,kha
 2010,black alder,101...110,protected,0.0,kha
 2010,black alder,11...20,protected,0.5,kha
@@ -3126,7 +3126,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,black alder,81...90,protected,0.6,kha
 2010,black alder,91...100,protected,0.0,kha
 2010,black alder,clearcut,protected,0.0,kha
-2010,black alder,renewal not yet achieved,protected,0.2,kha
+2010,black alder,renewal not complete,protected,0.2,kha
 2010,grey alder,...10,production,27.7,kha
 2010,grey alder,101...110,production,0.0,kha
 2010,grey alder,11...20,production,28.0,kha
@@ -3143,7 +3143,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,grey alder,81...90,production,0.0,kha
 2010,grey alder,91...100,production,0.0,kha
 2010,grey alder,clearcut,production,2.2,kha
-2010,grey alder,renewal not yet achieved,production,6.5,kha
+2010,grey alder,renewal not complete,production,6.5,kha
 2010,grey alder,...10,protected,0.4,kha
 2010,grey alder,101...110,protected,0.0,kha
 2010,grey alder,11...20,protected,0.5,kha
@@ -3160,7 +3160,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,grey alder,81...90,protected,0.0,kha
 2010,grey alder,91...100,protected,0.0,kha
 2010,grey alder,clearcut,protected,0.0,kha
-2010,grey alder,renewal not yet achieved,protected,0.0,kha
+2010,grey alder,renewal not complete,protected,0.0,kha
 2010,other,...10,production,2.7,kha
 2010,other,101...110,production,1.7,kha
 2010,other,11...20,production,5.3,kha
@@ -3177,7 +3177,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,other,81...90,production,2.3,kha
 2010,other,91...100,production,0.4,kha
 2010,other,clearcut,production,0.1,kha
-2010,other,renewal not yet achieved,production,1.2,kha
+2010,other,renewal not complete,production,1.2,kha
 2010,other,...10,protected,0.2,kha
 2010,other,101...110,protected,0.0,kha
 2010,other,11...20,protected,0.0,kha
@@ -3194,7 +3194,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,other,81...90,protected,0.2,kha
 2010,other,91...100,protected,0.6,kha
 2010,other,clearcut,protected,0.0,kha
-2010,other,renewal not yet achieved,protected,0.0,kha
+2010,other,renewal not complete,protected,0.0,kha
 2010,pine,...10,production,10.8,kha
 2010,pine,101...110,production,28.1,kha
 2010,pine,11...20,production,22.8,kha
@@ -3211,7 +3211,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,pine,81...90,production,58.2,kha
 2010,pine,91...100,production,48.2,kha
 2010,pine,clearcut,production,12.3,kha
-2010,pine,renewal not yet achieved,production,18.7,kha
+2010,pine,renewal not complete,production,18.7,kha
 2010,pine,...10,protected,0.4,kha
 2010,pine,101...110,protected,6.0,kha
 2010,pine,11...20,protected,1.3,kha
@@ -3228,7 +3228,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,pine,81...90,protected,8.5,kha
 2010,pine,91...100,protected,14.0,kha
 2010,pine,clearcut,protected,0.4,kha
-2010,pine,renewal not yet achieved,protected,1.4,kha
+2010,pine,renewal not complete,protected,1.4,kha
 2010,spruce,...10,production,8.0,kha
 2010,spruce,101...110,production,6.1,kha
 2010,spruce,11...20,production,16.6,kha
@@ -3245,7 +3245,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,spruce,81...90,production,23.2,kha
 2010,spruce,91...100,production,13.4,kha
 2010,spruce,clearcut,production,23.4,kha
-2010,spruce,renewal not yet achieved,production,20.6,kha
+2010,spruce,renewal not complete,production,20.6,kha
 2010,spruce,...10,protected,0.2,kha
 2010,spruce,101...110,protected,1.5,kha
 2010,spruce,11...20,protected,1.2,kha
@@ -3262,7 +3262,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2010,spruce,81...90,protected,1.3,kha
 2010,spruce,91...100,protected,2.8,kha
 2010,spruce,clearcut,protected,0.2,kha
-2010,spruce,renewal not yet achieved,protected,0.3,kha
+2010,spruce,renewal not complete,protected,0.3,kha
 2011,all,...10,production,142.7,kha
 2011,all,101...110,production,35.3,kha
 2011,all,11...20,production,140.5,kha
@@ -3279,7 +3279,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,all,81...90,production,100.8,kha
 2011,all,91...100,production,66.3,kha
 2011,all,clearcut,production,57.9,kha
-2011,all,renewal not yet achieved,production,82.8,kha
+2011,all,renewal not complete,production,82.8,kha
 2011,all,...10,protected,3.2,kha
 2011,all,101...110,protected,8.8,kha
 2011,all,11...20,protected,6.2,kha
@@ -3296,7 +3296,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,all,81...90,protected,14.9,kha
 2011,all,91...100,protected,19.5,kha
 2011,all,clearcut,protected,1.4,kha
-2011,all,renewal not yet achieved,protected,2.3,kha
+2011,all,renewal not complete,protected,2.3,kha
 2011,aspen,...10,production,22.1,kha
 2011,aspen,101...110,production,0.4,kha
 2011,aspen,11...20,production,10.0,kha
@@ -3313,7 +3313,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,aspen,81...90,production,2.3,kha
 2011,aspen,91...100,production,0.9,kha
 2011,aspen,clearcut,production,1.7,kha
-2011,aspen,renewal not yet achieved,production,11.3,kha
+2011,aspen,renewal not complete,production,11.3,kha
 2011,aspen,...10,protected,0.2,kha
 2011,aspen,101...110,protected,0.0,kha
 2011,aspen,11...20,protected,0.1,kha
@@ -3330,7 +3330,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,aspen,81...90,protected,0.6,kha
 2011,aspen,91...100,protected,0.0,kha
 2011,aspen,clearcut,protected,0.0,kha
-2011,aspen,renewal not yet achieved,protected,0.4,kha
+2011,aspen,renewal not complete,protected,0.4,kha
 2011,birch,...10,production,62.8,kha
 2011,birch,101...110,production,0.8,kha
 2011,birch,11...20,production,51.1,kha
@@ -3347,7 +3347,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,birch,81...90,production,14.0,kha
 2011,birch,91...100,production,7.3,kha
 2011,birch,clearcut,production,15.9,kha
-2011,birch,renewal not yet achieved,production,18.0,kha
+2011,birch,renewal not complete,production,18.0,kha
 2011,birch,...10,protected,2.2,kha
 2011,birch,101...110,protected,1.1,kha
 2011,birch,11...20,protected,2.6,kha
@@ -3364,7 +3364,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,birch,81...90,protected,2.7,kha
 2011,birch,91...100,protected,1.7,kha
 2011,birch,clearcut,protected,0.7,kha
-2011,birch,renewal not yet achieved,protected,0.4,kha
+2011,birch,renewal not complete,protected,0.4,kha
 2011,black alder,...10,production,6.1,kha
 2011,black alder,101...110,production,0.1,kha
 2011,black alder,11...20,production,2.5,kha
@@ -3381,7 +3381,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,black alder,81...90,production,2.7,kha
 2011,black alder,91...100,production,0.6,kha
 2011,black alder,clearcut,production,1.8,kha
-2011,black alder,renewal not yet achieved,production,4.4,kha
+2011,black alder,renewal not complete,production,4.4,kha
 2011,black alder,...10,protected,0.0,kha
 2011,black alder,101...110,protected,0.2,kha
 2011,black alder,11...20,protected,0.5,kha
@@ -3398,7 +3398,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,black alder,81...90,protected,0.8,kha
 2011,black alder,91...100,protected,0.0,kha
 2011,black alder,clearcut,protected,0.0,kha
-2011,black alder,renewal not yet achieved,protected,0.2,kha
+2011,black alder,renewal not complete,protected,0.2,kha
 2011,grey alder,...10,production,28.0,kha
 2011,grey alder,101...110,production,0.0,kha
 2011,grey alder,11...20,production,30.2,kha
@@ -3415,7 +3415,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,grey alder,81...90,production,0.0,kha
 2011,grey alder,91...100,production,0.0,kha
 2011,grey alder,clearcut,production,2.1,kha
-2011,grey alder,renewal not yet achieved,production,6.3,kha
+2011,grey alder,renewal not complete,production,6.3,kha
 2011,grey alder,...10,protected,0.3,kha
 2011,grey alder,101...110,protected,0.0,kha
 2011,grey alder,11...20,protected,0.4,kha
@@ -3432,7 +3432,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,grey alder,81...90,protected,0.0,kha
 2011,grey alder,91...100,protected,0.0,kha
 2011,grey alder,clearcut,protected,0.0,kha
-2011,grey alder,renewal not yet achieved,protected,0.0,kha
+2011,grey alder,renewal not complete,protected,0.0,kha
 2011,other,...10,production,2.6,kha
 2011,other,101...110,production,1.7,kha
 2011,other,11...20,production,4.9,kha
@@ -3449,7 +3449,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,other,81...90,production,1.9,kha
 2011,other,91...100,production,0.6,kha
 2011,other,clearcut,production,0.0,kha
-2011,other,renewal not yet achieved,production,1.2,kha
+2011,other,renewal not complete,production,1.2,kha
 2011,other,...10,protected,0.3,kha
 2011,other,101...110,protected,0.0,kha
 2011,other,11...20,protected,0.0,kha
@@ -3466,7 +3466,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,other,81...90,protected,0.4,kha
 2011,other,91...100,protected,0.6,kha
 2011,other,clearcut,protected,0.0,kha
-2011,other,renewal not yet achieved,protected,0.0,kha
+2011,other,renewal not complete,protected,0.0,kha
 2011,pine,...10,production,12.5,kha
 2011,pine,101...110,production,26.4,kha
 2011,pine,11...20,production,22.0,kha
@@ -3483,7 +3483,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,pine,81...90,production,58.5,kha
 2011,pine,91...100,production,46.4,kha
 2011,pine,clearcut,production,12.3,kha
-2011,pine,renewal not yet achieved,production,19.2,kha
+2011,pine,renewal not complete,production,19.2,kha
 2011,pine,...10,protected,0.0,kha
 2011,pine,101...110,protected,5.9,kha
 2011,pine,11...20,protected,1.5,kha
@@ -3500,7 +3500,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,pine,81...90,protected,8.4,kha
 2011,pine,91...100,protected,14.3,kha
 2011,pine,clearcut,protected,0.4,kha
-2011,pine,renewal not yet achieved,protected,1.2,kha
+2011,pine,renewal not complete,protected,1.2,kha
 2011,spruce,...10,production,8.7,kha
 2011,spruce,101...110,production,5.9,kha
 2011,spruce,11...20,production,19.9,kha
@@ -3517,7 +3517,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,spruce,81...90,production,21.5,kha
 2011,spruce,91...100,production,10.5,kha
 2011,spruce,clearcut,production,24.0,kha
-2011,spruce,renewal not yet achieved,production,22.5,kha
+2011,spruce,renewal not complete,production,22.5,kha
 2011,spruce,...10,protected,0.2,kha
 2011,spruce,101...110,protected,1.7,kha
 2011,spruce,11...20,protected,1.1,kha
@@ -3534,7 +3534,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2011,spruce,81...90,protected,1.9,kha
 2011,spruce,91...100,protected,2.8,kha
 2011,spruce,clearcut,protected,0.4,kha
-2011,spruce,renewal not yet achieved,protected,0.0,kha
+2011,spruce,renewal not complete,protected,0.0,kha
 2012,all,...10,production,141.3,kha
 2012,all,101...110,production,33.6,kha
 2012,all,11...20,production,150.1,kha
@@ -3551,7 +3551,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,all,81...90,production,100.2,kha
 2012,all,91...100,production,62.7,kha
 2012,all,clearcut,production,60.8,kha
-2012,all,renewal not yet achieved,production,82.7,kha
+2012,all,renewal not complete,production,82.7,kha
 2012,all,...10,protected,3.2,kha
 2012,all,101...110,protected,9.1,kha
 2012,all,11...20,protected,5.9,kha
@@ -3568,7 +3568,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,all,81...90,protected,17.2,kha
 2012,all,91...100,protected,18.2,kha
 2012,all,clearcut,protected,1.8,kha
-2012,all,renewal not yet achieved,protected,2.4,kha
+2012,all,renewal not complete,protected,2.4,kha
 2012,aspen,...10,production,22.4,kha
 2012,aspen,101...110,production,0.4,kha
 2012,aspen,11...20,production,10.9,kha
@@ -3585,7 +3585,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,aspen,81...90,production,2.3,kha
 2012,aspen,91...100,production,0.9,kha
 2012,aspen,clearcut,production,1.9,kha
-2012,aspen,renewal not yet achieved,production,12.0,kha
+2012,aspen,renewal not complete,production,12.0,kha
 2012,aspen,...10,protected,0.2,kha
 2012,aspen,101...110,protected,0.0,kha
 2012,aspen,11...20,protected,0.0,kha
@@ -3602,7 +3602,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,aspen,81...90,protected,0.4,kha
 2012,aspen,91...100,protected,0.0,kha
 2012,aspen,clearcut,protected,0.0,kha
-2012,aspen,renewal not yet achieved,protected,0.5,kha
+2012,aspen,renewal not complete,protected,0.5,kha
 2012,birch,...10,production,57.5,kha
 2012,birch,101...110,production,0.6,kha
 2012,birch,11...20,production,56.3,kha
@@ -3619,7 +3619,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,birch,81...90,production,13.1,kha
 2012,birch,91...100,production,6.5,kha
 2012,birch,clearcut,production,18.2,kha
-2012,birch,renewal not yet achieved,production,17.7,kha
+2012,birch,renewal not complete,production,17.7,kha
 2012,birch,...10,protected,2.0,kha
 2012,birch,101...110,protected,1.1,kha
 2012,birch,11...20,protected,2.4,kha
@@ -3636,7 +3636,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,birch,81...90,protected,3.0,kha
 2012,birch,91...100,protected,1.7,kha
 2012,birch,clearcut,protected,1.0,kha
-2012,birch,renewal not yet achieved,protected,0.6,kha
+2012,birch,renewal not complete,protected,0.6,kha
 2012,black alder,...10,production,7.0,kha
 2012,black alder,101...110,production,0.1,kha
 2012,black alder,11...20,production,2.6,kha
@@ -3653,7 +3653,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,black alder,81...90,production,2.9,kha
 2012,black alder,91...100,production,0.6,kha
 2012,black alder,clearcut,production,2.7,kha
-2012,black alder,renewal not yet achieved,production,4.8,kha
+2012,black alder,renewal not complete,production,4.8,kha
 2012,black alder,...10,protected,0.0,kha
 2012,black alder,101...110,protected,0.2,kha
 2012,black alder,11...20,protected,0.4,kha
@@ -3670,7 +3670,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,black alder,81...90,protected,1.1,kha
 2012,black alder,91...100,protected,0.2,kha
 2012,black alder,clearcut,protected,0.0,kha
-2012,black alder,renewal not yet achieved,protected,0.2,kha
+2012,black alder,renewal not complete,protected,0.2,kha
 2012,grey alder,...10,production,29.8,kha
 2012,grey alder,101...110,production,0.0,kha
 2012,grey alder,11...20,production,31.5,kha
@@ -3687,7 +3687,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,grey alder,81...90,production,0.0,kha
 2012,grey alder,91...100,production,0.0,kha
 2012,grey alder,clearcut,production,3.1,kha
-2012,grey alder,renewal not yet achieved,production,7.6,kha
+2012,grey alder,renewal not complete,production,7.6,kha
 2012,grey alder,...10,protected,0.6,kha
 2012,grey alder,101...110,protected,0.0,kha
 2012,grey alder,11...20,protected,0.6,kha
@@ -3704,7 +3704,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,grey alder,81...90,protected,0.0,kha
 2012,grey alder,91...100,protected,0.0,kha
 2012,grey alder,clearcut,protected,0.0,kha
-2012,grey alder,renewal not yet achieved,protected,0.0,kha
+2012,grey alder,renewal not complete,protected,0.0,kha
 2012,other,...10,production,2.9,kha
 2012,other,101...110,production,1.3,kha
 2012,other,11...20,production,4.9,kha
@@ -3721,7 +3721,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,other,81...90,production,2.1,kha
 2012,other,91...100,production,0.6,kha
 2012,other,clearcut,production,0.6,kha
-2012,other,renewal not yet achieved,production,1.4,kha
+2012,other,renewal not complete,production,1.4,kha
 2012,other,...10,protected,0.0,kha
 2012,other,101...110,protected,0.0,kha
 2012,other,11...20,protected,0.2,kha
@@ -3738,7 +3738,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,other,81...90,protected,0.4,kha
 2012,other,91...100,protected,0.7,kha
 2012,other,clearcut,protected,0.0,kha
-2012,other,renewal not yet achieved,protected,0.0,kha
+2012,other,renewal not complete,protected,0.0,kha
 2012,pine,...10,production,13.2,kha
 2012,pine,101...110,production,25.6,kha
 2012,pine,11...20,production,21.3,kha
@@ -3755,7 +3755,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,pine,81...90,production,58.0,kha
 2012,pine,91...100,production,43.7,kha
 2012,pine,clearcut,production,11.5,kha
-2012,pine,renewal not yet achieved,production,17.8,kha
+2012,pine,renewal not complete,production,17.8,kha
 2012,pine,...10,protected,0.2,kha
 2012,pine,101...110,protected,6.2,kha
 2012,pine,11...20,protected,1.3,kha
@@ -3772,7 +3772,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,pine,81...90,protected,10.5,kha
 2012,pine,91...100,protected,12.7,kha
 2012,pine,clearcut,protected,0.4,kha
-2012,pine,renewal not yet achieved,protected,1.2,kha
+2012,pine,renewal not complete,protected,1.2,kha
 2012,spruce,...10,production,8.5,kha
 2012,spruce,101...110,production,5.6,kha
 2012,spruce,11...20,production,22.7,kha
@@ -3789,7 +3789,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,spruce,81...90,production,21.8,kha
 2012,spruce,91...100,production,10.4,kha
 2012,spruce,clearcut,production,22.8,kha
-2012,spruce,renewal not yet achieved,production,21.4,kha
+2012,spruce,renewal not complete,production,21.4,kha
 2012,spruce,...10,protected,0.3,kha
 2012,spruce,101...110,protected,1.7,kha
 2012,spruce,11...20,protected,0.9,kha
@@ -3806,7 +3806,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2012,spruce,81...90,protected,1.9,kha
 2012,spruce,91...100,protected,2.9,kha
 2012,spruce,clearcut,protected,0.4,kha
-2012,spruce,renewal not yet achieved,protected,0.0,kha
+2012,spruce,renewal not complete,protected,0.0,kha
 2013,all,...10,production,136.5,kha
 2013,all,101...110,production,33.3,kha
 2013,all,11...20,production,166.8,kha
@@ -3823,7 +3823,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,all,81...90,production,99.1,kha
 2013,all,91...100,production,63.2,kha
 2013,all,clearcut,production,62.4,kha
-2013,all,renewal not yet achieved,production,84.5,kha
+2013,all,renewal not complete,production,84.5,kha
 2013,all,...10,protected,2.7,kha
 2013,all,101...110,protected,9.2,kha
 2013,all,11...20,protected,7.9,kha
@@ -3840,7 +3840,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,all,81...90,protected,19.1,kha
 2013,all,91...100,protected,18.5,kha
 2013,all,clearcut,protected,2.4,kha
-2013,all,renewal not yet achieved,protected,3.3,kha
+2013,all,renewal not complete,protected,3.3,kha
 2013,aspen,...10,production,19.5,kha
 2013,aspen,101...110,production,0.4,kha
 2013,aspen,11...20,production,12.1,kha
@@ -3857,7 +3857,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,aspen,81...90,production,2.5,kha
 2013,aspen,91...100,production,1.1,kha
 2013,aspen,clearcut,production,3.5,kha
-2013,aspen,renewal not yet achieved,production,11.6,kha
+2013,aspen,renewal not complete,production,11.6,kha
 2013,aspen,...10,protected,0.4,kha
 2013,aspen,101...110,protected,0.0,kha
 2013,aspen,11...20,protected,0.3,kha
@@ -3874,7 +3874,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,aspen,81...90,protected,0.4,kha
 2013,aspen,91...100,protected,0.0,kha
 2013,aspen,clearcut,protected,0.0,kha
-2013,aspen,renewal not yet achieved,protected,0.4,kha
+2013,aspen,renewal not complete,protected,0.4,kha
 2013,birch,...10,production,52.2,kha
 2013,birch,101...110,production,0.6,kha
 2013,birch,11...20,production,60.0,kha
@@ -3891,7 +3891,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,birch,81...90,production,13.3,kha
 2013,birch,91...100,production,7.0,kha
 2013,birch,clearcut,production,17.4,kha
-2013,birch,renewal not yet achieved,production,17.3,kha
+2013,birch,renewal not complete,production,17.3,kha
 2013,birch,...10,protected,1.3,kha
 2013,birch,101...110,protected,1.5,kha
 2013,birch,11...20,protected,3.0,kha
@@ -3908,7 +3908,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,birch,81...90,protected,4.3,kha
 2013,birch,91...100,protected,2.0,kha
 2013,birch,clearcut,protected,1.1,kha
-2013,birch,renewal not yet achieved,protected,0.4,kha
+2013,birch,renewal not complete,protected,0.4,kha
 2013,black alder,...10,production,7.3,kha
 2013,black alder,101...110,production,0.1,kha
 2013,black alder,11...20,production,3.1,kha
@@ -3925,7 +3925,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,black alder,81...90,production,2.9,kha
 2013,black alder,91...100,production,0.8,kha
 2013,black alder,clearcut,production,2.3,kha
-2013,black alder,renewal not yet achieved,production,4.8,kha
+2013,black alder,renewal not complete,production,4.8,kha
 2013,black alder,...10,protected,0.0,kha
 2013,black alder,101...110,protected,0.2,kha
 2013,black alder,11...20,protected,0.4,kha
@@ -3942,7 +3942,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,black alder,81...90,protected,1.2,kha
 2013,black alder,91...100,protected,0.4,kha
 2013,black alder,clearcut,protected,0.0,kha
-2013,black alder,renewal not yet achieved,protected,0.2,kha
+2013,black alder,renewal not complete,protected,0.2,kha
 2013,grey alder,...10,production,32.1,kha
 2013,grey alder,101...110,production,0.0,kha
 2013,grey alder,11...20,production,33.7,kha
@@ -3959,7 +3959,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,grey alder,81...90,production,0.0,kha
 2013,grey alder,91...100,production,0.0,kha
 2013,grey alder,clearcut,production,3.2,kha
-2013,grey alder,renewal not yet achieved,production,9.5,kha
+2013,grey alder,renewal not complete,production,9.5,kha
 2013,grey alder,...10,protected,0.5,kha
 2013,grey alder,101...110,protected,0.0,kha
 2013,grey alder,11...20,protected,1.3,kha
@@ -3976,7 +3976,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,grey alder,81...90,protected,0.0,kha
 2013,grey alder,91...100,protected,0.0,kha
 2013,grey alder,clearcut,protected,0.0,kha
-2013,grey alder,renewal not yet achieved,protected,0.1,kha
+2013,grey alder,renewal not complete,protected,0.1,kha
 2013,other,...10,production,2.7,kha
 2013,other,101...110,production,1.0,kha
 2013,other,11...20,production,5.7,kha
@@ -3993,7 +3993,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,other,81...90,production,1.9,kha
 2013,other,91...100,production,0.4,kha
 2013,other,clearcut,production,0.6,kha
-2013,other,renewal not yet achieved,production,1.9,kha
+2013,other,renewal not complete,production,1.9,kha
 2013,other,...10,protected,0.0,kha
 2013,other,101...110,protected,0.5,kha
 2013,other,11...20,protected,0.2,kha
@@ -4010,7 +4010,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,other,81...90,protected,0.6,kha
 2013,other,91...100,protected,0.4,kha
 2013,other,clearcut,protected,0.0,kha
-2013,other,renewal not yet achieved,protected,0.0,kha
+2013,other,renewal not complete,protected,0.0,kha
 2013,pine,...10,production,13.3,kha
 2013,pine,101...110,production,24.3,kha
 2013,pine,11...20,production,25.0,kha
@@ -4027,7 +4027,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,pine,81...90,production,59.5,kha
 2013,pine,91...100,production,42.2,kha
 2013,pine,clearcut,production,13.7,kha
-2013,pine,renewal not yet achieved,production,18.5,kha
+2013,pine,renewal not complete,production,18.5,kha
 2013,pine,...10,protected,0.2,kha
 2013,pine,101...110,protected,6.1,kha
 2013,pine,11...20,protected,1.3,kha
@@ -4044,7 +4044,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,pine,81...90,protected,10.5,kha
 2013,pine,91...100,protected,12.4,kha
 2013,pine,clearcut,protected,0.4,kha
-2013,pine,renewal not yet achieved,protected,1.2,kha
+2013,pine,renewal not complete,protected,1.2,kha
 2013,spruce,...10,production,9.5,kha
 2013,spruce,101...110,production,6.9,kha
 2013,spruce,11...20,production,27.2,kha
@@ -4061,7 +4061,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,spruce,81...90,production,19.0,kha
 2013,spruce,91...100,production,11.5,kha
 2013,spruce,clearcut,production,21.6,kha
-2013,spruce,renewal not yet achieved,production,21.0,kha
+2013,spruce,renewal not complete,production,21.0,kha
 2013,spruce,...10,protected,0.2,kha
 2013,spruce,101...110,protected,1.0,kha
 2013,spruce,11...20,protected,1.4,kha
@@ -4078,7 +4078,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2013,spruce,81...90,protected,2.1,kha
 2013,spruce,91...100,protected,3.3,kha
 2013,spruce,clearcut,protected,0.9,kha
-2013,spruce,renewal not yet achieved,protected,0.9,kha
+2013,spruce,renewal not complete,protected,0.9,kha
 2014,all,...10,production,144.1,kha
 2014,all,101...110,production,37.6,kha
 2014,all,11...20,production,183.2,kha
@@ -4095,7 +4095,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,all,81...90,production,104.5,kha
 2014,all,91...100,production,64.6,kha
 2014,all,clearcut,production,66.6,kha
-2014,all,renewal not yet achieved,production,87.7,kha
+2014,all,renewal not complete,production,87.7,kha
 2014,all,...10,protected,3.0,kha
 2014,all,101...110,protected,11.0,kha
 2014,all,11...20,protected,7.3,kha
@@ -4112,7 +4112,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,all,81...90,protected,21.8,kha
 2014,all,91...100,protected,18.4,kha
 2014,all,clearcut,protected,2.1,kha
-2014,all,renewal not yet achieved,protected,2.9,kha
+2014,all,renewal not complete,protected,2.9,kha
 2014,aspen,...10,production,23.0,kha
 2014,aspen,101...110,production,0.4,kha
 2014,aspen,11...20,production,13.7,kha
@@ -4129,7 +4129,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,aspen,81...90,production,2.7,kha
 2014,aspen,91...100,production,0.7,kha
 2014,aspen,clearcut,production,3.1,kha
-2014,aspen,renewal not yet achieved,production,11.1,kha
+2014,aspen,renewal not complete,production,11.1,kha
 2014,aspen,...10,protected,0.8,kha
 2014,aspen,101...110,protected,0.2,kha
 2014,aspen,11...20,protected,0.3,kha
@@ -4146,7 +4146,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,aspen,81...90,protected,0.5,kha
 2014,aspen,91...100,protected,0.2,kha
 2014,aspen,clearcut,protected,0.0,kha
-2014,aspen,renewal not yet achieved,protected,0.4,kha
+2014,aspen,renewal not complete,protected,0.4,kha
 2014,birch,...10,production,51.1,kha
 2014,birch,101...110,production,0.8,kha
 2014,birch,11...20,production,68.7,kha
@@ -4163,7 +4163,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,birch,81...90,production,13.1,kha
 2014,birch,91...100,production,6.8,kha
 2014,birch,clearcut,production,19.3,kha
-2014,birch,renewal not yet achieved,production,16.7,kha
+2014,birch,renewal not complete,production,16.7,kha
 2014,birch,...10,protected,1.1,kha
 2014,birch,101...110,protected,1.1,kha
 2014,birch,11...20,protected,2.7,kha
@@ -4180,7 +4180,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,birch,81...90,protected,4.6,kha
 2014,birch,91...100,protected,1.4,kha
 2014,birch,clearcut,protected,1.0,kha
-2014,birch,renewal not yet achieved,protected,0.6,kha
+2014,birch,renewal not complete,protected,0.6,kha
 2014,black alder,...10,production,6.7,kha
 2014,black alder,101...110,production,0.0,kha
 2014,black alder,11...20,production,4.8,kha
@@ -4197,7 +4197,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,black alder,81...90,production,2.7,kha
 2014,black alder,91...100,production,0.8,kha
 2014,black alder,clearcut,production,1.9,kha
-2014,black alder,renewal not yet achieved,production,4.6,kha
+2014,black alder,renewal not complete,production,4.6,kha
 2014,black alder,...10,protected,0.0,kha
 2014,black alder,101...110,protected,0.2,kha
 2014,black alder,11...20,protected,0.2,kha
@@ -4214,7 +4214,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,black alder,81...90,protected,1.2,kha
 2014,black alder,91...100,protected,0.6,kha
 2014,black alder,clearcut,protected,0.0,kha
-2014,black alder,renewal not yet achieved,protected,0.0,kha
+2014,black alder,renewal not complete,protected,0.0,kha
 2014,grey alder,...10,production,36.0,kha
 2014,grey alder,101...110,production,0.0,kha
 2014,grey alder,11...20,production,36.0,kha
@@ -4231,7 +4231,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,grey alder,81...90,production,0.0,kha
 2014,grey alder,91...100,production,0.0,kha
 2014,grey alder,clearcut,production,4.1,kha
-2014,grey alder,renewal not yet achieved,production,8.7,kha
+2014,grey alder,renewal not complete,production,8.7,kha
 2014,grey alder,...10,protected,0.5,kha
 2014,grey alder,101...110,protected,0.0,kha
 2014,grey alder,11...20,protected,1.0,kha
@@ -4248,7 +4248,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,grey alder,81...90,protected,0.0,kha
 2014,grey alder,91...100,protected,0.0,kha
 2014,grey alder,clearcut,protected,0.0,kha
-2014,grey alder,renewal not yet achieved,protected,0.1,kha
+2014,grey alder,renewal not complete,protected,0.1,kha
 2014,other,...10,production,2.4,kha
 2014,other,101...110,production,0.6,kha
 2014,other,11...20,production,5.9,kha
@@ -4265,7 +4265,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,other,81...90,production,2.1,kha
 2014,other,91...100,production,0.6,kha
 2014,other,clearcut,production,0.6,kha
-2014,other,renewal not yet achieved,production,2.1,kha
+2014,other,renewal not complete,production,2.1,kha
 2014,other,...10,protected,0.0,kha
 2014,other,101...110,protected,0.4,kha
 2014,other,11...20,protected,0.2,kha
@@ -4282,7 +4282,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,other,81...90,protected,0.8,kha
 2014,other,91...100,protected,0.2,kha
 2014,other,clearcut,protected,0.0,kha
-2014,other,renewal not yet achieved,protected,0.0,kha
+2014,other,renewal not complete,protected,0.0,kha
 2014,pine,...10,production,12.9,kha
 2014,pine,101...110,production,28.0,kha
 2014,pine,11...20,production,24.8,kha
@@ -4299,7 +4299,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,pine,81...90,production,64.8,kha
 2014,pine,91...100,production,42.6,kha
 2014,pine,clearcut,production,14.0,kha
-2014,pine,renewal not yet achieved,production,21.2,kha
+2014,pine,renewal not complete,production,21.2,kha
 2014,pine,...10,protected,0.3,kha
 2014,pine,101...110,protected,7.6,kha
 2014,pine,11...20,protected,1.3,kha
@@ -4316,7 +4316,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,pine,81...90,protected,12.5,kha
 2014,pine,91...100,protected,12.7,kha
 2014,pine,clearcut,protected,0.1,kha
-2014,pine,renewal not yet achieved,protected,1.0,kha
+2014,pine,renewal not complete,protected,1.0,kha
 2014,spruce,...10,production,12.0,kha
 2014,spruce,101...110,production,7.7,kha
 2014,spruce,11...20,production,29.3,kha
@@ -4333,7 +4333,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,spruce,81...90,production,19.2,kha
 2014,spruce,91...100,production,13.2,kha
 2014,spruce,clearcut,production,23.5,kha
-2014,spruce,renewal not yet achieved,production,23.3,kha
+2014,spruce,renewal not complete,production,23.3,kha
 2014,spruce,...10,protected,0.3,kha
 2014,spruce,101...110,protected,1.6,kha
 2014,spruce,11...20,protected,1.6,kha
@@ -4350,7 +4350,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2014,spruce,81...90,protected,2.1,kha
 2014,spruce,91...100,protected,3.3,kha
 2014,spruce,clearcut,protected,1.0,kha
-2014,spruce,renewal not yet achieved,protected,0.9,kha
+2014,spruce,renewal not complete,protected,0.9,kha
 2015,all,...10,production,153.0,kha
 2015,all,101...110,production,35.4,kha
 2015,all,11...20,production,192.6,kha
@@ -4367,7 +4367,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,all,81...90,production,104.4,kha
 2015,all,91...100,production,62.2,kha
 2015,all,clearcut,production,67.8,kha
-2015,all,renewal not yet achieved,production,89.6,kha
+2015,all,renewal not complete,production,89.6,kha
 2015,all,...10,protected,3.6,kha
 2015,all,101...110,protected,13.0,kha
 2015,all,11...20,protected,8.8,kha
@@ -4384,7 +4384,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,all,81...90,protected,23.7,kha
 2015,all,91...100,protected,18.8,kha
 2015,all,clearcut,protected,2.1,kha
-2015,all,renewal not yet achieved,protected,4.1,kha
+2015,all,renewal not complete,protected,4.1,kha
 2015,aspen,...10,production,25.2,kha
 2015,aspen,101...110,production,0.6,kha
 2015,aspen,11...20,production,13.6,kha
@@ -4401,7 +4401,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,aspen,81...90,production,2.7,kha
 2015,aspen,91...100,production,1.0,kha
 2015,aspen,clearcut,production,2.9,kha
-2015,aspen,renewal not yet achieved,production,11.0,kha
+2015,aspen,renewal not complete,production,11.0,kha
 2015,aspen,...10,protected,0.8,kha
 2015,aspen,101...110,protected,0.1,kha
 2015,aspen,11...20,protected,0.8,kha
@@ -4418,7 +4418,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,aspen,81...90,protected,0.6,kha
 2015,aspen,91...100,protected,0.4,kha
 2015,aspen,clearcut,protected,0.0,kha
-2015,aspen,renewal not yet achieved,protected,0.1,kha
+2015,aspen,renewal not complete,protected,0.1,kha
 2015,birch,...10,production,49.9,kha
 2015,birch,101...110,production,1.3,kha
 2015,birch,11...20,production,73.6,kha
@@ -4435,7 +4435,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,birch,81...90,production,15.0,kha
 2015,birch,91...100,production,5.8,kha
 2015,birch,clearcut,production,18.7,kha
-2015,birch,renewal not yet achieved,production,17.2,kha
+2015,birch,renewal not complete,production,17.2,kha
 2015,birch,...10,protected,1.3,kha
 2015,birch,101...110,protected,0.8,kha
 2015,birch,11...20,protected,3.2,kha
@@ -4452,7 +4452,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,birch,81...90,protected,6.0,kha
 2015,birch,91...100,protected,2.4,kha
 2015,birch,clearcut,protected,0.9,kha
-2015,birch,renewal not yet achieved,protected,0.8,kha
+2015,birch,renewal not complete,protected,0.8,kha
 2015,black alder,...10,production,6.6,kha
 2015,black alder,101...110,production,0.0,kha
 2015,black alder,11...20,production,4.8,kha
@@ -4469,7 +4469,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,black alder,81...90,production,2.2,kha
 2015,black alder,91...100,production,0.7,kha
 2015,black alder,clearcut,production,1.8,kha
-2015,black alder,renewal not yet achieved,production,4.1,kha
+2015,black alder,renewal not complete,production,4.1,kha
 2015,black alder,...10,protected,0.0,kha
 2015,black alder,101...110,protected,0.3,kha
 2015,black alder,11...20,protected,0.6,kha
@@ -4486,7 +4486,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,black alder,81...90,protected,0.9,kha
 2015,black alder,91...100,protected,0.8,kha
 2015,black alder,clearcut,protected,0.0,kha
-2015,black alder,renewal not yet achieved,protected,0.0,kha
+2015,black alder,renewal not complete,protected,0.0,kha
 2015,grey alder,...10,production,42.2,kha
 2015,grey alder,101...110,production,0.0,kha
 2015,grey alder,11...20,production,36.7,kha
@@ -4503,7 +4503,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,grey alder,81...90,production,0.0,kha
 2015,grey alder,91...100,production,0.0,kha
 2015,grey alder,clearcut,production,4.2,kha
-2015,grey alder,renewal not yet achieved,production,8.0,kha
+2015,grey alder,renewal not complete,production,8.0,kha
 2015,grey alder,...10,protected,0.4,kha
 2015,grey alder,101...110,protected,0.0,kha
 2015,grey alder,11...20,protected,1.1,kha
@@ -4520,7 +4520,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,grey alder,81...90,protected,0.0,kha
 2015,grey alder,91...100,protected,0.0,kha
 2015,grey alder,clearcut,protected,0.0,kha
-2015,grey alder,renewal not yet achieved,protected,0.1,kha
+2015,grey alder,renewal not complete,protected,0.1,kha
 2015,other,...10,production,2.4,kha
 2015,other,101...110,production,0.2,kha
 2015,other,11...20,production,6.4,kha
@@ -4537,7 +4537,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,other,81...90,production,1.3,kha
 2015,other,91...100,production,1.3,kha
 2015,other,clearcut,production,0.6,kha
-2015,other,renewal not yet achieved,production,1.6,kha
+2015,other,renewal not complete,production,1.6,kha
 2015,other,...10,protected,0.0,kha
 2015,other,101...110,protected,0.4,kha
 2015,other,11...20,protected,0.2,kha
@@ -4554,7 +4554,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,other,81...90,protected,0.7,kha
 2015,other,91...100,protected,0.2,kha
 2015,other,clearcut,protected,0.0,kha
-2015,other,renewal not yet achieved,protected,0.0,kha
+2015,other,renewal not complete,protected,0.0,kha
 2015,pine,...10,production,13.4,kha
 2015,pine,101...110,production,25.7,kha
 2015,pine,11...20,production,26.4,kha
@@ -4571,7 +4571,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,pine,81...90,production,65.5,kha
 2015,pine,91...100,production,41.1,kha
 2015,pine,clearcut,production,13.5,kha
-2015,pine,renewal not yet achieved,production,22.2,kha
+2015,pine,renewal not complete,production,22.2,kha
 2015,pine,...10,protected,0.3,kha
 2015,pine,101...110,protected,9.6,kha
 2015,pine,11...20,protected,1.4,kha
@@ -4588,7 +4588,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,pine,81...90,protected,12.9,kha
 2015,pine,91...100,protected,11.9,kha
 2015,pine,clearcut,protected,0.1,kha
-2015,pine,renewal not yet achieved,protected,1.3,kha
+2015,pine,renewal not complete,protected,1.3,kha
 2015,spruce,...10,production,13.3,kha
 2015,spruce,101...110,production,7.7,kha
 2015,spruce,11...20,production,31.1,kha
@@ -4605,7 +4605,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,spruce,81...90,production,17.7,kha
 2015,spruce,91...100,production,12.3,kha
 2015,spruce,clearcut,production,26.1,kha
-2015,spruce,renewal not yet achieved,production,25.5,kha
+2015,spruce,renewal not complete,production,25.5,kha
 2015,spruce,...10,protected,0.8,kha
 2015,spruce,101...110,protected,1.6,kha
 2015,spruce,11...20,protected,1.7,kha
@@ -4622,7 +4622,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2015,spruce,81...90,protected,2.6,kha
 2015,spruce,91...100,protected,3.1,kha
 2015,spruce,clearcut,protected,1.0,kha
-2015,spruce,renewal not yet achieved,protected,1.8,kha
+2015,spruce,renewal not complete,protected,1.8,kha
 2016,all,...10,production,155.2,kha
 2016,all,101...110,production,35.6,kha
 2016,all,11...20,production,197.1,kha
@@ -4639,7 +4639,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,all,81...90,production,106.5,kha
 2016,all,91...100,production,63.1,kha
 2016,all,clearcut,production,74.4,kha
-2016,all,renewal not yet achieved,production,89.0,kha
+2016,all,renewal not complete,production,89.0,kha
 2016,all,...10,protected,4.2,kha
 2016,all,101...110,protected,14.5,kha
 2016,all,11...20,protected,9.9,kha
@@ -4656,7 +4656,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,all,81...90,protected,25.3,kha
 2016,all,91...100,protected,20.5,kha
 2016,all,clearcut,protected,2.3,kha
-2016,all,renewal not yet achieved,protected,4.7,kha
+2016,all,renewal not complete,protected,4.7,kha
 2016,aspen,...10,production,26.7,kha
 2016,aspen,101...110,production,0.6,kha
 2016,aspen,11...20,production,15.9,kha
@@ -4673,7 +4673,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,aspen,81...90,production,3.3,kha
 2016,aspen,91...100,production,0.9,kha
 2016,aspen,clearcut,production,3.7,kha
-2016,aspen,renewal not yet achieved,production,10.2,kha
+2016,aspen,renewal not complete,production,10.2,kha
 2016,aspen,...10,protected,0.7,kha
 2016,aspen,101...110,protected,0.2,kha
 2016,aspen,11...20,protected,0.8,kha
@@ -4690,7 +4690,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,aspen,81...90,protected,0.5,kha
 2016,aspen,91...100,protected,0.5,kha
 2016,aspen,clearcut,protected,0.0,kha
-2016,aspen,renewal not yet achieved,protected,0.4,kha
+2016,aspen,renewal not complete,protected,0.4,kha
 2016,birch,...10,production,47.9,kha
 2016,birch,101...110,production,1.0,kha
 2016,birch,11...20,production,73.8,kha
@@ -4707,7 +4707,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,birch,81...90,production,15.1,kha
 2016,birch,91...100,production,5.1,kha
 2016,birch,clearcut,production,19.8,kha
-2016,birch,renewal not yet achieved,production,17.5,kha
+2016,birch,renewal not complete,production,17.5,kha
 2016,birch,...10,protected,1.1,kha
 2016,birch,101...110,protected,0.9,kha
 2016,birch,11...20,protected,3.4,kha
@@ -4724,7 +4724,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,birch,81...90,protected,6.8,kha
 2016,birch,91...100,protected,3.1,kha
 2016,birch,clearcut,protected,1.0,kha
-2016,birch,renewal not yet achieved,protected,1.0,kha
+2016,birch,renewal not complete,protected,1.0,kha
 2016,black alder,...10,production,8.0,kha
 2016,black alder,101...110,production,0.0,kha
 2016,black alder,11...20,production,5.7,kha
@@ -4741,7 +4741,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,black alder,81...90,production,1.7,kha
 2016,black alder,91...100,production,0.9,kha
 2016,black alder,clearcut,production,2.6,kha
-2016,black alder,renewal not yet achieved,production,5.0,kha
+2016,black alder,renewal not complete,production,5.0,kha
 2016,black alder,...10,protected,0.0,kha
 2016,black alder,101...110,protected,0.2,kha
 2016,black alder,11...20,protected,0.7,kha
@@ -4758,7 +4758,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,black alder,81...90,protected,0.9,kha
 2016,black alder,91...100,protected,1.2,kha
 2016,black alder,clearcut,protected,0.0,kha
-2016,black alder,renewal not yet achieved,protected,0.0,kha
+2016,black alder,renewal not complete,protected,0.0,kha
 2016,grey alder,...10,production,44.0,kha
 2016,grey alder,101...110,production,0.0,kha
 2016,grey alder,11...20,production,36.6,kha
@@ -4775,7 +4775,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,grey alder,81...90,production,0.0,kha
 2016,grey alder,91...100,production,0.0,kha
 2016,grey alder,clearcut,production,3.6,kha
-2016,grey alder,renewal not yet achieved,production,8.5,kha
+2016,grey alder,renewal not complete,production,8.5,kha
 2016,grey alder,...10,protected,0.5,kha
 2016,grey alder,101...110,protected,0.0,kha
 2016,grey alder,11...20,protected,1.2,kha
@@ -4792,7 +4792,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,grey alder,81...90,protected,0.0,kha
 2016,grey alder,91...100,protected,0.0,kha
 2016,grey alder,clearcut,protected,0.0,kha
-2016,grey alder,renewal not yet achieved,protected,0.1,kha
+2016,grey alder,renewal not complete,protected,0.1,kha
 2016,other,...10,production,2.0,kha
 2016,other,101...110,production,0.7,kha
 2016,other,11...20,production,6.0,kha
@@ -4809,7 +4809,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,other,81...90,production,1.6,kha
 2016,other,91...100,production,1.0,kha
 2016,other,clearcut,production,0.5,kha
-2016,other,renewal not yet achieved,production,1.5,kha
+2016,other,renewal not complete,production,1.5,kha
 2016,other,...10,protected,0.0,kha
 2016,other,101...110,protected,0.3,kha
 2016,other,11...20,protected,0.2,kha
@@ -4826,7 +4826,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,other,81...90,protected,1.0,kha
 2016,other,91...100,protected,0.2,kha
 2016,other,clearcut,protected,0.0,kha
-2016,other,renewal not yet achieved,protected,0.0,kha
+2016,other,renewal not complete,protected,0.0,kha
 2016,pine,...10,production,13.0,kha
 2016,pine,101...110,production,26.1,kha
 2016,pine,11...20,production,26.7,kha
@@ -4843,7 +4843,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,pine,81...90,production,65.2,kha
 2016,pine,91...100,production,41.9,kha
 2016,pine,clearcut,production,14.8,kha
-2016,pine,renewal not yet achieved,production,21.8,kha
+2016,pine,renewal not complete,production,21.8,kha
 2016,pine,...10,protected,0.8,kha
 2016,pine,101...110,protected,10.9,kha
 2016,pine,11...20,protected,1.6,kha
@@ -4860,7 +4860,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,pine,81...90,protected,13.4,kha
 2016,pine,91...100,protected,11.9,kha
 2016,pine,clearcut,protected,0.1,kha
-2016,pine,renewal not yet achieved,protected,1.3,kha
+2016,pine,renewal not complete,protected,1.3,kha
 2016,spruce,...10,production,13.6,kha
 2016,spruce,101...110,production,7.2,kha
 2016,spruce,11...20,production,32.4,kha
@@ -4877,7 +4877,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,spruce,81...90,production,19.6,kha
 2016,spruce,91...100,production,13.3,kha
 2016,spruce,clearcut,production,29.3,kha
-2016,spruce,renewal not yet achieved,production,24.5,kha
+2016,spruce,renewal not complete,production,24.5,kha
 2016,spruce,...10,protected,1.0,kha
 2016,spruce,101...110,protected,2.1,kha
 2016,spruce,11...20,protected,2.0,kha
@@ -4894,7 +4894,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2016,spruce,81...90,protected,2.7,kha
 2016,spruce,91...100,protected,3.5,kha
 2016,spruce,clearcut,protected,1.1,kha
-2016,spruce,renewal not yet achieved,protected,2.0,kha
+2016,spruce,renewal not complete,protected,2.0,kha
 2017,all,...10,production,158.4,kha
 2017,all,101...110,production,35.2,kha
 2017,all,11...20,production,198.5,kha
@@ -4911,7 +4911,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,all,81...90,production,107.3,kha
 2017,all,91...100,production,65.1,kha
 2017,all,clearcut,production,72.6,kha
-2017,all,renewal not yet achieved,production,92.8,kha
+2017,all,renewal not complete,production,92.8,kha
 2017,all,...10,protected,4.4,kha
 2017,all,101...110,protected,16.1,kha
 2017,all,11...20,protected,12.0,kha
@@ -4928,7 +4928,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,all,81...90,protected,27.7,kha
 2017,all,91...100,protected,22.3,kha
 2017,all,clearcut,protected,3.0,kha
-2017,all,renewal not yet achieved,protected,4.9,kha
+2017,all,renewal not complete,protected,4.9,kha
 2017,aspen,...10,production,27.4,kha
 2017,aspen,101...110,production,0.6,kha
 2017,aspen,11...20,production,16.8,kha
@@ -4945,7 +4945,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,aspen,81...90,production,4.2,kha
 2017,aspen,91...100,production,1.3,kha
 2017,aspen,clearcut,production,4.5,kha
-2017,aspen,renewal not yet achieved,production,9.7,kha
+2017,aspen,renewal not complete,production,9.7,kha
 2017,aspen,...10,protected,0.8,kha
 2017,aspen,101...110,protected,0.2,kha
 2017,aspen,11...20,protected,0.8,kha
@@ -4962,7 +4962,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,aspen,81...90,protected,0.8,kha
 2017,aspen,91...100,protected,0.7,kha
 2017,aspen,clearcut,protected,0.0,kha
-2017,aspen,renewal not yet achieved,protected,0.3,kha
+2017,aspen,renewal not complete,protected,0.3,kha
 2017,birch,...10,production,49.3,kha
 2017,birch,101...110,production,1.2,kha
 2017,birch,11...20,production,74.4,kha
@@ -4979,7 +4979,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,birch,81...90,production,15.3,kha
 2017,birch,91...100,production,5.5,kha
 2017,birch,clearcut,production,18.1,kha
-2017,birch,renewal not yet achieved,production,18.2,kha
+2017,birch,renewal not complete,production,18.2,kha
 2017,birch,...10,protected,1.5,kha
 2017,birch,101...110,protected,0.9,kha
 2017,birch,11...20,protected,3.9,kha
@@ -4996,7 +4996,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,birch,81...90,protected,6.9,kha
 2017,birch,91...100,protected,3.1,kha
 2017,birch,clearcut,protected,0.8,kha
-2017,birch,renewal not yet achieved,protected,1.0,kha
+2017,birch,renewal not complete,protected,1.0,kha
 2017,black alder,...10,production,8.8,kha
 2017,black alder,101...110,production,0.0,kha
 2017,black alder,11...20,production,6.3,kha
@@ -5013,7 +5013,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,black alder,81...90,production,1.6,kha
 2017,black alder,91...100,production,1.0,kha
 2017,black alder,clearcut,production,2.7,kha
-2017,black alder,renewal not yet achieved,production,5.5,kha
+2017,black alder,renewal not complete,production,5.5,kha
 2017,black alder,...10,protected,0.0,kha
 2017,black alder,101...110,protected,0.1,kha
 2017,black alder,11...20,protected,0.7,kha
@@ -5030,7 +5030,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,black alder,81...90,protected,0.9,kha
 2017,black alder,91...100,protected,1.0,kha
 2017,black alder,clearcut,protected,0.2,kha
-2017,black alder,renewal not yet achieved,protected,0.1,kha
+2017,black alder,renewal not complete,protected,0.1,kha
 2017,grey alder,...10,production,43.8,kha
 2017,grey alder,101...110,production,0.0,kha
 2017,grey alder,11...20,production,36.7,kha
@@ -5047,7 +5047,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,grey alder,81...90,production,0.0,kha
 2017,grey alder,91...100,production,0.0,kha
 2017,grey alder,clearcut,production,3.3,kha
-2017,grey alder,renewal not yet achieved,production,7.5,kha
+2017,grey alder,renewal not complete,production,7.5,kha
 2017,grey alder,...10,protected,0.2,kha
 2017,grey alder,101...110,protected,0.0,kha
 2017,grey alder,11...20,protected,1.6,kha
@@ -5064,7 +5064,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,grey alder,81...90,protected,0.0,kha
 2017,grey alder,91...100,protected,0.0,kha
 2017,grey alder,clearcut,protected,0.0,kha
-2017,grey alder,renewal not yet achieved,protected,0.1,kha
+2017,grey alder,renewal not complete,protected,0.1,kha
 2017,other,...10,production,1.8,kha
 2017,other,101...110,production,1.3,kha
 2017,other,11...20,production,6.2,kha
@@ -5081,7 +5081,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,other,81...90,production,1.3,kha
 2017,other,91...100,production,2.0,kha
 2017,other,clearcut,production,0.2,kha
-2017,other,renewal not yet achieved,production,1.8,kha
+2017,other,renewal not complete,production,1.8,kha
 2017,other,...10,protected,0.1,kha
 2017,other,101...110,protected,0.3,kha
 2017,other,11...20,protected,0.3,kha
@@ -5098,7 +5098,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,other,81...90,protected,1.2,kha
 2017,other,91...100,protected,0.3,kha
 2017,other,clearcut,protected,0.0,kha
-2017,other,renewal not yet achieved,protected,0.0,kha
+2017,other,renewal not complete,protected,0.0,kha
 2017,pine,...10,production,11.9,kha
 2017,pine,101...110,production,24.7,kha
 2017,pine,11...20,production,27.4,kha
@@ -5115,7 +5115,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,pine,81...90,production,63.5,kha
 2017,pine,91...100,production,42.3,kha
 2017,pine,clearcut,production,13.5,kha
-2017,pine,renewal not yet achieved,production,23.5,kha
+2017,pine,renewal not complete,production,23.5,kha
 2017,pine,...10,protected,0.8,kha
 2017,pine,101...110,protected,12.0,kha
 2017,pine,11...20,protected,2.1,kha
@@ -5132,7 +5132,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,pine,81...90,protected,14.5,kha
 2017,pine,91...100,protected,13.2,kha
 2017,pine,clearcut,protected,0.4,kha
-2017,pine,renewal not yet achieved,protected,1.4,kha
+2017,pine,renewal not complete,protected,1.4,kha
 2017,spruce,...10,production,15.4,kha
 2017,spruce,101...110,production,7.4,kha
 2017,spruce,11...20,production,30.7,kha
@@ -5149,7 +5149,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,spruce,81...90,production,21.3,kha
 2017,spruce,91...100,production,13.1,kha
 2017,spruce,clearcut,production,30.2,kha
-2017,spruce,renewal not yet achieved,production,26.5,kha
+2017,spruce,renewal not complete,production,26.5,kha
 2017,spruce,...10,protected,1.0,kha
 2017,spruce,101...110,protected,2.6,kha
 2017,spruce,11...20,protected,2.6,kha
@@ -5166,7 +5166,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2017,spruce,81...90,protected,3.4,kha
 2017,spruce,91...100,protected,4.0,kha
 2017,spruce,clearcut,protected,1.7,kha
-2017,spruce,renewal not yet achieved,protected,2.1,kha
+2017,spruce,renewal not complete,protected,2.1,kha
 2018,all,...10,production,163.4,kha
 2018,all,101...110,production,35.4,kha
 2018,all,11...20,production,204.6,kha
@@ -5183,7 +5183,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,all,81...90,production,113.0,kha
 2018,all,91...100,production,67.0,kha
 2018,all,clearcut,production,76.4,kha
-2018,all,renewal not yet achieved,production,99.9,kha
+2018,all,renewal not complete,production,99.9,kha
 2018,all,...10,protected,4.4,kha
 2018,all,101...110,protected,14.3,kha
 2018,all,11...20,protected,9.8,kha
@@ -5200,7 +5200,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,all,81...90,protected,23.8,kha
 2018,all,91...100,protected,20.2,kha
 2018,all,clearcut,protected,3.2,kha
-2018,all,renewal not yet achieved,protected,2.7,kha
+2018,all,renewal not complete,protected,2.7,kha
 2018,aspen,...10,production,26.7,kha
 2018,aspen,101...110,production,0.7,kha
 2018,aspen,11...20,production,16.8,kha
@@ -5217,7 +5217,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,aspen,81...90,production,4.1,kha
 2018,aspen,91...100,production,1.1,kha
 2018,aspen,clearcut,production,5.0,kha
-2018,aspen,renewal not yet achieved,production,11.6,kha
+2018,aspen,renewal not complete,production,11.6,kha
 2018,aspen,...10,protected,0.9,kha
 2018,aspen,101...110,protected,0.2,kha
 2018,aspen,11...20,protected,0.8,kha
@@ -5234,7 +5234,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,aspen,81...90,protected,0.7,kha
 2018,aspen,91...100,protected,0.8,kha
 2018,aspen,clearcut,protected,0.1,kha
-2018,aspen,renewal not yet achieved,protected,0.5,kha
+2018,aspen,renewal not complete,protected,0.5,kha
 2018,birch,...10,production,50.6,kha
 2018,birch,101...110,production,1.3,kha
 2018,birch,11...20,production,73.6,kha
@@ -5251,7 +5251,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,birch,81...90,production,17.4,kha
 2018,birch,91...100,production,5.7,kha
 2018,birch,clearcut,production,20.1,kha
-2018,birch,renewal not yet achieved,production,19.7,kha
+2018,birch,renewal not complete,production,19.7,kha
 2018,birch,...10,protected,1.1,kha
 2018,birch,101...110,protected,0.5,kha
 2018,birch,11...20,protected,3.5,kha
@@ -5268,7 +5268,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,birch,81...90,protected,6.0,kha
 2018,birch,91...100,protected,2.8,kha
 2018,birch,clearcut,protected,1.1,kha
-2018,birch,renewal not yet achieved,protected,0.7,kha
+2018,birch,renewal not complete,protected,0.7,kha
 2018,black alder,...10,production,10.4,kha
 2018,black alder,101...110,production,0.0,kha
 2018,black alder,11...20,production,7.1,kha
@@ -5285,7 +5285,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,black alder,81...90,production,1.6,kha
 2018,black alder,91...100,production,0.9,kha
 2018,black alder,clearcut,production,2.7,kha
-2018,black alder,renewal not yet achieved,production,6.3,kha
+2018,black alder,renewal not complete,production,6.3,kha
 2018,black alder,...10,protected,0.2,kha
 2018,black alder,101...110,protected,0.1,kha
 2018,black alder,11...20,protected,0.5,kha
@@ -5302,7 +5302,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,black alder,81...90,protected,0.7,kha
 2018,black alder,91...100,protected,0.8,kha
 2018,black alder,clearcut,protected,0.1,kha
-2018,black alder,renewal not yet achieved,protected,0.0,kha
+2018,black alder,renewal not complete,protected,0.0,kha
 2018,grey alder,...10,production,43.1,kha
 2018,grey alder,101...110,production,0.0,kha
 2018,grey alder,11...20,production,42.0,kha
@@ -5319,7 +5319,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,grey alder,81...90,production,0.0,kha
 2018,grey alder,91...100,production,0.0,kha
 2018,grey alder,clearcut,production,4.4,kha
-2018,grey alder,renewal not yet achieved,production,7.3,kha
+2018,grey alder,renewal not complete,production,7.3,kha
 2018,grey alder,...10,protected,0.6,kha
 2018,grey alder,101...110,protected,0.0,kha
 2018,grey alder,11...20,protected,1.4,kha
@@ -5336,7 +5336,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,grey alder,81...90,protected,0.0,kha
 2018,grey alder,91...100,protected,0.0,kha
 2018,grey alder,clearcut,protected,0.2,kha
-2018,grey alder,renewal not yet achieved,protected,0.0,kha
+2018,grey alder,renewal not complete,protected,0.0,kha
 2018,other,...10,production,1.9,kha
 2018,other,101...110,production,1.2,kha
 2018,other,11...20,production,6.3,kha
@@ -5353,7 +5353,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,other,81...90,production,1.6,kha
 2018,other,91...100,production,2.0,kha
 2018,other,clearcut,production,0.3,kha
-2018,other,renewal not yet achieved,production,1.4,kha
+2018,other,renewal not complete,production,1.4,kha
 2018,other,...10,protected,0.0,kha
 2018,other,101...110,protected,0.0,kha
 2018,other,11...20,protected,0.1,kha
@@ -5370,7 +5370,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,other,81...90,protected,0.6,kha
 2018,other,91...100,protected,0.2,kha
 2018,other,clearcut,protected,0.0,kha
-2018,other,renewal not yet achieved,protected,0.0,kha
+2018,other,renewal not complete,protected,0.0,kha
 2018,pine,...10,production,12.6,kha
 2018,pine,101...110,production,25.5,kha
 2018,pine,11...20,production,26.3,kha
@@ -5387,7 +5387,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,pine,81...90,production,65.6,kha
 2018,pine,91...100,production,44.6,kha
 2018,pine,clearcut,production,15.4,kha
-2018,pine,renewal not yet achieved,production,24.2,kha
+2018,pine,renewal not complete,production,24.2,kha
 2018,pine,...10,protected,0.6,kha
 2018,pine,101...110,protected,10.8,kha
 2018,pine,11...20,protected,1.7,kha
@@ -5404,7 +5404,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,pine,81...90,protected,12.5,kha
 2018,pine,91...100,protected,13.2,kha
 2018,pine,clearcut,protected,0.4,kha
-2018,pine,renewal not yet achieved,protected,0.9,kha
+2018,pine,renewal not complete,protected,0.9,kha
 2018,spruce,...10,production,18.1,kha
 2018,spruce,101...110,production,6.6,kha
 2018,spruce,11...20,production,32.4,kha
@@ -5421,7 +5421,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,spruce,81...90,production,22.9,kha
 2018,spruce,91...100,production,12.6,kha
 2018,spruce,clearcut,production,28.5,kha
-2018,spruce,renewal not yet achieved,production,29.5,kha
+2018,spruce,renewal not complete,production,29.5,kha
 2018,spruce,...10,protected,1.0,kha
 2018,spruce,101...110,protected,2.7,kha
 2018,spruce,11...20,protected,1.9,kha
@@ -5438,7 +5438,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2018,spruce,81...90,protected,3.1,kha
 2018,spruce,91...100,protected,2.5,kha
 2018,spruce,clearcut,protected,1.4,kha
-2018,spruce,renewal not yet achieved,protected,0.5,kha
+2018,spruce,renewal not complete,protected,0.5,kha
 2019,all,...10,production,167.3,kha
 2019,all,101...110,production,33.8,kha
 2019,all,11...20,production,203.2,kha
@@ -5455,7 +5455,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,all,81...90,production,108.2,kha
 2019,all,91...100,production,67.1,kha
 2019,all,clearcut,production,79.1,kha
-2019,all,renewal not yet achieved,production,104.7,kha
+2019,all,renewal not complete,production,104.7,kha
 2019,all,...10,protected,4.5,kha
 2019,all,101...110,protected,15.0,kha
 2019,all,11...20,protected,11.1,kha
@@ -5472,7 +5472,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,all,81...90,protected,26.3,kha
 2019,all,91...100,protected,19.4,kha
 2019,all,clearcut,protected,2.4,kha
-2019,all,renewal not yet achieved,protected,4.5,kha
+2019,all,renewal not complete,protected,4.5,kha
 2019,aspen,...10,production,26.6,kha
 2019,aspen,101...110,production,0.7,kha
 2019,aspen,11...20,production,17.0,kha
@@ -5489,7 +5489,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,aspen,81...90,production,3.9,kha
 2019,aspen,91...100,production,1.6,kha
 2019,aspen,clearcut,production,5.1,kha
-2019,aspen,renewal not yet achieved,production,12.3,kha
+2019,aspen,renewal not complete,production,12.3,kha
 2019,aspen,...10,protected,1.1,kha
 2019,aspen,101...110,protected,0.3,kha
 2019,aspen,11...20,protected,1.3,kha
@@ -5506,7 +5506,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,aspen,81...90,protected,0.7,kha
 2019,aspen,91...100,protected,0.6,kha
 2019,aspen,clearcut,protected,0.0,kha
-2019,aspen,renewal not yet achieved,protected,0.6,kha
+2019,aspen,renewal not complete,protected,0.6,kha
 2019,birch,...10,production,50.8,kha
 2019,birch,101...110,production,1.6,kha
 2019,birch,11...20,production,68.6,kha
@@ -5523,7 +5523,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,birch,81...90,production,19.7,kha
 2019,birch,91...100,production,6.3,kha
 2019,birch,clearcut,production,22.5,kha
-2019,birch,renewal not yet achieved,production,22.6,kha
+2019,birch,renewal not complete,production,22.6,kha
 2019,birch,...10,protected,1.3,kha
 2019,birch,101...110,protected,0.7,kha
 2019,birch,11...20,protected,3.6,kha
@@ -5540,7 +5540,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,birch,81...90,protected,6.6,kha
 2019,birch,91...100,protected,3.1,kha
 2019,birch,clearcut,protected,0.8,kha
-2019,birch,renewal not yet achieved,protected,0.9,kha
+2019,birch,renewal not complete,protected,0.9,kha
 2019,black alder,...10,production,12.3,kha
 2019,black alder,101...110,production,0.2,kha
 2019,black alder,11...20,production,6.7,kha
@@ -5557,7 +5557,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,black alder,81...90,production,1.4,kha
 2019,black alder,91...100,production,0.8,kha
 2019,black alder,clearcut,production,2.7,kha
-2019,black alder,renewal not yet achieved,production,6.7,kha
+2019,black alder,renewal not complete,production,6.7,kha
 2019,black alder,...10,protected,0.2,kha
 2019,black alder,101...110,protected,0.1,kha
 2019,black alder,11...20,protected,0.7,kha
@@ -5574,7 +5574,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,black alder,81...90,protected,0.8,kha
 2019,black alder,91...100,protected,0.8,kha
 2019,black alder,clearcut,protected,0.1,kha
-2019,black alder,renewal not yet achieved,protected,0.1,kha
+2019,black alder,renewal not complete,protected,0.1,kha
 2019,grey alder,...10,production,43.4,kha
 2019,grey alder,101...110,production,0.0,kha
 2019,grey alder,11...20,production,42.2,kha
@@ -5591,7 +5591,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,grey alder,81...90,production,0.0,kha
 2019,grey alder,91...100,production,0.0,kha
 2019,grey alder,clearcut,production,4.9,kha
-2019,grey alder,renewal not yet achieved,production,7.9,kha
+2019,grey alder,renewal not complete,production,7.9,kha
 2019,grey alder,...10,protected,0.6,kha
 2019,grey alder,101...110,protected,0.0,kha
 2019,grey alder,11...20,protected,1.6,kha
@@ -5608,7 +5608,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,grey alder,81...90,protected,0.0,kha
 2019,grey alder,91...100,protected,0.0,kha
 2019,grey alder,clearcut,protected,0.0,kha
-2019,grey alder,renewal not yet achieved,protected,0.1,kha
+2019,grey alder,renewal not complete,protected,0.1,kha
 2019,other,...10,production,1.7,kha
 2019,other,101...110,production,1.2,kha
 2019,other,11...20,production,5.6,kha
@@ -5625,7 +5625,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,other,81...90,production,1.3,kha
 2019,other,91...100,production,2.0,kha
 2019,other,clearcut,production,0.8,kha
-2019,other,renewal not yet achieved,production,1.1,kha
+2019,other,renewal not complete,production,1.1,kha
 2019,other,...10,protected,0.0,kha
 2019,other,101...110,protected,0.4,kha
 2019,other,11...20,protected,0.3,kha
@@ -5642,7 +5642,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,other,81...90,protected,0.9,kha
 2019,other,91...100,protected,0.3,kha
 2019,other,clearcut,protected,0.0,kha
-2019,other,renewal not yet achieved,protected,0.0,kha
+2019,other,renewal not complete,protected,0.0,kha
 2019,pine,...10,production,12.4,kha
 2019,pine,101...110,production,23.8,kha
 2019,pine,11...20,production,27.0,kha
@@ -5659,7 +5659,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,pine,81...90,production,61.3,kha
 2019,pine,91...100,production,44.4,kha
 2019,pine,clearcut,production,16.1,kha
-2019,pine,renewal not yet achieved,production,23.9,kha
+2019,pine,renewal not complete,production,23.9,kha
 2019,pine,...10,protected,0.4,kha
 2019,pine,101...110,protected,11.2,kha
 2019,pine,11...20,protected,1.8,kha
@@ -5676,7 +5676,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,pine,81...90,protected,13.3,kha
 2019,pine,91...100,protected,12.8,kha
 2019,pine,clearcut,protected,0.4,kha
-2019,pine,renewal not yet achieved,protected,1.4,kha
+2019,pine,renewal not complete,protected,1.4,kha
 2019,spruce,...10,production,20.0,kha
 2019,spruce,101...110,production,6.2,kha
 2019,spruce,11...20,production,35.9,kha
@@ -5693,7 +5693,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,spruce,81...90,production,20.6,kha
 2019,spruce,91...100,production,12.0,kha
 2019,spruce,clearcut,production,27.1,kha
-2019,spruce,renewal not yet achieved,production,30.3,kha
+2019,spruce,renewal not complete,production,30.3,kha
 2019,spruce,...10,protected,1.2,kha
 2019,spruce,101...110,protected,2.4,kha
 2019,spruce,11...20,protected,2.1,kha
@@ -5710,7 +5710,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2019,spruce,81...90,protected,4.0,kha
 2019,spruce,91...100,protected,1.8,kha
 2019,spruce,clearcut,protected,1.0,kha
-2019,spruce,renewal not yet achieved,protected,1.3,kha
+2019,spruce,renewal not complete,protected,1.3,kha
 2020,all,...10,production,172.0,kha
 2020,all,101...110,production,33.8,kha
 2020,all,11...20,production,202.4,kha
@@ -5727,7 +5727,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,all,81...90,production,106.2,kha
 2020,all,91...100,production,64.4,kha
 2020,all,clearcut,production,85.3,kha
-2020,all,renewal not yet achieved,production,111.6,kha
+2020,all,renewal not complete,production,111.6,kha
 2020,all,...10,protected,5.9,kha
 2020,all,101...110,protected,17.7,kha
 2020,all,11...20,protected,10.8,kha
@@ -5744,7 +5744,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,all,81...90,protected,29.1,kha
 2020,all,91...100,protected,21.8,kha
 2020,all,clearcut,protected,3.5,kha
-2020,all,renewal not yet achieved,protected,4.4,kha
+2020,all,renewal not complete,protected,4.4,kha
 2020,aspen,...10,production,28.0,kha
 2020,aspen,101...110,production,0.6,kha
 2020,aspen,11...20,production,19.1,kha
@@ -5761,7 +5761,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,aspen,81...90,production,5.0,kha
 2020,aspen,91...100,production,1.4,kha
 2020,aspen,clearcut,production,5.6,kha
-2020,aspen,renewal not yet achieved,production,11.5,kha
+2020,aspen,renewal not complete,production,11.5,kha
 2020,aspen,...10,protected,1.1,kha
 2020,aspen,101...110,protected,0.3,kha
 2020,aspen,11...20,protected,1.4,kha
@@ -5778,7 +5778,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,aspen,81...90,protected,1.0,kha
 2020,aspen,91...100,protected,0.7,kha
 2020,aspen,clearcut,protected,0.0,kha
-2020,aspen,renewal not yet achieved,protected,0.9,kha
+2020,aspen,renewal not complete,protected,0.9,kha
 2020,birch,...10,production,53.6,kha
 2020,birch,101...110,production,1.9,kha
 2020,birch,11...20,production,64.9,kha
@@ -5795,7 +5795,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,birch,81...90,production,20.4,kha
 2020,birch,91...100,production,6.0,kha
 2020,birch,clearcut,production,26.8,kha
-2020,birch,renewal not yet achieved,production,25.4,kha
+2020,birch,renewal not complete,production,25.4,kha
 2020,birch,...10,protected,1.9,kha
 2020,birch,101...110,protected,1.9,kha
 2020,birch,11...20,protected,3.3,kha
@@ -5812,7 +5812,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,birch,81...90,protected,7.1,kha
 2020,birch,91...100,protected,3.2,kha
 2020,birch,clearcut,protected,0.8,kha
-2020,birch,renewal not yet achieved,protected,1.4,kha
+2020,birch,renewal not complete,protected,1.4,kha
 2020,black alder,...10,production,13.8,kha
 2020,black alder,101...110,production,0.3,kha
 2020,black alder,11...20,production,8.3,kha
@@ -5829,7 +5829,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,black alder,81...90,production,1.6,kha
 2020,black alder,91...100,production,0.8,kha
 2020,black alder,clearcut,production,4.0,kha
-2020,black alder,renewal not yet achieved,production,6.4,kha
+2020,black alder,renewal not complete,production,6.4,kha
 2020,black alder,...10,protected,0.2,kha
 2020,black alder,101...110,protected,0.2,kha
 2020,black alder,11...20,protected,0.5,kha
@@ -5846,7 +5846,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,black alder,81...90,protected,0.7,kha
 2020,black alder,91...100,protected,0.8,kha
 2020,black alder,clearcut,protected,0.1,kha
-2020,black alder,renewal not yet achieved,protected,0.2,kha
+2020,black alder,renewal not complete,protected,0.2,kha
 2020,grey alder,...10,production,43.8,kha
 2020,grey alder,101...110,production,0.0,kha
 2020,grey alder,11...20,production,44.4,kha
@@ -5863,7 +5863,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,grey alder,81...90,production,0.0,kha
 2020,grey alder,91...100,production,0.2,kha
 2020,grey alder,clearcut,production,6.5,kha
-2020,grey alder,renewal not yet achieved,production,7.9,kha
+2020,grey alder,renewal not complete,production,7.9,kha
 2020,grey alder,...10,protected,0.7,kha
 2020,grey alder,101...110,protected,0.0,kha
 2020,grey alder,11...20,protected,1.5,kha
@@ -5880,7 +5880,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,grey alder,81...90,protected,0.0,kha
 2020,grey alder,91...100,protected,0.0,kha
 2020,grey alder,clearcut,protected,0.0,kha
-2020,grey alder,renewal not yet achieved,protected,0.1,kha
+2020,grey alder,renewal not complete,protected,0.1,kha
 2020,other,...10,production,1.9,kha
 2020,other,101...110,production,1.4,kha
 2020,other,11...20,production,4.6,kha
@@ -5897,7 +5897,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,other,81...90,production,1.1,kha
 2020,other,91...100,production,2.2,kha
 2020,other,clearcut,production,0.9,kha
-2020,other,renewal not yet achieved,production,1.5,kha
+2020,other,renewal not complete,production,1.5,kha
 2020,other,...10,protected,0.0,kha
 2020,other,101...110,protected,0.6,kha
 2020,other,11...20,protected,0.3,kha
@@ -5914,7 +5914,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,other,81...90,protected,0.9,kha
 2020,other,91...100,protected,0.3,kha
 2020,other,clearcut,protected,0.0,kha
-2020,other,renewal not yet achieved,protected,0.0,kha
+2020,other,renewal not complete,protected,0.0,kha
 2020,pine,...10,production,10.5,kha
 2020,pine,101...110,production,24.6,kha
 2020,pine,11...20,production,25.7,kha
@@ -5931,7 +5931,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,pine,81...90,production,58.9,kha
 2020,pine,91...100,production,43.0,kha
 2020,pine,clearcut,production,16.4,kha
-2020,pine,renewal not yet achieved,production,24.2,kha
+2020,pine,renewal not complete,production,24.2,kha
 2020,pine,...10,protected,1.0,kha
 2020,pine,101...110,protected,12.4,kha
 2020,pine,11...20,protected,1.6,kha
@@ -5948,7 +5948,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,pine,81...90,protected,14.3,kha
 2020,pine,91...100,protected,14.0,kha
 2020,pine,clearcut,protected,0.5,kha
-2020,pine,renewal not yet achieved,protected,1.1,kha
+2020,pine,renewal not complete,protected,1.1,kha
 2020,spruce,...10,production,20.4,kha
 2020,spruce,101...110,production,5.0,kha
 2020,spruce,11...20,production,35.5,kha
@@ -5965,7 +5965,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,spruce,81...90,production,19.3,kha
 2020,spruce,91...100,production,10.8,kha
 2020,spruce,clearcut,production,25.1,kha
-2020,spruce,renewal not yet achieved,production,34.8,kha
+2020,spruce,renewal not complete,production,34.8,kha
 2020,spruce,...10,protected,1.1,kha
 2020,spruce,101...110,protected,2.3,kha
 2020,spruce,11...20,protected,2.0,kha
@@ -5982,7 +5982,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2020,spruce,81...90,protected,4.9,kha
 2020,spruce,91...100,protected,2.9,kha
 2020,spruce,clearcut,protected,2.1,kha
-2020,spruce,renewal not yet achieved,protected,0.8,kha
+2020,spruce,renewal not complete,protected,0.8,kha
 2021,all,...10,production,183.1,kha
 2021,all,101...110,production,29.9,kha
 2021,all,11...20,production,201.2,kha
@@ -5999,7 +5999,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,all,81...90,production,97.8,kha
 2021,all,91...100,production,60.6,kha
 2021,all,clearcut,production,79.1,kha
-2021,all,renewal not yet achieved,production,118.7,kha
+2021,all,renewal not complete,production,118.7,kha
 2021,all,...10,protected,7.1,kha
 2021,all,101...110,protected,21.4,kha
 2021,all,11...20,protected,11.3,kha
@@ -6016,7 +6016,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,all,81...90,protected,37.9,kha
 2021,all,91...100,protected,27.4,kha
 2021,all,clearcut,protected,4.0,kha
-2021,all,renewal not yet achieved,protected,6.0,kha
+2021,all,renewal not complete,protected,6.0,kha
 2021,aspen,...10,production,28.0,kha
 2021,aspen,101...110,production,0.6,kha
 2021,aspen,11...20,production,17.7,kha
@@ -6033,7 +6033,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,aspen,81...90,production,4.3,kha
 2021,aspen,91...100,production,1.8,kha
 2021,aspen,clearcut,production,5.7,kha
-2021,aspen,renewal not yet achieved,production,10.7,kha
+2021,aspen,renewal not complete,production,10.7,kha
 2021,aspen,...10,protected,1.7,kha
 2021,aspen,101...110,protected,0.8,kha
 2021,aspen,11...20,protected,1.4,kha
@@ -6050,7 +6050,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,aspen,81...90,protected,1.5,kha
 2021,aspen,91...100,protected,0.7,kha
 2021,aspen,clearcut,protected,0.0,kha
-2021,aspen,renewal not yet achieved,protected,0.9,kha
+2021,aspen,renewal not complete,protected,0.9,kha
 2021,birch,...10,production,56.5,kha
 2021,birch,101...110,production,2.0,kha
 2021,birch,11...20,production,64.6,kha
@@ -6067,7 +6067,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,birch,81...90,production,18.1,kha
 2021,birch,91...100,production,6.3,kha
 2021,birch,clearcut,production,27.6,kha
-2021,birch,renewal not yet achieved,production,25.7,kha
+2021,birch,renewal not complete,production,25.7,kha
 2021,birch,...10,protected,2.4,kha
 2021,birch,101...110,protected,2.2,kha
 2021,birch,11...20,protected,3.8,kha
@@ -6084,7 +6084,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,birch,81...90,protected,9.9,kha
 2021,birch,91...100,protected,3.3,kha
 2021,birch,clearcut,protected,0.7,kha
-2021,birch,renewal not yet achieved,protected,1.7,kha
+2021,birch,renewal not complete,protected,1.7,kha
 2021,black alder,...10,production,14.7,kha
 2021,black alder,101...110,production,0.2,kha
 2021,black alder,11...20,production,7.9,kha
@@ -6101,7 +6101,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,black alder,81...90,production,2.2,kha
 2021,black alder,91...100,production,0.9,kha
 2021,black alder,clearcut,production,4.0,kha
-2021,black alder,renewal not yet achieved,production,5.6,kha
+2021,black alder,renewal not complete,production,5.6,kha
 2021,black alder,...10,protected,0.6,kha
 2021,black alder,101...110,protected,0.6,kha
 2021,black alder,11...20,protected,0.7,kha
@@ -6118,7 +6118,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,black alder,81...90,protected,1.1,kha
 2021,black alder,91...100,protected,0.3,kha
 2021,black alder,clearcut,protected,0.3,kha
-2021,black alder,renewal not yet achieved,protected,0.2,kha
+2021,black alder,renewal not complete,protected,0.2,kha
 2021,grey alder,...10,production,47.9,kha
 2021,grey alder,101...110,production,0.0,kha
 2021,grey alder,11...20,production,45.9,kha
@@ -6135,7 +6135,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,grey alder,81...90,production,0.0,kha
 2021,grey alder,91...100,production,0.2,kha
 2021,grey alder,clearcut,production,7.0,kha
-2021,grey alder,renewal not yet achieved,production,7.4,kha
+2021,grey alder,renewal not complete,production,7.4,kha
 2021,grey alder,...10,protected,0.7,kha
 2021,grey alder,101...110,protected,0.0,kha
 2021,grey alder,11...20,protected,1.2,kha
@@ -6152,7 +6152,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,grey alder,81...90,protected,0.0,kha
 2021,grey alder,91...100,protected,0.0,kha
 2021,grey alder,clearcut,protected,0.0,kha
-2021,grey alder,renewal not yet achieved,protected,0.2,kha
+2021,grey alder,renewal not complete,protected,0.2,kha
 2021,other,...10,production,2.2,kha
 2021,other,101...110,production,1.4,kha
 2021,other,11...20,production,4.4,kha
@@ -6169,7 +6169,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,other,81...90,production,0.9,kha
 2021,other,91...100,production,2.2,kha
 2021,other,clearcut,production,1.1,kha
-2021,other,renewal not yet achieved,production,1.5,kha
+2021,other,renewal not complete,production,1.5,kha
 2021,other,...10,protected,0.0,kha
 2021,other,101...110,protected,0.6,kha
 2021,other,11...20,protected,0.3,kha
@@ -6186,7 +6186,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,other,81...90,protected,0.7,kha
 2021,other,91...100,protected,0.6,kha
 2021,other,clearcut,protected,0.0,kha
-2021,other,renewal not yet achieved,protected,0.0,kha
+2021,other,renewal not complete,protected,0.0,kha
 2021,pine,...10,production,11.1,kha
 2021,pine,101...110,production,21.2,kha
 2021,pine,11...20,production,26.0,kha
@@ -6203,7 +6203,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,pine,81...90,production,55.3,kha
 2021,pine,91...100,production,40.1,kha
 2021,pine,clearcut,production,14.7,kha
-2021,pine,renewal not yet achieved,production,25.5,kha
+2021,pine,renewal not complete,production,25.5,kha
 2021,pine,...10,protected,0.6,kha
 2021,pine,101...110,protected,13.9,kha
 2021,pine,11...20,protected,1.5,kha
@@ -6220,7 +6220,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,pine,81...90,protected,19.2,kha
 2021,pine,91...100,protected,18.4,kha
 2021,pine,clearcut,protected,1.1,kha
-2021,pine,renewal not yet achieved,protected,2.0,kha
+2021,pine,renewal not complete,protected,2.0,kha
 2021,spruce,...10,production,22.7,kha
 2021,spruce,101...110,production,4.5,kha
 2021,spruce,11...20,production,34.7,kha
@@ -6237,7 +6237,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,spruce,81...90,production,17.0,kha
 2021,spruce,91...100,production,9.1,kha
 2021,spruce,clearcut,production,19.0,kha
-2021,spruce,renewal not yet achieved,production,42.3,kha
+2021,spruce,renewal not complete,production,42.3,kha
 2021,spruce,...10,protected,1.0,kha
 2021,spruce,101...110,protected,3.3,kha
 2021,spruce,11...20,protected,2.4,kha
@@ -6254,7 +6254,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2021,spruce,81...90,protected,5.5,kha
 2021,spruce,91...100,protected,4.1,kha
 2021,spruce,clearcut,protected,2.0,kha
-2021,spruce,renewal not yet achieved,protected,1.0,kha
+2021,spruce,renewal not complete,protected,1.0,kha
 2022,all,...10,production,196.4,kha
 2022,all,101...110,production,28.0,kha
 2022,all,11...20,production,196.6,kha
@@ -6271,7 +6271,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,all,81...90,production,95.9,kha
 2022,all,91...100,production,57.1,kha
 2022,all,clearcut,production,79.7,kha
-2022,all,renewal not yet achieved,production,121.7,kha
+2022,all,renewal not complete,production,121.7,kha
 2022,all,...10,protected,8.3,kha
 2022,all,101...110,protected,21.6,kha
 2022,all,11...20,protected,11.3,kha
@@ -6288,7 +6288,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,all,81...90,protected,40.5,kha
 2022,all,91...100,protected,30.3,kha
 2022,all,clearcut,protected,5.2,kha
-2022,all,renewal not yet achieved,protected,7.2,kha
+2022,all,renewal not complete,protected,7.2,kha
 2022,aspen,...10,production,28.5,kha
 2022,aspen,101...110,production,0.8,kha
 2022,aspen,11...20,production,17.9,kha
@@ -6305,7 +6305,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,aspen,81...90,production,3.6,kha
 2022,aspen,91...100,production,1.4,kha
 2022,aspen,clearcut,production,5.1,kha
-2022,aspen,renewal not yet achieved,production,10.6,kha
+2022,aspen,renewal not complete,production,10.6,kha
 2022,aspen,...10,protected,1.9,kha
 2022,aspen,101...110,protected,0.8,kha
 2022,aspen,11...20,protected,1.4,kha
@@ -6322,7 +6322,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,aspen,81...90,protected,1.5,kha
 2022,aspen,91...100,protected,1.5,kha
 2022,aspen,clearcut,protected,0.2,kha
-2022,aspen,renewal not yet achieved,protected,1.1,kha
+2022,aspen,renewal not complete,protected,1.1,kha
 2022,birch,...10,production,60.1,kha
 2022,birch,101...110,production,1.9,kha
 2022,birch,11...20,production,57.1,kha
@@ -6339,7 +6339,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,birch,81...90,production,16.7,kha
 2022,birch,91...100,production,6.3,kha
 2022,birch,clearcut,production,31.2,kha
-2022,birch,renewal not yet achieved,production,23.9,kha
+2022,birch,renewal not complete,production,23.9,kha
 2022,birch,...10,protected,2.7,kha
 2022,birch,101...110,protected,2.4,kha
 2022,birch,11...20,protected,3.6,kha
@@ -6356,7 +6356,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,birch,81...90,protected,10.4,kha
 2022,birch,91...100,protected,4.3,kha
 2022,birch,clearcut,protected,1.4,kha
-2022,birch,renewal not yet achieved,protected,2.0,kha
+2022,birch,renewal not complete,protected,2.0,kha
 2022,black alder,...10,production,14.8,kha
 2022,black alder,101...110,production,0.2,kha
 2022,black alder,11...20,production,8.0,kha
@@ -6373,7 +6373,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,black alder,81...90,production,2.3,kha
 2022,black alder,91...100,production,0.9,kha
 2022,black alder,clearcut,production,3.6,kha
-2022,black alder,renewal not yet achieved,production,5.4,kha
+2022,black alder,renewal not complete,production,5.4,kha
 2022,black alder,...10,protected,1.0,kha
 2022,black alder,101...110,protected,0.6,kha
 2022,black alder,11...20,protected,0.8,kha
@@ -6390,7 +6390,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,black alder,81...90,protected,1.9,kha
 2022,black alder,91...100,protected,0.7,kha
 2022,black alder,clearcut,protected,0.2,kha
-2022,black alder,renewal not yet achieved,protected,0.0,kha
+2022,black alder,renewal not complete,protected,0.0,kha
 2022,grey alder,...10,production,52.3,kha
 2022,grey alder,101...110,production,0.0,kha
 2022,grey alder,11...20,production,48.7,kha
@@ -6407,7 +6407,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,grey alder,81...90,production,0.0,kha
 2022,grey alder,91...100,production,0.2,kha
 2022,grey alder,clearcut,production,7.0,kha
-2022,grey alder,renewal not yet achieved,production,7.9,kha
+2022,grey alder,renewal not complete,production,7.9,kha
 2022,grey alder,...10,protected,1.1,kha
 2022,grey alder,101...110,protected,0.0,kha
 2022,grey alder,11...20,protected,1.5,kha
@@ -6424,7 +6424,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,grey alder,81...90,protected,0.0,kha
 2022,grey alder,91...100,protected,0.0,kha
 2022,grey alder,clearcut,protected,0.0,kha
-2022,grey alder,renewal not yet achieved,protected,0.3,kha
+2022,grey alder,renewal not complete,protected,0.3,kha
 2022,other,...10,production,2.2,kha
 2022,other,101...110,production,0.9,kha
 2022,other,11...20,production,4.6,kha
@@ -6441,7 +6441,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,other,81...90,production,0.8,kha
 2022,other,91...100,production,1.4,kha
 2022,other,clearcut,production,0.9,kha
-2022,other,renewal not yet achieved,production,1.7,kha
+2022,other,renewal not complete,production,1.7,kha
 2022,other,...10,protected,0.2,kha
 2022,other,101...110,protected,1.0,kha
 2022,other,11...20,protected,0.2,kha
@@ -6458,7 +6458,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,other,81...90,protected,0.9,kha
 2022,other,91...100,protected,0.5,kha
 2022,other,clearcut,protected,0.0,kha
-2022,other,renewal not yet achieved,protected,0.0,kha
+2022,other,renewal not complete,protected,0.0,kha
 2022,pine,...10,production,15.0,kha
 2022,pine,101...110,production,19.4,kha
 2022,pine,11...20,production,23.4,kha
@@ -6475,7 +6475,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,pine,81...90,production,57.7,kha
 2022,pine,91...100,production,38.1,kha
 2022,pine,clearcut,production,16.1,kha
-2022,pine,renewal not yet achieved,production,25.9,kha
+2022,pine,renewal not complete,production,25.9,kha
 2022,pine,...10,protected,0.5,kha
 2022,pine,101...110,protected,13.7,kha
 2022,pine,11...20,protected,1.6,kha
@@ -6492,7 +6492,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,pine,81...90,protected,20.7,kha
 2022,pine,91...100,protected,19.9,kha
 2022,pine,clearcut,protected,1.6,kha
-2022,pine,renewal not yet achieved,protected,3.1,kha
+2022,pine,renewal not complete,protected,3.1,kha
 2022,spruce,...10,production,23.4,kha
 2022,spruce,101...110,production,4.9,kha
 2022,spruce,11...20,production,36.9,kha
@@ -6509,7 +6509,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,spruce,81...90,production,14.8,kha
 2022,spruce,91...100,production,8.7,kha
 2022,spruce,clearcut,production,15.7,kha
-2022,spruce,renewal not yet achieved,production,46.2,kha
+2022,spruce,renewal not complete,production,46.2,kha
 2022,spruce,...10,protected,1.1,kha
 2022,spruce,101...110,protected,3.1,kha
 2022,spruce,11...20,protected,2.2,kha
@@ -6526,7 +6526,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2022,spruce,81...90,protected,5.0,kha
 2022,spruce,91...100,protected,3.6,kha
 2022,spruce,clearcut,protected,1.8,kha
-2022,spruce,renewal not yet achieved,protected,0.8,kha
+2022,spruce,renewal not complete,protected,0.8,kha
 2023,all,...10,production,210.8,kha
 2023,all,101...110,production,30.1,kha
 2023,all,11...20,production,193.5,kha
@@ -6543,7 +6543,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,all,81...90,production,89.9,kha
 2023,all,91...100,production,57.7,kha
 2023,all,clearcut,production,77.7,kha
-2023,all,renewal not yet achieved,production,123.8,kha
+2023,all,renewal not complete,production,123.8,kha
 2023,all,...10,protected,7.9,kha
 2023,all,101...110,protected,22.9,kha
 2023,all,11...20,protected,11.1,kha
@@ -6560,7 +6560,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,all,81...90,protected,43.1,kha
 2023,all,91...100,protected,32.6,kha
 2023,all,clearcut,protected,4.0,kha
-2023,all,renewal not yet achieved,protected,6.6,kha
+2023,all,renewal not complete,protected,6.6,kha
 2023,aspen,...10,production,31.2,kha
 2023,aspen,101...110,production,0.8,kha
 2023,aspen,11...20,production,18.9,kha
@@ -6577,7 +6577,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,aspen,81...90,production,3.1,kha
 2023,aspen,91...100,production,1.3,kha
 2023,aspen,clearcut,production,4.2,kha
-2023,aspen,renewal not yet achieved,production,9.8,kha
+2023,aspen,renewal not complete,production,9.8,kha
 2023,aspen,...10,protected,1.9,kha
 2023,aspen,101...110,protected,0.9,kha
 2023,aspen,11...20,protected,1.3,kha
@@ -6594,7 +6594,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,aspen,81...90,protected,3.2,kha
 2023,aspen,91...100,protected,1.3,kha
 2023,aspen,clearcut,protected,0.1,kha
-2023,aspen,renewal not yet achieved,protected,0.8,kha
+2023,aspen,renewal not complete,protected,0.8,kha
 2023,birch,...10,production,65.1,kha
 2023,birch,101...110,production,2.4,kha
 2023,birch,11...20,production,56.4,kha
@@ -6611,7 +6611,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,birch,81...90,production,16.0,kha
 2023,birch,91...100,production,6.7,kha
 2023,birch,clearcut,production,31.8,kha
-2023,birch,renewal not yet achieved,production,23.3,kha
+2023,birch,renewal not complete,production,23.3,kha
 2023,birch,...10,protected,2.7,kha
 2023,birch,101...110,protected,2.7,kha
 2023,birch,11...20,protected,3.0,kha
@@ -6628,7 +6628,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,birch,81...90,protected,11.4,kha
 2023,birch,91...100,protected,4.4,kha
 2023,birch,clearcut,protected,1.4,kha
-2023,birch,renewal not yet achieved,protected,2.0,kha
+2023,birch,renewal not complete,protected,2.0,kha
 2023,black alder,...10,production,15.4,kha
 2023,black alder,101...110,production,0.2,kha
 2023,black alder,11...20,production,8.3,kha
@@ -6645,7 +6645,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,black alder,81...90,production,2.7,kha
 2023,black alder,91...100,production,0.8,kha
 2023,black alder,clearcut,production,4.7,kha
-2023,black alder,renewal not yet achieved,production,5.0,kha
+2023,black alder,renewal not complete,production,5.0,kha
 2023,black alder,...10,protected,0.8,kha
 2023,black alder,101...110,protected,0.6,kha
 2023,black alder,11...20,protected,1.0,kha
@@ -6662,7 +6662,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,black alder,81...90,protected,2.2,kha
 2023,black alder,91...100,protected,1.1,kha
 2023,black alder,clearcut,protected,0.2,kha
-2023,black alder,renewal not yet achieved,protected,0.0,kha
+2023,black alder,renewal not complete,protected,0.0,kha
 2023,grey alder,...10,production,54.4,kha
 2023,grey alder,101...110,production,0.0,kha
 2023,grey alder,11...20,production,46.7,kha
@@ -6679,7 +6679,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,grey alder,81...90,production,0.0,kha
 2023,grey alder,91...100,production,0.2,kha
 2023,grey alder,clearcut,production,7.6,kha
-2023,grey alder,renewal not yet achieved,production,6.5,kha
+2023,grey alder,renewal not complete,production,6.5,kha
 2023,grey alder,...10,protected,0.9,kha
 2023,grey alder,101...110,protected,0.0,kha
 2023,grey alder,11...20,protected,1.5,kha
@@ -6696,7 +6696,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,grey alder,81...90,protected,0.0,kha
 2023,grey alder,91...100,protected,0.0,kha
 2023,grey alder,clearcut,protected,0.0,kha
-2023,grey alder,renewal not yet achieved,protected,0.1,kha
+2023,grey alder,renewal not complete,protected,0.1,kha
 2023,other,...10,production,2.6,kha
 2023,other,101...110,production,0.9,kha
 2023,other,11...20,production,4.3,kha
@@ -6713,7 +6713,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,other,81...90,production,0.8,kha
 2023,other,91...100,production,1.6,kha
 2023,other,clearcut,production,0.9,kha
-2023,other,renewal not yet achieved,production,1.6,kha
+2023,other,renewal not complete,production,1.6,kha
 2023,other,...10,protected,0.1,kha
 2023,other,101...110,protected,1.1,kha
 2023,other,11...20,protected,0.1,kha
@@ -6730,7 +6730,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,other,81...90,protected,0.8,kha
 2023,other,91...100,protected,0.4,kha
 2023,other,clearcut,protected,0.0,kha
-2023,other,renewal not yet achieved,protected,0.0,kha
+2023,other,renewal not complete,protected,0.0,kha
 2023,pine,...10,production,16.5,kha
 2023,pine,101...110,production,20.2,kha
 2023,pine,11...20,production,22.2,kha
@@ -6747,7 +6747,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,pine,81...90,production,53.2,kha
 2023,pine,91...100,production,38.6,kha
 2023,pine,clearcut,production,13.8,kha
-2023,pine,renewal not yet achieved,production,27.7,kha
+2023,pine,renewal not complete,production,27.7,kha
 2023,pine,...10,protected,0.5,kha
 2023,pine,101...110,protected,14.6,kha
 2023,pine,11...20,protected,1.7,kha
@@ -6764,7 +6764,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,pine,81...90,protected,20.2,kha
 2023,pine,91...100,protected,21.5,kha
 2023,pine,clearcut,protected,1.0,kha
-2023,pine,renewal not yet achieved,protected,2.9,kha
+2023,pine,renewal not complete,protected,2.9,kha
 2023,spruce,...10,production,25.6,kha
 2023,spruce,101...110,production,5.7,kha
 2023,spruce,11...20,production,36.8,kha
@@ -6781,7 +6781,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,spruce,81...90,production,14.2,kha
 2023,spruce,91...100,production,8.5,kha
 2023,spruce,clearcut,production,14.7,kha
-2023,spruce,renewal not yet achieved,production,50.0,kha
+2023,spruce,renewal not complete,production,50.0,kha
 2023,spruce,...10,protected,1.0,kha
 2023,spruce,101...110,protected,2.9,kha
 2023,spruce,11...20,protected,2.3,kha
@@ -6798,7 +6798,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2023,spruce,81...90,protected,5.2,kha
 2023,spruce,91...100,protected,3.9,kha
 2023,spruce,clearcut,protected,1.4,kha
-2023,spruce,renewal not yet achieved,protected,0.7,kha
+2023,spruce,renewal not complete,protected,0.7,kha
 2024,all,...10,production,220.0,kha
 2024,all,101...110,production,29.7,kha
 2024,all,11...20,production,194.6,kha
@@ -6815,7 +6815,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,all,81...90,production,87.0,kha
 2024,all,91...100,production,56.0,kha
 2024,all,clearcut,production,75.4,kha
-2024,all,renewal not yet achieved,production,127.6,kha
+2024,all,renewal not complete,production,127.6,kha
 2024,all,...10,protected,10.9,kha
 2024,all,101...110,protected,26.4,kha
 2024,all,11...20,protected,13.8,kha
@@ -6832,7 +6832,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,all,81...90,protected,51.4,kha
 2024,all,91...100,protected,37.9,kha
 2024,all,clearcut,protected,5.7,kha
-2024,all,renewal not yet achieved,protected,6.1,kha
+2024,all,renewal not complete,protected,6.1,kha
 2024,aspen,...10,production,34.9,kha
 2024,aspen,101...110,production,0.6,kha
 2024,aspen,11...20,production,20.2,kha
@@ -6849,7 +6849,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,aspen,81...90,production,2.9,kha
 2024,aspen,91...100,production,1.4,kha
 2024,aspen,clearcut,production,5.0,kha
-2024,aspen,renewal not yet achieved,production,9.6,kha
+2024,aspen,renewal not complete,production,9.6,kha
 2024,aspen,...10,protected,2.2,kha
 2024,aspen,101...110,protected,0.6,kha
 2024,aspen,11...20,protected,1.4,kha
@@ -6866,7 +6866,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,aspen,81...90,protected,4.0,kha
 2024,aspen,91...100,protected,1.8,kha
 2024,aspen,clearcut,protected,0.2,kha
-2024,aspen,renewal not yet achieved,protected,1.0,kha
+2024,aspen,renewal not complete,protected,1.0,kha
 2024,birch,...10,production,68.1,kha
 2024,birch,101...110,production,3.5,kha
 2024,birch,11...20,production,55.2,kha
@@ -6883,7 +6883,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,birch,81...90,production,16.3,kha
 2024,birch,91...100,production,6.6,kha
 2024,birch,clearcut,production,32.2,kha
-2024,birch,renewal not yet achieved,production,21.3,kha
+2024,birch,renewal not complete,production,21.3,kha
 2024,birch,...10,protected,4.7,kha
 2024,birch,101...110,protected,2.9,kha
 2024,birch,11...20,protected,3.4,kha
@@ -6900,7 +6900,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,birch,81...90,protected,12.3,kha
 2024,birch,91...100,protected,5.0,kha
 2024,birch,clearcut,protected,1.7,kha
-2024,birch,renewal not yet achieved,protected,1.5,kha
+2024,birch,renewal not complete,protected,1.5,kha
 2024,black alder,...10,production,15.1,kha
 2024,black alder,101...110,production,0.2,kha
 2024,black alder,11...20,production,8.6,kha
@@ -6917,7 +6917,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,black alder,81...90,production,2.7,kha
 2024,black alder,91...100,production,0.9,kha
 2024,black alder,clearcut,production,4.5,kha
-2024,black alder,renewal not yet achieved,production,4.1,kha
+2024,black alder,renewal not complete,production,4.1,kha
 2024,black alder,...10,protected,0.9,kha
 2024,black alder,101...110,protected,0.4,kha
 2024,black alder,11...20,protected,0.8,kha
@@ -6934,7 +6934,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,black alder,81...90,protected,2.9,kha
 2024,black alder,91...100,protected,1.3,kha
 2024,black alder,clearcut,protected,0.4,kha
-2024,black alder,renewal not yet achieved,protected,0.0,kha
+2024,black alder,renewal not complete,protected,0.0,kha
 2024,grey alder,...10,production,54.6,kha
 2024,grey alder,101...110,production,0.0,kha
 2024,grey alder,11...20,production,48.1,kha
@@ -6951,7 +6951,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,grey alder,81...90,production,0.0,kha
 2024,grey alder,91...100,production,0.2,kha
 2024,grey alder,clearcut,production,6.7,kha
-2024,grey alder,renewal not yet achieved,production,5.8,kha
+2024,grey alder,renewal not complete,production,5.8,kha
 2024,grey alder,...10,protected,1.0,kha
 2024,grey alder,101...110,protected,0.0,kha
 2024,grey alder,11...20,protected,1.1,kha
@@ -6968,7 +6968,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,grey alder,81...90,protected,0.0,kha
 2024,grey alder,91...100,protected,0.0,kha
 2024,grey alder,clearcut,protected,0.1,kha
-2024,grey alder,renewal not yet achieved,protected,0.1,kha
+2024,grey alder,renewal not complete,protected,0.1,kha
 2024,other,...10,production,2.9,kha
 2024,other,101...110,production,1.1,kha
 2024,other,11...20,production,4.2,kha
@@ -6985,7 +6985,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,other,81...90,production,0.8,kha
 2024,other,91...100,production,1.4,kha
 2024,other,clearcut,production,0.6,kha
-2024,other,renewal not yet achieved,production,1.7,kha
+2024,other,renewal not complete,production,1.7,kha
 2024,other,...10,protected,0.2,kha
 2024,other,101...110,protected,1.3,kha
 2024,other,11...20,protected,0.1,kha
@@ -7002,7 +7002,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,other,81...90,protected,0.6,kha
 2024,other,91...100,protected,0.6,kha
 2024,other,clearcut,protected,0.0,kha
-2024,other,renewal not yet achieved,protected,0.0,kha
+2024,other,renewal not complete,protected,0.0,kha
 2024,pine,...10,production,17.2,kha
 2024,pine,101...110,production,18.2,kha
 2024,pine,11...20,production,20.6,kha
@@ -7019,7 +7019,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,pine,81...90,production,49.0,kha
 2024,pine,91...100,production,38.7,kha
 2024,pine,clearcut,production,11.7,kha
-2024,pine,renewal not yet achieved,production,29.1,kha
+2024,pine,renewal not complete,production,29.1,kha
 2024,pine,...10,protected,0.7,kha
 2024,pine,101...110,protected,17.5,kha
 2024,pine,11...20,protected,3.4,kha
@@ -7036,7 +7036,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,pine,81...90,protected,25.9,kha
 2024,pine,91...100,protected,24.1,kha
 2024,pine,clearcut,protected,1.7,kha
-2024,pine,renewal not yet achieved,protected,2.7,kha
+2024,pine,renewal not complete,protected,2.7,kha
 2024,spruce,...10,production,27.2,kha
 2024,spruce,101...110,production,6.0,kha
 2024,spruce,11...20,production,37.7,kha
@@ -7053,7 +7053,7 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,spruce,81...90,production,15.2,kha
 2024,spruce,91...100,production,6.9,kha
 2024,spruce,clearcut,production,14.7,kha
-2024,spruce,renewal not yet achieved,production,56.0,kha
+2024,spruce,renewal not complete,production,56.0,kha
 2024,spruce,...10,protected,1.2,kha
 2024,spruce,101...110,protected,3.7,kha
 2024,spruce,11...20,protected,3.7,kha
@@ -7070,4 +7070,4 @@ YEAR,DOMINANT_SPECIES,AGE_GROUP,TYPE,AREA,UNIT
 2024,spruce,81...90,protected,5.8,kha
 2024,spruce,91...100,protected,5.0,kha
 2024,spruce,clearcut,protected,1.6,kha
-2024,spruce,renewal not yet achieved,protected,0.8,kha
+2024,spruce,renewal not complete,protected,0.8,kha
