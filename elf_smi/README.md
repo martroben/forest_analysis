@@ -34,7 +34,8 @@ Results by tree species:
     │   ├── __init__.py         # Marks 'plot' as a Python module
     │   └── plot.py             # Plotting and visualization functions
     ├── 01_clean_age_groups.py  # Clean age group raw data and save it to clean
-    └── 02_plot_age_groups.py   # Plot age group data and save png plots to results
+    ├── 02_get_cutting_ages.py  # Assemble estimated cutting ages for each tree species
+    └── 03_plot_age_groups.py   # Plot age group data and save png plots to results
 ```
 
 ## Installation
@@ -59,10 +60,11 @@ pip install -r requirements.txt
 4. Generate age group plots:
 ```shell
 python elf_smi/src/01_clean_age_groups.py
-python elf_smi/src/02_plot_age_groups.py
+python elf_smi/src/02_get_cutting_ages.py
+python elf_smi/src/03_plot_age_groups.py
 ```
 
-Result is saved to `elf_smi/result`
+Results are saved to `elf_smi/result`
 
 ## Libraries
 - [`plotly`](https://plotly.com/python/) for visualisation

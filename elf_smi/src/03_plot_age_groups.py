@@ -47,8 +47,8 @@ TRANSLATION_MAP = {
 
 # --[ paths
 ROOT_DIR_PATH = "elf_smi"
-AGE_GROUP_PATH = f'data/clean/age_group.csv'
-REGENERATION_CUTTING_PATH = f'data/clean/regeneration_cutting.csv'
+AGE_GROUP_PATH = "data/clean/age_group.csv"
+REGENERATION_CUTTING_PATH = "data/clean/regeneration_cutting.csv"
 PLOT_SAVE_DIR_PATH = "result"
 
 # --[ analysis parameters
@@ -89,7 +89,7 @@ SOURCE = (
     "vanusegruppide andmed: https://tableau.envir.ee/views/SMI/17Vanuseklassidaegrida?%3Aembed=y<br>"
     "uuendusraie andmed: https://tableau.envir.ee/views/SMI/28Raieaegrida?%3Aembed=y<br>"
     "analüüs: https://github.com/martroben/forest_analysis/tree/main/elf_smi/<br>"
-    "skript: src/02_plot_age_groups.py"
+    "skript: src/03_plot_age_groups.py"
     # ^ Added as annotations to the plot image
 )
 REGENERATION_CUTTING_COLOUR = "#C35B00"
@@ -121,8 +121,13 @@ AREA_COLORSCALES = [
 # Load data #
 #############
 
-age_group_data = pl.read_csv(os.path.join(ROOT_DIR_PATH, AGE_GROUP_PATH))
-regeneration_cutting_data = pl.read_csv(os.path.join(ROOT_DIR_PATH, REGENERATION_CUTTING_PATH))
+age_group_path = os.path.join(ROOT_DIR_PATH, AGE_GROUP_PATH)
+with open(age_group_path, encoding="utf-8") as read_file:
+    age_group_data = pl.read_csv(read_file)
+
+regeneration_cutting_path = os.path.join(ROOT_DIR_PATH, REGENERATION_CUTTING_PATH)
+with open(regeneration_cutting_path, encoding="utf-8") as read_file:
+    regeneration_cutting_data = pl.read_csv(read_file)
 
 
 ###################

@@ -87,11 +87,11 @@ regeneration_cutting = pl.DataFrame()
 # Load data by species
 for dominant_species, path in REGENERATION_CUTTING_RAW_PATHS.items():
     # Read
-    regeneration_cutting_raw = pl.read_csv(
-        os.path.join(ROOT_DIR_PATH, path),
-        encoding="utf-8",
-        separator=";"
-    )
+    with open(os.path.join(ROOT_DIR_PATH, path), encoding="utf-8") as read_file:
+        regeneration_cutting_raw = pl.read_csv(
+            read_file,
+            separator=";"
+        )
     # Add default values
     # Regeneration cutting does not have age group or type (production/protected) info. Denoting both as "all" (combined data).
     regeneration_cutting_defaults = (
@@ -126,10 +126,11 @@ os.makedirs(
     os.path.dirname(regeneration_cutting_save_path),
     exist_ok=True)
 
-regeneration_cutting.write_csv(
-    regeneration_cutting_save_path,
-    separator=","
-)
+with open(regeneration_cutting_save_path, "w", encoding="utf-8") as save_file:
+    regeneration_cutting.write_csv(
+        save_file,
+        separator=","
+    )
 
 
 ########################
@@ -139,13 +140,12 @@ regeneration_cutting.write_csv(
 age_group_clean = pl.DataFrame()
 # Load data by species
 for species, path in AGE_GROUP_RAW_PATHS.items():
-    print(species)
     # Read
-    age_group_raw = pl.read_csv(
-        os.path.join(ROOT_DIR_PATH, path),
-        encoding="utf-8",
-        separator=";"
-    )
+    with open(os.path.join(ROOT_DIR_PATH, path), encoding="utf-8") as read_file:
+        age_group_raw = pl.read_csv(
+            read_file,
+            separator=";"
+        )
     age_group_defaults = (
         age_group_raw
         .with_columns(
@@ -174,11 +174,11 @@ age_group_production_clean = pl.DataFrame()
 # Load data by species
 for species, path in AGE_GROUP_PRODUCTION_RAW_PATHS.items():
     # Read
-    age_group_production_raw = pl.read_csv(
-        os.path.join(ROOT_DIR_PATH, path),
-        encoding="utf-8",
-        separator=";"
-    )
+    with open(os.path.join(ROOT_DIR_PATH, path), encoding="utf-8") as read_file:
+        age_group_production_raw = pl.read_csv(
+            read_file,
+            separator=";"
+        )
     age_group_production_defaults = (
         age_group_production_raw
         .with_columns(
@@ -223,11 +223,13 @@ if abs(sum(age_group_areas_by_species) - sum(age_group_areas_by_totals)) > 1:
     raise ValueError(f'Total area by individual species ({age_group_areas_by_species} kha) does not match the total area by the "all" species rows ({age_group_areas_by_totals}) kha')
 
 # Save
+age_group_save_path = os.path.join(ROOT_DIR_PATH, AGE_GROUP_SAVE_PATH)
 os.makedirs(
-    os.path.dirname(os.path.join(ROOT_DIR_PATH, AGE_GROUP_SAVE_PATH)),
+    os.path.dirname(age_group_save_path),
     exist_ok=True)
 
-age_group.write_csv(
-    os.path.join(ROOT_DIR_PATH, AGE_GROUP_SAVE_PATH),
-    separator=","
-)
+with open(age_group_save_path, "w", encoding="utf-8") as save_file:
+    age_group.write_csv(
+        save_file,
+        separator=","
+    )
