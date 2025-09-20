@@ -49,6 +49,7 @@ TRANSLATION_MAP = {
 ROOT_DIR_PATH = "elf_smi"
 AGE_GROUP_PATH = "data/clean/age_group.csv"
 REGENERATION_CUTTING_PATH = "data/clean/regeneration_cutting.csv"
+CUTTING_AGE_PATH = "data/clean/cutting_age.csv"
 PLOT_SAVE_DIR_PATH = "result"
 
 # --[ analysis parameters
@@ -129,10 +130,14 @@ regeneration_cutting_path = os.path.join(ROOT_DIR_PATH, REGENERATION_CUTTING_PAT
 with open(regeneration_cutting_path, encoding="utf-8") as read_file:
     regeneration_cutting_data = pl.read_csv(read_file)
 
+cutting_age_path = os.path.join(ROOT_DIR_PATH, CUTTING_AGE_PATH)
+with open(cutting_age_path, encoding="utf-8") as read_file:
+    cutting_age_data = pl.read_csv(read_file)
 
-###################
-# Add assumptions #
-###################
+
+#####################
+# Apply assumptions #
+#####################
 
 # Assume all regeneration cutting is done in production forest
 regeneration_cutting_default_type = (
@@ -153,7 +158,7 @@ age_group_aggregated = plot.aggregate_age_groups(age_group_data, AGE_GROUP_AGGRE
 age_group_adjusted = plot.subtract_regeneration_cutting(
     age_group_aggregated,
     regeneration_cutting_default_type,
-    REGENERATION_CUTTING_AGE_THRESHOLD
+    cutting_age_data
 )
 area_data = plot.get_areas(age_group_adjusted)
 
@@ -268,8 +273,10 @@ for species, type_colorscales in species_colorscales.items():
 traces = {species: [] for species in unique_species}
 
 # --[ area traces
+unique_types_sorted = sorted(unique_types, key=lambda x: {"protected": 1, "production": 2}.get(x, 3))
+# ^ Make sure protected type is before production in the graph
 for species in unique_species:
-    for type in unique_types:
+    for type in unique_types_sorted:
         # get the age group: colour dict for current type/species combination:
         species_colours = plot.get_colours(
             n=len(unique_age_groups),

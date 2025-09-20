@@ -30,63 +30,74 @@ def aggregate_age_groups(data: pl.DataFrame, aggregation_map: dict) -> pl.DataFr
     return out
 
 
-def subtract_regeneration_cutting(age_group: pl.DataFrame, regeneration_cutting: pl.DataFrame, threshold: int) -> pl.DataFrame:
+def subtract_regeneration_cutting(age_group: pl.DataFrame, regeneration_cutting: pl.DataFrame, cutting_age: pl.DataFrame) -> pl.DataFrame:
     """
+    Join cutting age thresholds for each year / type / species.
     Subtract regeneration cutting area proportionately from eligible age groups.
-    Eligible age groups are the ones that have age equal or older to the input threshold age.
+    Eligible age groups are the ones that contain the cutting age or are older than that.
     """
     out = (
-    age_group
-        .with_columns(
-            AGE_GROUP_START=col("AGE_GROUP").str.split("...").list.get(0).str.strip_chars().cast(pl.Int32)
-        )
-        .with_columns(
-            IS_ELIGIBLE_REGENERATION_CUTTING=(col("AGE_GROUP_START") >= pl.lit(threshold))
-        )
-        .with_columns(
-            AREA_PROPORTION_REGENERATION_CUTTING=(
-                pl.when(
-                    col("IS_ELIGIBLE_REGENERATION_CUTTING")
-                )
-                .then(col("AREA") / pl.sum("AREA").over("YEAR", "DOMINANT_SPECIES", "TYPE", "IS_ELIGIBLE_REGENERATION_CUTTING"))
-                .otherwise(0)
+        age_group
+            .with_columns(
+                AGE_GROUP_END=col("AGE_GROUP").str.split("...").list.get(1).str.strip_chars().replace("", 999).cast(pl.Int32)
             )
-        )
-        .join(
-            regeneration_cutting,
-            on=[
-                col("YEAR"),
-                col("TYPE"),
-                col("DOMINANT_SPECIES")
-            ],
-            how="left",
-            suffix="_REGENERATION_CUTTING"
-        )
-        .with_columns(
-            col("AREA_REGENERATION_CUTTING").fill_null(0)
-        )
-        .with_columns(
-            # Subtract regeneration cutting area proportionately from eligible age groups
-            AREA_UNADJUSTED=col("AREA"),
-            REGENERATION_CUTTING_ADJUSTMENT=-col("AREA_PROPORTION_REGENERATION_CUTTING") * col("AREA_REGENERATION_CUTTING")
-        )
-        .with_columns(
-            AREA=(col("AREA") + col("REGENERATION_CUTTING_ADJUSTMENT")).round(2)
-        )
-    ).select(
-        col("YEAR"),
-        col("TYPE"),
-        col("AGE_GROUP"),
-        col("DOMINANT_SPECIES"),
-        col("AREA_UNADJUSTED"),
-        col("REGENERATION_CUTTING_ADJUSTMENT"),
-        col("AREA"),
-        col("UNIT")
-    ).sort(
-        col("YEAR"),
-        col("TYPE"),
-        col("DOMINANT_SPECIES"),
-        col("AGE_GROUP")
+            .join(
+                cutting_age,
+                on=[
+                    col("YEAR"),
+                    col("TYPE"),
+                    col("DOMINANT_SPECIES")
+                ],
+                how="left"
+            )
+            .with_columns(
+                IS_ELIGIBLE_REGENERATION_CUTTING=(
+                    (col("CUTTING_AGE") < col("AGE_GROUP_END"))
+            ))
+            .with_columns(
+                AREA_PROPORTION_REGENERATION_CUTTING=(
+                    pl.when(
+                        col("IS_ELIGIBLE_REGENERATION_CUTTING")
+                    )
+                    .then(col("AREA") / pl.sum("AREA").over("YEAR", "DOMINANT_SPECIES", "TYPE", "IS_ELIGIBLE_REGENERATION_CUTTING"))
+                    .otherwise(0)
+                )
+            )
+            .join(
+                regeneration_cutting,
+                on=[
+                    col("YEAR"),
+                    col("TYPE"),
+                    col("DOMINANT_SPECIES")
+                ],
+                how="left",
+                suffix="_REGENERATION_CUTTING"
+            )
+            .with_columns(
+                col("AREA_REGENERATION_CUTTING").fill_null(0)
+            )
+            .with_columns(
+                # Subtract regeneration cutting area proportionately from eligible age groups
+                AREA_UNADJUSTED=col("AREA"),
+                REGENERATION_CUTTING_ADJUSTMENT=-col("AREA_PROPORTION_REGENERATION_CUTTING") * col("AREA_REGENERATION_CUTTING")
+            )
+            .with_columns(
+                AREA=(col("AREA") + col("REGENERATION_CUTTING_ADJUSTMENT")).round(2)
+            )
+        ).select(
+            col("YEAR"),
+            col("TYPE"),
+            col("AGE_GROUP"),
+            col("DOMINANT_SPECIES"),
+            col("AREA_UNADJUSTED"),
+            col("REGENERATION_CUTTING_ADJUSTMENT"),
+            col("AREA"),
+            col("UNIT")
+        ).sort(
+            col("YEAR"),
+            col("TYPE"),
+            col("DOMINANT_SPECIES"),
+            col("AGE_GROUP")
     )
     return out
 

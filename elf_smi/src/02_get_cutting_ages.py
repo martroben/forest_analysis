@@ -110,7 +110,12 @@ cutting_age_all_species = (
     )
     .agg(
         DOMINANT_SPECIES=pl.lit("all"),
-        CUTTING_AGE=col("CUTTING_AGE_CONTRIBUTION").sum()
+        # Set to None if value is 0
+        CUTTING_AGE=pl.when(
+            col("CUTTING_AGE_CONTRIBUTION").sum() != 0
+        )
+        .then(col("CUTTING_AGE_CONTRIBUTION").sum())
+        .otherwise(None)
     )
 )
 cutting_age = (
