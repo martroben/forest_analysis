@@ -3,6 +3,13 @@ import polars as pl
 from polars import col
 
 
+def is_unique_value(data: pl.DataFrame, field: str) -> bool:
+    """
+    Return True if the input field has one unique value.
+    """
+    return len(data[field].unique()) == 1
+
+
 def clean_regeneration_cutting_data(data: pl.DataFrame) -> pl.DataFrame:
     """
     Filter records of annual regeneration cutting total areas.
@@ -28,6 +35,9 @@ def clean_regeneration_cutting_data(data: pl.DataFrame) -> pl.DataFrame:
         )
         .select(
             col("Raie aasta").alias("YEAR"),
+            col("TYPE"),
+            col("DOMINANT_SPECIES"),
+            col("AGE_GROUP"),
             col("AREA"),
             col("UNIT")
         )
@@ -36,13 +46,12 @@ def clean_regeneration_cutting_data(data: pl.DataFrame) -> pl.DataFrame:
     return out
 
 
-def clean_age_group_data(data: pl.DataFrame, type_name: str, translations: dict) -> pl.DataFrame:
+def clean_age_group_data(data: pl.DataFrame, translations: dict) -> pl.DataFrame:
     """
     Discard age group totals (Kaitsepõhjus: Kokku).
     Convert Meetriku väärtus to float and rename to AREA.
     Set UNIT value to kha.
     Map translations to Kaitsepõhjus and rename to AGE_GROUP.
-    Set TYPE value to type_name input.
     """
     out = (
         data
@@ -70,8 +79,7 @@ def clean_age_group_data(data: pl.DataFrame, type_name: str, translations: dict)
                 col("Kaitsepõhjus")
                 .str.strip_chars()
                 .replace(translations)
-            ),
-            TYPE = pl.lit(type_name)
+            )
         )
         .select(
             col("Aasta").alias("YEAR"),

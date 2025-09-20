@@ -6,40 +6,6 @@ import polars as pl
 from polars import col
 
 
-def align_regeneration_cutting_data(data: pl.DataFrame, year_min: int, year_max: int, type_name: str) -> pl.DataFrame:
-    """
-    Set regeneration cutting data to input year range.
-    Set TYPE (production/protected) to input type_name.
-    Fill missing AREA data with zeros.
-    Fill missing UNIT data with kha.
-    """
-    year_type_data = pl.DataFrame({
-        "YEAR": range(year_min, year_max + 1),
-        "TYPE": [type_name] * (year_max - year_min + 1)
-    })
-
-    out = (
-        year_type_data
-        .join(
-            data,
-            on=col("YEAR"),
-            how="left"
-        )
-        .with_columns(
-            AREA=col("AREA").fill_null(0),
-            UNIT=col("UNIT").fill_null("kha")
-        )
-        .select(
-            col("YEAR"),
-            col("TYPE"),
-            col("AREA"),
-            col("UNIT")
-        )
-        .sort(col("YEAR"))
-    )
-    return out
-
-
 def aggregate_age_groups(data: pl.DataFrame, aggregation_map: dict) -> pl.DataFrame:
     """
     Aggregate age groups by input aggregation map.
@@ -53,7 +19,8 @@ def aggregate_age_groups(data: pl.DataFrame, aggregation_map: dict) -> pl.DataFr
         .group_by([
             col("YEAR"),
             col("TYPE"),
-            col("AGE_GROUP")
+            col("AGE_GROUP"),
+            col("DOMINANT_SPECIES")
         ])
         .agg(
             col("AREA").sum().alias("AREA"),
@@ -69,41 +36,57 @@ def subtract_regeneration_cutting(age_group: pl.DataFrame, regeneration_cutting:
     Eligible age groups are the ones that have age equal or older to the input threshold age.
     """
     out = (
-        age_group
+    age_group
         .with_columns(
             AGE_GROUP_START=col("AGE_GROUP").str.split("...").list.get(0).str.strip_chars().cast(pl.Int32)
         )
         .with_columns(
-            IS_REGENERATION_CUTTING_ELIGIBLE=(col("AGE_GROUP_START") >= pl.lit(threshold))
+            IS_ELIGIBLE_REGENERATION_CUTTING=(col("AGE_GROUP_START") >= pl.lit(threshold))
         )
         .with_columns(
-            REGENERATION_CUTTING_AREA_PROPORTION=(
+            AREA_PROPORTION_REGENERATION_CUTTING=(
                 pl.when(
-                    col("IS_REGENERATION_CUTTING_ELIGIBLE")
+                    col("IS_ELIGIBLE_REGENERATION_CUTTING")
                 )
-                .then(col("AREA") / pl.sum("AREA").over("YEAR", "AGE_GROUP", "IS_REGENERATION_CUTTING_ELIGIBLE"))
+                .then(col("AREA") / pl.sum("AREA").over("YEAR", "DOMINANT_SPECIES", "TYPE", "IS_ELIGIBLE_REGENERATION_CUTTING"))
                 .otherwise(0)
             )
         )
         .join(
             regeneration_cutting,
-            on=["YEAR", "TYPE"],
+            on=[
+                col("YEAR"),
+                col("TYPE"),
+                col("DOMINANT_SPECIES")
+            ],
             how="left",
             suffix="_REGENERATION_CUTTING"
         )
         .with_columns(
+            col("AREA_REGENERATION_CUTTING").fill_null(0)
+        )
+        .with_columns(
             # Subtract regeneration cutting area proportionately from eligible age groups
-            AREA=(
-                col("AREA") - col("REGENERATION_CUTTING_AREA_PROPORTION") * col("AREA_REGENERATION_CUTTING")
-            ).round(2)
+            AREA_UNADJUSTED=col("AREA"),
+            REGENERATION_CUTTING_ADJUSTMENT=-col("AREA_PROPORTION_REGENERATION_CUTTING") * col("AREA_REGENERATION_CUTTING")
         )
-        .select(
-            col("YEAR"),
-            col("TYPE"),
-            col("AGE_GROUP"),
-            col("AREA"),
-            col("UNIT")
+        .with_columns(
+            AREA=(col("AREA") + col("REGENERATION_CUTTING_ADJUSTMENT")).round(2)
         )
+    ).select(
+        col("YEAR"),
+        col("TYPE"),
+        col("AGE_GROUP"),
+        col("DOMINANT_SPECIES"),
+        col("AREA_UNADJUSTED"),
+        col("REGENERATION_CUTTING_ADJUSTMENT"),
+        col("AREA"),
+        col("UNIT")
+    ).sort(
+        col("YEAR"),
+        col("TYPE"),
+        col("DOMINANT_SPECIES"),
+        col("AGE_GROUP")
     )
     return out
 
@@ -116,13 +99,58 @@ def get_areas(data: pl.DataFrame) -> pl.DataFrame:
     out = (
         data
         .pivot(
-            index=["YEAR", "UNIT", "TYPE"],
+            index=["YEAR", "UNIT", "TYPE", "DOMINANT_SPECIES"],
             on="AGE_GROUP",
             values="AREA",
             sort_columns=True
         )
         .with_columns(pl.exclude("YEAR").fill_null(0.0))
         .sort(col("YEAR"))
+    )
+    return out
+
+
+def get_regeneration_cutting_plot_data(data: pl.DataFrame, unique_years: list[str], unique_types: list[str], unique_species: list[str]) -> pl.DataFrame:
+    """
+    Add all years, types and species to the regeneration cutting data, fill missing values with defaults and nulls.
+    This allows using the same logic for generating traces as is used for areas.
+    """
+    types_in_data = (
+        data
+        .select(col("TYPE"))
+        .to_series()
+        .to_list()
+    )
+    for type in types_in_data:
+        if type not in unique_types:
+            raise ValueError(f'Type {type} in input regeneration cutting data is not present in unique types input: {unique_types}. Check that regeneration cutting data types have been aligned with areas data')
+
+    all_values = (
+        pl.DataFrame({"YEAR": unique_years})
+        .join(
+            pl.DataFrame({"TYPE": unique_types}),
+            how="cross"
+        )
+        .join(
+            pl.DataFrame({"DOMINANT_SPECIES": unique_species}),
+            how="cross"
+        )
+    )
+    out = (
+        data
+        .join(
+            all_values,
+            on=[
+                col("YEAR"),
+                col("TYPE"),
+                col("DOMINANT_SPECIES")
+            ],
+            how="right"
+        )
+        .with_columns(
+            AREA=col("AREA").fill_null(0.0),
+            UNIT=col("UNIT").fill_null("kha")
+        )
     )
     return out
 
@@ -159,43 +187,22 @@ def get_colours(n: int, scale_name: str) -> list[str]:
     return colours_hex
 
 
-def get_legend_traces(names: list[str], colours: list[str]) -> list[plotly.graph_objects.Bar]:
+def get_gridline_intervals(max_y_value: float) -> tuple[int, int]:
     """
-    Get dummy traces to control the plot legend.
+    Return the intervals of y-axis major and minor gridlines.
     """
-    traces = []
-    for name, colour in zip(names, colours):
-        traces += [
-            plotly.graph_objects.Bar(
-                x=[None], y=[None],
-                name=name,
-                marker_color=colour,
-                showlegend=True
-            )
-        ]
-    return traces
+    if max_y_value >= 500:
+        return (500, 100)
+    if 500 > max_y_value >= 100:
+        return (100, 100)
+    if 100 > max_y_value >= 50:
+        return (50, 10)
+    return (10, 10)
 
 
-def get_area_traces(type_name: str, years: list[int], areas_by_age_group: dict[str, list], colours_by_age_group: dict[str: str]) -> list[plotly.graph_objects.Bar]:
-    """
-    Get traces for area data.
-    """
-    traces = []
-    for age_group, areas in areas_by_age_group.items():
-        traces += [
-            plotly.graph_objects.Bar(
-                x=years,
-                y=areas,
-                name=age_group,
-                offsetgroup=type_name,
-                marker_color=colours_by_age_group[age_group],
-                showlegend=False
-            )
-        ]
-    return traces
+def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: str, source: str, max_y_value: float) -> plotly.graph_objects.Layout:
+    major_gridline_interval, minor_gridline_interval = get_gridline_intervals(max_y_value)
 
-
-def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: str, source: str) -> plotly.graph_objects.Layout:
     layout = plotly.graph_objects.Layout(
         barmode="stack",
         bargroupgap=0.1,
@@ -215,15 +222,15 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: s
                 "font": {"size": 28},
                 "standoff": 60
             },
-            "dtick": 1,                     # Show label for every year
+            "dtick": 1,                             # Show label for every year
             "tickfont": {"size": 24}
         },
         yaxis={
             "gridcolor": "gray",
             "tickfont": {"size": 24},
-            "dtick": 500,                   # Major gridlines
-            "minor": {                      # Minor gridlines
-                "dtick": 100,  
+            "dtick": major_gridline_interval,       # Major gridlines
+            "minor": {                              # Minor gridlines
+                "dtick": minor_gridline_interval,  
                 "gridcolor": "lightgray",
                 "gridwidth": 0.5
             },
@@ -234,7 +241,7 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: s
             }
         },
         margin={
-            "pad": 20,                      # Axis label padding
+            "pad": 20,                              # Axis label padding
             "t": 250,
             "l": 200,
             "b": 200,
@@ -263,25 +270,19 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: s
     return layout
 
 
-def apply_colour_to_substring(string: str, substring: str, colour: str) -> str:
+def apply_colour_to_substring(string: str, substring_colour_map: dict[str, str]) -> str:
     """
     Apply HTML bold + colour formatting to a substring of the input string.
     """
-    if not substring in string:
-        return string
-    if f'>{substring}<' in string:
-        # Skip if formatting is already applied
-        return string
-    out = re.sub(
-        fr'\b{substring}\b',
-        fr"<b><span style='color: {colour};'>{substring}</span></b>",
-        string)
+    out = string
+    for substring, colour in substring_colour_map.items():
+        if not substring in out:
+            continue
+        if f'>{substring}<' in out:
+            # Skip if formatting is already applied
+            continue
+        out = re.sub(
+            fr'\b{substring}\b',
+            fr"<b><span style='color: {colour};'>{substring}</span></b>",
+            out)
     return out
-
-
-def get_figure(traces: list[plotly.graph_objects.Bar], layout: plotly.graph_objects.Layout) -> plotly.graph_objects.Figure:
-    return plotly.graph_objects.Figure(traces, layout)
-
-
-def save_plot(figure: plotly.graph_objects.Figure, path: str) -> None:
-    plotly.io.write_image(figure, path, format="png")
