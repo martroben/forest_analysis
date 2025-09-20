@@ -1,5 +1,6 @@
 # standard
 import re
+from typing import Optional
 # external
 import plotly
 import polars as pl
@@ -166,6 +167,43 @@ def get_regeneration_cutting_plot_data(data: pl.DataFrame, unique_years: list[st
     return out
 
 
+def get_target_area_up_to_k_years(age_group: pl.DataFrame, cutting_age: pl.DataFrame, k_years: float) -> pl.DataFrame:
+    """
+    Aggregate age group data to give one record per each species / year / type.
+    Join cuttin age to each record, based on cuttin age input data.
+    Determine TARGET_AREA for each record, which shows the area that the age group 0...k_years should have, if the age distribution was uniform.
+    I.e. if equal age spans (0...20, 20..40 etc. up until cutting age) had equal areas.
+    """
+    out=(
+        age_group
+        .group_by(
+            col("YEAR"),
+            col("DOMINANT_SPECIES"),
+            col("TYPE")
+        )
+        .agg(
+            AREA=col("AREA").sum()
+        )
+        .join(
+            cutting_age,
+            on=[
+                col("YEAR"),
+                col("DOMINANT_SPECIES"),
+                col("TYPE")
+            ],
+            how="left"
+        )
+        .with_columns(
+            AGE_GROUP_LIMIT_YEARS=k_years,
+            TARGET_PROPORTION=k_years / col("CUTTING_AGE")
+        )
+        .with_columns(
+            TARGET_AREA=col("AREA") * col("TARGET_PROPORTION")
+        )
+    )
+    return out
+
+
 def rgb_to_hex(rgb: str) -> str:
     """
     Convert string in the form of 'rgb(10, 20, 30)' to a hex string.
@@ -211,8 +249,12 @@ def get_gridline_intervals(max_y_value: float) -> tuple[int, int]:
     return (10, 10)
 
 
-def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: str, source: str, max_y_value: float) -> plotly.graph_objects.Layout:
-    major_gridline_interval, minor_gridline_interval = get_gridline_intervals(max_y_value)
+def get_layout(title: str, x_axis_title: str, y_axis_title: str, source: str, x_range: tuple[float], y_range: tuple[float]) -> plotly.graph_objects.Layout:
+
+    x_min = min(x_range)
+    x_max = max(x_range)
+    y_max = max(y_range)
+    major_gridline_interval, minor_gridline_interval = get_gridline_intervals(y_max)
 
     layout = plotly.graph_objects.Layout(
         barmode="stack",
@@ -234,7 +276,13 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: s
                 "standoff": 60
             },
             "dtick": 1,                             # Show label for every year
-            "tickfont": {"size": 24}
+            "tickfont": {"size": 24},
+            "range": [
+                # Add some padding to the x-axis min and max
+                # Otherwise the grouped bars get clipped
+                x_min - 0.7,
+                x_max + 0.5
+            ]
         },
         yaxis={
             "gridcolor": "gray",
@@ -259,11 +307,7 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, legend_title: s
             "r": 400
         },
         legend={
-            "font": {"size": 24},
-            "title": {
-                "text": legend_title,
-                "font": {"size": 28}
-            }
+            "font": {"size": 24}
         },
         annotations=[
             {
@@ -297,3 +341,59 @@ def apply_colour_to_substring(string: str, substring_colour_map: dict[str, str])
             fr"<b><span style='color: {colour};'>{substring}</span></b>",
             out)
     return out
+
+
+def prepare_segment_coordinates(x: list[float], y: list[float], segment_width: float, segment_offset: float) -> tuple[list[Optional[float]], list[Optional[float]]]:
+    """
+    Helper for get_horizontal_segments_trace.
+    Plotly requires transforming input coordinates to a peculiar form to draw segment-like pointers.
+    A single coordinate has to be transformed to to 3 values: [start, end, None].
+    For x-coordinates, the start and end should be values around the input x. E.g. 10 -> [9.5, 10.5, None].
+    For y-coordinates, the start and end are the same, becase the segments are straight horizontal lines: E.g. 100 -> [100, 100, None].
+    The results are returned as flattened lists where the None values act as separators.
+    """
+    x_prepared = []
+    y_prepared = []
+    for x, y in zip(x, y):
+        x_start = x - (segment_width / 2) + segment_offset
+        x_end = x + (segment_width / 2) + segment_offset
+
+        x_prepared += [x_start, x_end, None]
+        y_prepared += [y, y, None]
+    return x_prepared, y_prepared
+
+
+def get_horizontal_segments_trace(x: list[float], y: list[float], colour: str) -> plotly.graph_objects.Scatter:
+    """
+    Get a trace similar to scatterplot, but the points are horizontal line segments around the x values at height y.
+    """
+    segment_line_width = 3
+    marker_height = 15
+    # ^ height of the vertical bars at the end of segments
+
+    # Control the position of segments relative to x input
+    segment_width = 0.6
+    segment_offset = 0
+
+    x_prepared, y_prepared = prepare_segment_coordinates(x, y, segment_width, segment_offset)
+
+    trace = plotly.graph_objects.Scatter(
+        x=x_prepared,
+        y=y_prepared,
+        showlegend=False,
+        fill="toself",
+        mode="lines+markers",
+        line={
+            "width": segment_line_width,
+            "color": colour
+        },
+        marker={
+            "symbol": "line-ns",
+            "size": marker_height,
+            "line": {
+                "width": segment_line_width,
+                "color": colour
+            }
+        }
+    )
+    return trace

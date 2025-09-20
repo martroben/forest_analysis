@@ -85,7 +85,8 @@ PLOT_TITLE = {
 REGENERATION_CUTTING_NAME = "uuendusraie"
 X_AXIS_TITLE = "Aasta"
 Y_AXIS_TITLE = "pindala (tuhat ha)"
-LEGEND_TITLE = "Vanusegrupid:"
+LEGEND_AGE_GROUPS_TITLE = "Vanusegrupid:"
+LEGEND_TARGETS_TITLE = "Sihtmäärad:"
 SOURCE = (
     "vanusegruppide andmed: https://tableau.envir.ee/views/SMI/17Vanuseklassidaegrida?%3Aembed=y<br>"
     "uuendusraie andmed: https://tableau.envir.ee/views/SMI/28Raieaegrida?%3Aembed=y<br>"
@@ -230,6 +231,17 @@ species_for_which_regeneration_cutting_data_is_available = (
 )
 
 
+#########################################
+# Get target areas for lowest age group #
+#########################################
+
+target_areas_up_to_20_years = plot.get_target_area_up_to_k_years(
+    age_group_data,
+    cutting_age_data,
+    k_years=20
+)
+
+
 ###############
 # Get colours #
 ###############
@@ -245,6 +257,16 @@ legend_colours = plot.get_colours(
     n=len(unique_age_groups),
     scale_name=LEGEND_COLORSCALE
 )
+
+target_colours = {}
+for species, type_colorscales in species_colorscales.items():
+    colours = plot.get_colours(
+        n=len(unique_age_groups),
+        scale_name=type_colorscales["production"]
+    )
+    target_colours[species] = colours[3]
+    #                                 ^ Use colour from a slightly older age group
+
 title_colours = {}
 for species, type_colorscales in species_colorscales.items():
     if not species in title_colours:
@@ -284,7 +306,7 @@ for species in unique_species:
         )
         age_group_colour_map = dict(zip(unique_age_groups, species_colours))
 
-        one_species_one_type_data = (
+        trace_data = (
             area_data
             .filter(
                 col("DOMINANT_SPECIES") == species,
@@ -295,8 +317,8 @@ for species in unique_species:
         for age_group in unique_age_groups:
             traces[species] += [
                 plotly.graph_objects.Bar(
-                    x=one_species_one_type_data["YEAR"],
-                    y=one_species_one_type_data[age_group],
+                    x=trace_data["YEAR"],
+                    y=trace_data[age_group],
                     name=age_group,
                     offsetgroup=type,
                     marker_color=age_group_colour_map[age_group],
@@ -307,7 +329,7 @@ for species in unique_species:
 # --[ regeneration cutting traces
 for species in unique_species:
     for type in unique_types:
-        one_species_one_type_data = (
+        trace_data = (
             regeneration_cutting_plot_data
             .filter(
                 col("DOMINANT_SPECIES") == species,
@@ -321,12 +343,40 @@ for species in unique_species:
 
         traces[species] += [
             plotly.graph_objects.Bar(
-                x=one_species_one_type_data["YEAR"],
-                y=one_species_one_type_data["AREA"],
+                x=trace_data["YEAR"],
+                y=trace_data["AREA"],
                 name=REGENERATION_CUTTING_NAME,
                 offsetgroup=type,
                 marker_color=REGENERATION_CUTTING_COLOUR,
                 showlegend=False
+            )
+        ]
+
+# --[ target traces
+for species in unique_species:
+    for type in unique_types:
+        trace_data = (
+            target_areas_up_to_20_years
+            .filter(
+                col("DOMINANT_SPECIES") == species,
+                col("TYPE") == type
+            )
+            .to_dict(as_series=False)
+        )
+        # Skip species / types where there aren't a single value
+        if not any(trace_data["TARGET_AREA"]):
+            continue
+
+        species_colours = plot.get_colours(
+            n=len(unique_age_groups),
+            scale_name=species_colorscales[species][type]
+        )
+        traces[species] += [
+            plot.get_horizontal_segments_trace(
+                x=trace_data["YEAR"],
+                y=trace_data["TARGET_AREA"],
+                colour=species_colours[2]
+                #                      ^ Use colour from a slightly older age group
             )
         ]
 
@@ -339,19 +389,43 @@ for species in traces.keys():
                 x=[None], y=[None],
                 name=age_group,
                 marker_color=legend_colour_map[age_group],
-                showlegend=True
+                showlegend=True,
+                legendgroup="age_groups",
+                legendgrouptitle={
+                    "text": LEGEND_AGE_GROUPS_TITLE,
+                    "font": {"size": 28}
+                }
             )
         ]
     # Add regeneration cutting colour to legend only if regeneration cutting data is available for this species
-    if species not in species_for_which_regeneration_cutting_data_is_available:
-       continue
-
+    if species in species_for_which_regeneration_cutting_data_is_available:
+        traces[species] += [
+            plotly.graph_objects.Bar(
+                x=[None], y=[None],
+                name=REGENERATION_CUTTING_NAME,
+                marker_color=REGENERATION_CUTTING_COLOUR,
+                showlegend=True,
+                legendgroup="age_groups",
+                legendgrouptitle={
+                    "text": LEGEND_AGE_GROUPS_TITLE,
+                    "font": {"size": 28}
+                }
+            )
+        ]
+    # Add age group area target legends
     traces[species] += [
-        plotly.graph_objects.Bar(
+        plotly.graph_objects.Scatter(
             x=[None], y=[None],
-            name=REGENERATION_CUTTING_NAME,
-            marker_color=REGENERATION_CUTTING_COLOUR,
-            showlegend=True
+            name="0...20",
+            marker_color=target_colours[species],
+            line_width=4,
+            mode="lines",
+            showlegend=True,
+            legendgroup="targets",
+            legendgrouptitle={
+                "text": f'<br><br>{LEGEND_TARGETS_TITLE}',
+                "font": {"size": 28}
+            }
         )
     ]
 
@@ -372,12 +446,12 @@ for species in layouts.keys():
         substring_colour_map
     )
     layouts[species] = plot.get_layout(
-        plot_title,
-        X_AXIS_TITLE,
-        Y_AXIS_TITLE,
-        LEGEND_TITLE,
-        SOURCE,
-        max_y_value=max_areas[species]
+        title=plot_title,
+        x_axis_title=X_AXIS_TITLE,
+        y_axis_title=Y_AXIS_TITLE,
+        source=SOURCE,
+        x_range=(min(unique_years), max(unique_years)),
+        y_range=(0, max_areas[species])
     )
 
 
