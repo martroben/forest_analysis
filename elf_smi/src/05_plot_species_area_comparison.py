@@ -1,6 +1,6 @@
 # standard
+import datetime
 import os
-import re
 import sys
 # external
 import plotly
@@ -52,35 +52,16 @@ PLOT_SAVE_DIR_PATH = "result"
 # --[ analysis parameters
 COMPARISON_SPECIES = ["birch", "pine", "aspen"]
 
-AGE_GROUP_AGGREGATION_MAP = {
-    TRANSLATION_MAP["Lage ala"]:        "0...20",
-    TRANSLATION_MAP["Selguseta ala"]:   "0...20",
-    "...10":                            "0...20",
-    "11...20":                          "0...20",
-    "21...30":                          "21...40",
-    "31...40":                          "21...40",
-    "41...50":                          "41...60",
-    "51...60":                          "41...60",
-    "61...70":                          "61...80",
-    "71...80":                          "61...80",
-    "81...90":                          "81...",
-    "91...100":                         "81...",
-    "101...110":                        "81...",
-    "111...120":                        "81...",
-    "121...130":                        "81...",
-    "131...140":                        "81...",
-    "141...":                           "81..."
-}
-
 # --[ plot parameters
 PLOT_TITLE = "Metsamaa pindalad enamuspuuliigi kaupa"
 X_AXIS_TITLE = "Aasta"
 Y_AXIS_TITLE = "pindala (tuhat ha)"
-LEGEND_AGE_GROUPS_TITLE = "Vanusegrupp:"
+LEGEND_TITLE = "Puuliik:"
 SOURCE_ANNOTATIONS = (
-    "vanusegruppide andmed: https://tableau.envir.ee/views/SMI/17Vanuseklassidaegrida?%3Aembed=y<br>"
+    "1999 ja hilisemad andmed: https://tableau.envir.ee/views/SMI/17Vanuseklassidaegrida?%3Aembed=y<br>"
+    "varasemad andmed: https://keskkonnaportaal.ee/sites/default/files/Teemad/Mets/Mets2021.pdf#page=42<br>"
     "analüüs: https://github.com/martroben/forest_analysis/tree/main/elf_smi/<br>"
-    "skript: src/04_plot_areas_by_species.py"
+    "skript: src/05_plot_species_area_comparison.py"
     # ^ Added as annotations to the plot image
 )
 LEGEND_COLORSCALE = "Greys"
@@ -95,6 +76,15 @@ SPECIES_COLORSCALES = [
     ("other",                "Greys"),
     ("pine",                 "amp"),
     ("spruce",               "tempo"),
+]
+MANUAL_DATA_POINTS = [
+    # YEAR      # DOMINANT_SPECIES      # AREA
+    (1958,      "pine",                 594.8),
+    (1958,      "birch",                386.1),
+    (1975,      "pine",                 721.5),
+    (1975,      "birch",                506.5),
+    (1988,      "pine",                 749.6),
+    (1988,      "birch",                540.4)
 ]
 
 
@@ -111,21 +101,35 @@ with open(age_group_path, encoding="utf-8") as read_file:
 # Get areas data #
 ##################
 
-# Aggregate age groups
-age_group_aggregated = plot.aggregate_age_groups(age_group_data, AGE_GROUP_AGGREGATION_MAP)
-area_data = plot.get_areas(age_group_aggregated)
-# Sum up production and protected areas
-area_data_combined = (
-    area_data
+manual_area_data = (
+    pl.from_records(
+        MANUAL_DATA_POINTS,
+        schema={
+            "YEAR": pl.Int64,
+            "DOMINANT_SPECIES": pl.String,
+            "AREA": pl.Float64
+        }
+    )
+    .with_columns(
+        UNIT=pl.lit("kha")
+    )
+)
+loaded_area_data = (
+    age_group_data
     .group_by(
         col("YEAR"),
         col("DOMINANT_SPECIES")
     )
     .agg(
-        # Sum all age group fields
-        **{field: col(field).sum() for field in set(AGE_GROUP_AGGREGATION_MAP.values())},
+        AREA=col("AREA").sum(),
         UNIT=col("UNIT").first()
     )
+)
+area_data = (
+    pl.concat([
+        manual_area_data,
+        loaded_area_data
+    ])
 )
 
 
@@ -148,18 +152,13 @@ unique_years = (
     .to_series()
     .to_list()
 )
-unique_age_groups = sorted(
-    set(AGE_GROUP_AGGREGATION_MAP.values()),
-    # Sort ascending by group start age
-    key=lambda x: int(re.search(r"\d+", x).group())
-)
 # Maximum bar heights by species
 max_areas = dict(
     age_group_data
-    .group_by([
-        col("DOMINANT_SPECIES"),
-        col("YEAR")
-    ])
+    .group_by(
+        col("YEAR"),
+        col("DOMINANT_SPECIES")
+    )
     .agg(AREA=col("AREA").sum())
     .group_by(col("DOMINANT_SPECIES"))
     .agg(AREA=col("AREA").max())
@@ -176,15 +175,12 @@ for row in SPECIES_COLORSCALES:
     species, colorscale = row
     species_colorscales[species] = colorscale
 
-legend_colours = plot.get_colours(
-    n=len(unique_age_groups),
-    scale_name=LEGEND_COLORSCALE
-)
-
 title_colours = {}
 for species, colorscale in species_colorscales.items():
     colours = plot.get_colours(5, colorscale)
     title_colours[species] = colours[3]
+
+legend_colours = title_colours
 
 
 ##############
@@ -194,51 +190,53 @@ for species, colorscale in species_colorscales.items():
 # --[ strategy
 # Each year (1999 / 2000 etc.) is a separate group of bars on the plot.
 # Each selected species (pine, birch etc.) is a separate grouped bar under a year.
-# Each age group (0...20 / 20...40 etc.) is a section in the stacked bars.
 # To display legend, we add extra traces with no points on plot - just colours.
-# Altogether, there is a trace for each (species, age group) combination + legend traces.
+# Altogether, there is a trace for each species + legend traces.
 
 traces = []
 
 # --[ area traces
 for species in COMPARISON_SPECIES:
-    species_colours = plot.get_colours(
-        n=len(unique_age_groups),
-        scale_name=species_colorscales[species]
-    )
-    age_group_colour_map = dict(zip(unique_age_groups, species_colours))
-
     trace_data = (
-        area_data_combined
+        area_data
         .filter(
             col("DOMINANT_SPECIES") == species,
         )
         .to_dict(as_series=False)
     )
-    for age_group in unique_age_groups:
-        traces += [
-            plotly.graph_objects.Bar(
-                x=trace_data["YEAR"],
-                y=trace_data[age_group],
-                name=age_group,
-                offsetgroup=species,
-                marker_color=age_group_colour_map[age_group],
-                showlegend=False
-            )
-        ]
+
+    # Convert x values to dates
+    offset_days = 60
+    x_dates = []
+    for year in trace_data["YEAR"]:
+        x_date = datetime.datetime.strptime(str(year), "%Y")
+        # Apply offset to center the x-axis labels to the bars
+        x_date_with_offset = x_date + datetime.timedelta(days=offset_days)
+        x_dates += [x_date_with_offset]
+
+    traces += [
+        plotly.graph_objects.Bar(
+            x=x_dates,
+            y=trace_data["AREA"],
+            name=TRANSLATION_MAP[species],
+            offsetgroup=species,
+            marker_color=legend_colours[species],
+            showlegend=False
+        )
+    ]
 
 # --[ legend traces
-legend_colour_map = dict(zip(unique_age_groups, legend_colours))
-for age_group in unique_age_groups:
+for species in reversed(COMPARISON_SPECIES):
+    #          ^ Reverse so that items on legend would appear in the correct order (legend is populated from bottom up)
     traces += [
         plotly.graph_objects.Bar(
             x=[None], y=[None],
-            name=age_group,
-            marker_color=legend_colour_map[age_group],
+            name=TRANSLATION_MAP[species],
+            marker_color=legend_colours[species],
             showlegend=True,
-            legendgroup="age_groups",
+            legendgroup="species",
             legendgrouptitle={
-                "text": LEGEND_AGE_GROUPS_TITLE,
+                "text": LEGEND_TITLE,
                 "font": {"size": 28}
             }
         )
@@ -257,13 +255,13 @@ plot_title = plot.apply_colour_to_substring(
     plot_title_text,
     substring_colour_map
 )
-layout = plot.get_layout(
+layout = plot.get_layout_date_axis(
     title=plot_title,
     x_axis_title=X_AXIS_TITLE,
     y_axis_title=Y_AXIS_TITLE,
     source_annotations=SOURCE_ANNOTATIONS,
-    x_range=(min(unique_years), max(unique_years)),
-    y_range=(0, max([max_areas[species] for species in COMPARISON_SPECIES]))
+    x_values=unique_years,
+    y_range=(0, max_areas[species])
 )
 
 
@@ -275,7 +273,7 @@ figure = plotly.graph_objects.Figure(
     traces,
     layout
 )
-filename = f'pindalade_võrdlus_{"_".join(comparison_species_translated)}.png'
+filename = f'puuliikide_pindala_ajalugu_{"_".join(comparison_species_translated)}.png'
 save_path = os.path.join(ROOT_DIR_PATH, PLOT_SAVE_DIR_PATH, filename)
 
 os.makedirs(

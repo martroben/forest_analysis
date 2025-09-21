@@ -3,6 +3,7 @@ import os
 import sys
 # external
 import polars as pl
+from polars import col
 # local
 src_path = os.path.abspath("elf_smi/src")
 if src_path not in sys.path:
@@ -207,15 +208,15 @@ age_group = clean.combine_all_and_production_data(age_group_clean, age_group_pro
 # Validate species totals
 age_group_areas_by_species = (
     age_group
-    .filter(pl.col("DOMINANT_SPECIES") != "all")
-    .select(pl.col("AREA"))
+    .filter(col("DOMINANT_SPECIES") != "all")
+    .select(col("AREA"))
     .to_series()
     .to_list()
 )
 age_group_areas_by_totals = (
     age_group
-    .filter(pl.col("DOMINANT_SPECIES") == "all")
-    .select(pl.col("AREA"))
+    .filter(col("DOMINANT_SPECIES") == "all")
+    .select(col("AREA"))
     .to_series()
     .to_list()
 )

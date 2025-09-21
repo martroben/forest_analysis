@@ -325,6 +325,91 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, source_annotati
     return layout
 
 
+def get_layout_date_axis(title: str, x_axis_title: str, y_axis_title: str, source_annotations: str, x_values: tuple[int], y_range: tuple[float]) -> plotly.graph_objects.Layout:
+    """
+    Alternative layout for plots that have dates as x-axis values.
+    Date type is needed to leave gaps in the x values.
+    Plotly only allows rangebreaks if x-axis is date type:
+    https://plotly.com/python/time-series/#hiding-weekends-and-holidays
+    https://plotly.com/python/reference/layout/xaxis/#layout-xaxis-rangebreaks
+    """
+    major_gridline_interval, minor_gridline_interval = get_gridline_intervals(max(y_range))
+    # Get values that are missing in x_values between min and max
+    range_break_years = sorted(set(range(min(x_values), max(x_values) + 1)) - set(x_values))
+
+    layout = plotly.graph_objects.Layout(
+        barmode="stack",
+        bargroupgap=0.1,
+        bargap=0.1,
+        height=1300,
+        width=3600,
+        plot_bgcolor="white",
+        title={
+            "text": title,
+            "font": {"size": 50},
+            "x": 0.5,           
+            "xanchor": "center" 
+        },
+        xaxis={
+            "title": {
+                "text": x_axis_title,
+                "font": {"size": 28},
+                "standoff": 60
+            },
+            "dtick": "M12",                         # Show x-axis labels for every year (12 months)
+            "tickfont": {"size": 24},
+            "tickvals": x_values,                   # Manually set tick values to avoid weird overlaps because or range breaks
+            "tickformat": "%Y",                     # Format tick text to display only year number (1975, not 1975-01-01)
+            "rangebreaks": [                        # Insert breaks for years that don't have data available
+                {
+                    "values": [*range_break_years],
+                    # Length of bread in milliseconds
+                    "dvalue": 1000 * 60 * 60 * 24 * 365
+                    #       ^ 1 year in milliseconds
+                }
+            ]
+        },
+        yaxis={
+            "gridcolor": "gray",
+            "tickfont": {"size": 24},
+            "dtick": major_gridline_interval,       # Major gridlines
+            "minor": {                              # Minor gridlines
+                "dtick": minor_gridline_interval,  
+                "gridcolor": "lightgray",
+                "gridwidth": 0.5
+            },
+            "title": {
+                "text": y_axis_title,
+                "font": {"size": 28},
+                "standoff": 45
+            }
+        },
+        margin={
+            "pad": 20,                              # Axis label padding
+            "t": 250,
+            "l": 200,
+            "b": 200,
+            "r": 400
+        },
+        legend={
+            "font": {"size": 24}
+        },
+        annotations=[
+            {
+                "text": source_annotations,
+                "xref": "paper",
+                "yref": "paper",
+                "x": 0,
+                "y": -0.2,
+                "showarrow": False,
+                "font": {"size": 20},
+                "align": "left"
+            }
+        ]
+    )
+    return layout
+
+
 def apply_colour_to_substring(string: str, substring_colour_map: dict[str, str]) -> str:
     """
     Apply HTML bold + colour formatting to a substring of the input string.

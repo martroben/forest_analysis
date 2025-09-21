@@ -202,9 +202,9 @@ max_areas = dict(
         col("YEAR"),
         col("TYPE")
     ])
-    .agg(AREA=pl.col("AREA").sum())
+    .agg(AREA=col("AREA").sum())
     .group_by(col("DOMINANT_SPECIES"))
-    .agg(AREA=pl.col("AREA").max())
+    .agg(AREA=col("AREA").max())
     .iter_rows()
 )
 
