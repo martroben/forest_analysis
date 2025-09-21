@@ -46,7 +46,7 @@ def clean_regeneration_cutting_data(data: pl.DataFrame) -> pl.DataFrame:
     return out
 
 
-def clean_age_group_data(data: pl.DataFrame, translations: dict) -> pl.DataFrame:
+def clean_age_group_data(data: pl.DataFrame, translation_map: dict) -> pl.DataFrame:
     """
     Discard age group totals (Kaitsepõhjus: Kokku).
     Convert Meetriku väärtus to float and rename to AREA.
@@ -73,12 +73,12 @@ def clean_age_group_data(data: pl.DataFrame, translations: dict) -> pl.DataFrame
             DOMINANT_SPECIES = (
                 col("Enamuspuuliik")
                 .str.strip_chars()
-                .replace(translations)
+                .replace(translation_map)
             ),
             AGE_GROUP = (
                 col("Kaitsepõhjus")
                 .str.strip_chars()
-                .replace(translations)
+                .replace(translation_map)
             )
         )
         .select(
