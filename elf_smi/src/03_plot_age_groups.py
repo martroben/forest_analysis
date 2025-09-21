@@ -6,9 +6,8 @@ import sys
 import plotly
 import polars as pl
 from polars import col
-
 # local
-src_path = os.path.abspath("src") if os.path.exists("src") else os.path.abspath("elf_smi/src")
+src_path = os.path.abspath("elf_smi/src")
 if src_path not in sys.path:
     sys.path.insert(0, src_path)
 
@@ -85,9 +84,9 @@ PLOT_TITLE = {
 REGENERATION_CUTTING_NAME = "uuendusraie"
 X_AXIS_TITLE = "Aasta"
 Y_AXIS_TITLE = "pindala (tuhat ha)"
-LEGEND_AGE_GROUPS_TITLE = "Vanusegrupid:"
-LEGEND_TARGETS_TITLE = "Sihtmäärad:"
-SOURCE = (
+LEGEND_AGE_GROUPS_TITLE = "Vanusegrupp:"
+LEGEND_TARGETS_TITLE = "Sihtmäär:"
+SOURCE_ANNOTATIONS = (
     "vanusegruppide andmed: https://tableau.envir.ee/views/SMI/17Vanuseklassidaegrida?%3Aembed=y<br>"
     "uuendusraie andmed: https://tableau.envir.ee/views/SMI/28Raieaegrida?%3Aembed=y<br>"
     "analüüs: https://github.com/martroben/forest_analysis/tree/main/elf_smi/<br>"
@@ -203,9 +202,9 @@ max_areas = dict(
         col("YEAR"),
         col("TYPE")
     ])
-    .agg(pl.col("AREA").sum().alias("AREA"))
+    .agg(AREA=pl.col("AREA").sum())
     .group_by(col("DOMINANT_SPECIES"))
-    .agg(pl.col("AREA").max().alias("AREA"))
+    .agg(AREA=pl.col("AREA").max())
     .iter_rows()
 )
 
@@ -274,8 +273,8 @@ for species, type_colorscales in species_colorscales.items():
     for type, colorscale in type_colorscales.items():
         colours = plot.get_colours(5, colorscale)
         if type.lower() == "protected":
-            # Use a lighter colour for protected title word
             title_colours[species][type] = colours[2]
+            #                                      ^ Use a lighter colour fto get a better contrast between protected and production
         else:
             title_colours[species][type] = colours[3]
 
@@ -286,11 +285,12 @@ for species, type_colorscales in species_colorscales.items():
 
 # --[ strategy
 # Each species is a separate plot
-# Each year (1999 / 2000 etc.) is a spearate bar on the plot.
+# Each year (1999 / 2000 etc.) is a separate group of bars on the plot.
 # Each type (protected / production etc.) is a separate grouped bar under a year.
 # Each age group (0...20 / 20...40 etc.) is a section in the stacked bars. If regeneration data is available, we add an extra section to the stacked bars.
+# In addition we add the lowest age group target area marker traces for each year.
 # To display legend, we add extra traces with no points on plot - just colours.
-# Altogether, there is a trace for each (species, type, age group) combination plus the legend traces
+# Altogether, there is a trace for each (species, type, age group) combination + legend traces + target area marker traces.
 
 traces = {species: [] for species in unique_species}
 
@@ -449,7 +449,7 @@ for species in layouts.keys():
         title=plot_title,
         x_axis_title=X_AXIS_TITLE,
         y_axis_title=Y_AXIS_TITLE,
-        source=SOURCE,
+        source_annotations=SOURCE_ANNOTATIONS,
         x_range=(min(unique_years), max(unique_years)),
         y_range=(0, max_areas[species])
     )

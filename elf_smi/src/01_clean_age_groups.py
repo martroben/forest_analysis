@@ -4,7 +4,7 @@ import sys
 # external
 import polars as pl
 # local
-src_path = os.path.abspath("src") if os.path.exists("src") else os.path.abspath("elf_smi/src")
+src_path = os.path.abspath("elf_smi/src")
 if src_path not in sys.path:
     sys.path.insert(0, src_path)
 

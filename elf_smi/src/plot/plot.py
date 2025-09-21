@@ -249,7 +249,7 @@ def get_gridline_intervals(max_y_value: float) -> tuple[int, int]:
     return (10, 10)
 
 
-def get_layout(title: str, x_axis_title: str, y_axis_title: str, source: str, x_range: tuple[float], y_range: tuple[float]) -> plotly.graph_objects.Layout:
+def get_layout(title: str, x_axis_title: str, y_axis_title: str, source_annotations: str, x_range: tuple[float], y_range: tuple[float]) -> plotly.graph_objects.Layout:
 
     x_min = min(x_range)
     x_max = max(x_range)
@@ -311,7 +311,7 @@ def get_layout(title: str, x_axis_title: str, y_axis_title: str, source: str, x_
         },
         annotations=[
             {
-                "text": source,
+                "text": source_annotations,
                 "xref": "paper",
                 "yref": "paper",
                 "x": 0,
