@@ -46,41 +46,50 @@ TRANSLATION_MAP = {
 
 # --[ paths
 ROOT_DIR_PATH = "elf_smi"
-AGE_GROUP_PATH = "data/clean/age_group.csv"
+DIAMETER_PATH = "data/clean/diameter.csv"
 PLOT_SAVE_DIR_PATH = "result"
 
-# --[ analysis parameters
-COMPARISON_SPECIES = ["birch", "pine", "aspen"]
 
-AGE_GROUP_AGGREGATION_MAP = {
-    TRANSLATION_MAP["Lage ala"]:        "0...20",
-    TRANSLATION_MAP["Selguseta ala"]:   "0...20",
-    "...10":                            "0...20",
-    "11...20":                          "0...20",
-    "21...30":                          "21...40",
-    "31...40":                          "21...40",
-    "41...50":                          "41...60",
-    "51...60":                          "41...60",
-    "61...70":                          "61...80",
-    "71...80":                          "61...80",
-    "81...90":                          "81...",
-    "91...100":                         "81...",
-    "101...110":                        "81...",
-    "111...120":                        "81...",
-    "121...130":                        "81...",
-    "131...140":                        "81...",
-    "141...":                           "81..."
+# --[ analysis parameters
+COMPARISON_SPECIES = ["pine"]
+DIAMETER_AGGREGATION_MAP = {
+    "0...2":            "0...10",
+    "3...4":            "0...10",
+    "5...6":            "0...10",
+    "7...8":            "0...10",
+    "9...10":           "0...10",
+    "11...12":          "11...18",
+    "13...14":          "11...18",
+    "15...16":          "11...18",
+    "17...18":          "11...18",
+    "19...20":          "19...24",
+    "21...22":          "19...24",
+    "23...24":          "19...24",
+    "25...26":          "25...28",
+    "27...28":          "25...28",
+    "29...30":          "29...34",
+    "31...32":          "29...34",
+    "33...34":          "29...34",
+    "35...36":          "35...",
+    "37...38":          "35...",
+    "39...40":          "35...",
+    "41...42":          "35...",
+    "43...44":          "35...",
+    "45...46":          "35...",
+    "47...48":          "35...",
+    "49...50":          "35...",
+    "51...":            "35...",
 }
 
 # --[ plot parameters
-PLOT_TITLE = "Metsamaa pindalad enamuspuuliigi kaupa"
+PLOT_TITLE = "Metsamaa pindalad keskmise diameetri järgi"
 X_AXIS_TITLE = "Aasta"
 Y_AXIS_TITLE = "pindala (tuhat ha)"
-LEGEND_AGE_GROUPS_TITLE = "Vanusegrupp:"
+LEGEND_diameter_groupS_TITLE = "Diameetri grupp:"
 SOURCE_ANNOTATIONS = (
-    "vanusegruppide andmed: https://tableau.envir.ee/views/SMI/17Vanuseklassidaegrida?%3Aembed=y<br>"
+    "diameetri andmed: https://tableau.envir.ee/views/SMI/10Diameetrid?%3Aembed=y<br>"
     "analüüs: https://github.com/martroben/forest_analysis/tree/main/elf_smi/<br>"
-    "skript: src/04_plot_areas_by_species.py"
+    "skript: src/07_plot_diameters.py"
     # ^ Added as annotations to the plot image
 )
 LEGEND_COLORSCALE = "Greys"
@@ -102,9 +111,9 @@ SPECIES_COLORSCALES = [
 # Load data #
 #############
 
-age_group_path = os.path.join(ROOT_DIR_PATH, AGE_GROUP_PATH)
-with open(age_group_path, encoding="utf-8") as read_file:
-    age_group_data = pl.read_csv(read_file)
+DIAMETER_PATH = os.path.join(ROOT_DIR_PATH, DIAMETER_PATH)
+with open(DIAMETER_PATH, encoding="utf-8") as read_file:
+    diameter_data = pl.read_csv(read_file)
 
 
 ##################
@@ -112,20 +121,20 @@ with open(age_group_path, encoding="utf-8") as read_file:
 ##################
 
 # Aggregate age groups
-age_group_aggregated = plot.aggregate_age_groups(age_group_data, AGE_GROUP_AGGREGATION_MAP)
-area_data = plot.get_areas(age_group_aggregated)
-# Sum up production and protected areas
-area_data_combined = (
-    area_data
-    .group_by(
-        col("YEAR"),
-        col("DOMINANT_SPECIES")
+diameter_aggregated = plot.aggregate_diameter_groups(diameter_data, DIAMETER_AGGREGATION_MAP)
+area_data = (
+    diameter_aggregated
+    .filter(
+        col("DIAMETER_CM_GROUP") != "all"
     )
-    .agg(
-        # Sum all age group fields
-        **{field: col(field).sum() for field in set(AGE_GROUP_AGGREGATION_MAP.values())},
-        UNIT=col("UNIT").first()
+    .pivot(
+        index=["YEAR", "UNIT", "DOMINANT_SPECIES"],
+        on="DIAMETER_CM_GROUP",
+        values="AREA",
+        sort_columns=True
     )
+    .with_columns(pl.exclude("YEAR").fill_null(0.0))
+    .sort(col("YEAR"))
 )
 
 
@@ -148,14 +157,14 @@ unique_years = (
     .to_series()
     .to_list()
 )
-unique_age_groups = sorted(
-    set(AGE_GROUP_AGGREGATION_MAP.values()),
+unique_diameter_groups = sorted(
+    set(DIAMETER_AGGREGATION_MAP.values()),
     # Sort ascending by group start age
     key=lambda x: int(re.search(r"\d+", x).group())
 )
 # Maximum bar heights by species
 max_areas = dict(
-    age_group_data
+    diameter_data
     .group_by([
         col("DOMINANT_SPECIES"),
         col("YEAR")
@@ -177,7 +186,7 @@ for row in SPECIES_COLORSCALES:
     species_colorscales[species] = colorscale
 
 legend_colours = plot.get_colours(
-    n=len(unique_age_groups),
+    n=len(unique_diameter_groups),
     scale_name=LEGEND_COLORSCALE
 )
 
@@ -194,34 +203,33 @@ for species, colorscale in species_colorscales.items():
 # --[ strategy
 # Each year (1999 / 2000 etc.) is a separate group of bars on the plot.
 # Each selected species (pine, birch etc.) is a separate grouped bar under a year.
-# Each age group (0...20 / 20...40 etc.) is a section in the stacked bars.
+# Each diameter group (0...10 / 11...18 etc.) is a section in the stacked bars.
 # To display legend, we add extra traces with no points on plot - just colours.
-# Altogether, there is a trace for each (species, age group) combination + legend traces.
+# Altogether, there is a trace for each (species, diameter group) combination + legend traces.
 
 traces = []
 
 # --[ area traces
 for species in COMPARISON_SPECIES:
     species_colours = plot.get_colours(
-        n=len(unique_age_groups),
+        n=len(unique_diameter_groups),
         scale_name=species_colorscales[species]
     )
-    age_group_colour_map = dict(zip(unique_age_groups, species_colours))
+    diameter_group_colour_map = dict(zip(unique_diameter_groups, species_colours))
 
     trace_data = (
-        area_data_combined
+        area_data
         .filter(
             col("DOMINANT_SPECIES") == species,
         )
         .to_dict(as_series=False)
     )
-    for age_group in unique_age_groups:
+    for diameter_group in unique_diameter_groups:
         trace = plotly.graph_objects.Bar(
             x=trace_data["YEAR"],
-            y=trace_data[age_group],
-            name=age_group,
-            offsetgroup=species,
-            marker_color=age_group_colour_map[age_group],
+            y=trace_data[diameter_group],
+            name=diameter_group,
+            marker_color=diameter_group_colour_map[diameter_group],
             showlegend=False
         )
         # Set offsetgroup only if there are more than 1 comparison species.
@@ -231,17 +239,17 @@ for species in COMPARISON_SPECIES:
         traces += [trace]
 
 # --[ legend traces
-legend_colour_map = dict(zip(unique_age_groups, legend_colours))
-for age_group in unique_age_groups:
+legend_colour_map = dict(zip(unique_diameter_groups, legend_colours))
+for diameter_group in unique_diameter_groups:
     traces += [
         plotly.graph_objects.Bar(
             x=[None], y=[None],
-            name=age_group,
-            marker_color=legend_colour_map[age_group],
+            name=diameter_group,
+            marker_color=legend_colour_map[diameter_group],
             showlegend=True,
-            legendgroup="age_groups",
+            legendgroup="diameter_groups",
             legendgrouptitle={
-                "text": LEGEND_AGE_GROUPS_TITLE,
+                "text": LEGEND_diameter_groupS_TITLE,
                 "font": {"size": 28}
             }
         )
@@ -272,7 +280,6 @@ layout = plot.get_layout(
 if len(COMPARISON_SPECIES) == 1:
     layout.bargap = 0.7
 
-
 ##############
 # Save plots #
 ##############
@@ -281,7 +288,7 @@ figure = plotly.graph_objects.Figure(
     traces,
     layout
 )
-filename = f'pindalade_võrdlus_{"_".join(comparison_species_translated)}.png'
+filename = f'diameetrid_{"_".join(comparison_species_translated)}.png'
 save_path = os.path.join(ROOT_DIR_PATH, PLOT_SAVE_DIR_PATH, filename)
 
 os.makedirs(

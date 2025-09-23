@@ -31,6 +31,29 @@ def aggregate_age_groups(data: pl.DataFrame, aggregation_map: dict) -> pl.DataFr
     return out
 
 
+def aggregate_diameter_groups(data: pl.DataFrame, aggregation_map: dict) -> pl.DataFrame:
+    """
+    Aggregate diameters by input aggregation map.
+    Set AREA to the sum of areas for each group.
+    """
+    out = (
+        data
+        .with_columns(
+            DIAMETER_CM_GROUP=col("DIAMETER_CM_GROUP").replace(aggregation_map)
+        )
+        .group_by([
+            col("YEAR"),
+            col("DIAMETER_CM_GROUP"),
+            col("DOMINANT_SPECIES")
+        ])
+        .agg(
+            col("AREA").sum().alias("AREA"),
+            col("UNIT").first().alias("UNIT")
+        )
+    )
+    return out
+
+
 def subtract_regeneration_cutting(age_group: pl.DataFrame, regeneration_cutting: pl.DataFrame, cutting_age: pl.DataFrame) -> pl.DataFrame:
     """
     Join cutting age thresholds for each year / type / species.
