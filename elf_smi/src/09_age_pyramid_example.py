@@ -28,7 +28,7 @@ Y_AXIS_TITLE = "vanusegrupp"
 SUBPLOT1_TITLE = "<b>1</b>:  aeglane kasv | kõrge raievanus"
 SUBPLOT2_TITLE = "<b>2</b>:  kiire kasv | madal raievanus"
 SUBPLOT3_TITLE = "<b>1 + 2</b>:  kombineeritud"
-ANNOTATIONS = "<u>github.com/martroben/forest_analysis/tree/main/elf_smi/src/age_pyramid.py</u>  |  Mart Roben CC-BY"
+ANNOTATIONS = "<u>github.com/martroben/forest_analysis/tree/main/elf_smi/src/09_age_pyramid_example.py</u>  |  Mart Roben CC-BY"
 
 # Proportion of the remaining mature forest cut every year
 STANDARD_ANNUAL_MATURE_CUT_PROPORTION = 0.1
