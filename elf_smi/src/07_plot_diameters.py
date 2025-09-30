@@ -85,7 +85,7 @@ DIAMETER_AGGREGATION_MAP = {
 PLOT_TITLE = "Metsamaa pindalad keskmise diameetri järgi"
 X_AXIS_TITLE = "Aasta"
 Y_AXIS_TITLE = "pindala (tuhat ha)"
-LEGEND_diameter_groupS_TITLE = "Diameetri grupp:"
+LEGEND_DIAMETER_GROUPS_TITLE = "Diameetri grupp:"
 SOURCE_ANNOTATIONS = (
     "diameetri andmed: https://tableau.envir.ee/views/SMI/10Diameetrid?%3Aembed=y<br>"
     "analüüs: https://github.com/martroben/forest_analysis/tree/main/elf_smi/<br>"
@@ -249,7 +249,7 @@ for diameter_group in unique_diameter_groups:
             showlegend=True,
             legendgroup="diameter_groups",
             legendgrouptitle={
-                "text": LEGEND_diameter_groupS_TITLE,
+                "text": LEGEND_DIAMETER_GROUPS_TITLE,
                 "font": {"size": 28}
             }
         )

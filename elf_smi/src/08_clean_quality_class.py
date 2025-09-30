@@ -98,52 +98,6 @@ QUALITY_CLASS_RAW_PATHS = [
 
 QUALITY_CLASS_CLEAN_SAVE_PATH = "data/clean/quality_class.csv"
 
-# TODO: not here, let's keep data as close to original as possible
-# https://www.riigiteataja.ee/akt/126022014017?leiaKehtiv §3 pt.1^2
-MATURITY_AGES = [
-    # SPECIES       # QUALITY_CLASS     # MATURITY_AGE
-    ("pine",        "1A",               90),
-    ("pine",        "1",                90),
-    ("pine",        "2",                90),
-    ("pine",        "3",               100),
-    ("pine",        "4",               110),
-    ("pine",        "5",               120),
-    ("pine",        "5A",              120),
-    ("spruce",      "1A",               60),
-    ("spruce",      "1",                70),
-    ("spruce",      "2",                80),
-    ("spruce",      "3",                90),
-    ("spruce",      "4",                90),
-    ("spruce",      "5",                90),
-    ("spruce",      "5A",               90),
-    ("birch",       "1A",               60),
-    ("birch",       "1",                60),
-    ("birch",       "2",                70),
-    ("birch",       "3",                70),
-    ("birch",       "4",                70),
-    ("birch",       "5",                70),
-    ("birch",       "5A",               70),
-    ("aspen",       "1A",               30),
-    ("aspen",       "1",                40),
-    ("aspen",       "2",                40),
-    ("aspen",       "3",                50),
-    ("aspen",       "4",                50),
-    ("black alder", "1A",               60),
-    ("black alder", "1",                60),
-    ("black alder", "2",                60),
-    ("black alder", "3",                60),
-    ("black alder", "4",                60),
-    ("black alder", "5",                60),
-    ("black alder", "5A",               60),
-    ("hardwood",    "1A",               90),
-    ("hardwood",    "1",                90),
-    ("hardwood",    "2",               100),
-    ("hardwood",    "3",               110),
-    ("hardwood",    "4",               120),
-    ("hardwood",    "5",               130),
-    ("hardwood",    "5A",              130)
-]
-
 
 #############
 # Load data #

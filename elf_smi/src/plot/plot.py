@@ -433,6 +433,71 @@ def get_layout_date_axis(title: str, x_axis_title: str, y_axis_title: str, sourc
     return layout
 
 
+def get_pyramid_layout(title: str, x_axis_title: str, y_axis_title: str, source_annotations: str, x_range: tuple[float]) -> plotly.graph_objects.Layout:
+
+    x_min = min(x_range) * 1.1
+    x_max = max(x_range) * 1.1
+
+    layout = plotly.graph_objects.Layout(
+        barmode="relative",
+        bargroupgap=0.1,
+        bargap=0.1,
+        height=1300,
+        width=2600,
+        plot_bgcolor="white",
+        title={
+            "text": title,
+            "font": {"size": 50},
+            "x": 0.5,           
+            "xanchor": "center" 
+        },
+        xaxis={
+            "title": {
+                "text": x_axis_title,
+                "font": {"size": 28},
+                "standoff": 60
+            },
+            "tickfont": {"size": 24},
+            "range": [
+                x_min * 1.1,
+                x_max * 1.1
+            ]
+        },
+        yaxis={
+            "gridcolor": "gray",
+            "tickfont": {"size": 24},
+            "title": {
+                "text": y_axis_title,
+                "font": {"size": 28},
+                "standoff": 45
+            }
+        },
+        margin={
+            "pad": 20,                              # Axis label padding
+            "t": 250,
+            "l": 250,
+            "b": 200,
+            "r": 350
+        },
+        legend={
+            "font": {"size": 24}
+        },
+        annotations=[
+            {
+                "text": source_annotations,
+                "xref": "paper",
+                "yref": "paper",
+                "x": -0.05,
+                "y": -0.4,
+                "showarrow": False,
+                "font": {"size": 20},
+                "align": "left"
+            }
+        ]
+    )
+    return layout
+
+
 def apply_colour_to_substring(string: str, substring_colour_map: dict[str, str]) -> str:
     """
     Apply HTML bold + colour formatting to a substring of the input string.
