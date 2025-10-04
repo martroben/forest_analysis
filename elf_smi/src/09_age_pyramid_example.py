@@ -9,7 +9,8 @@ import polars as pl
 from polars import col
 # local
 ROOT_DIR_PATH = Path("elf_smi")
-src_path = ROOT_DIR_PATH / "elf_smi" / "src"
+
+src_path = ROOT_DIR_PATH / "src"
 if str(src_path) not in sys.path:
     sys.path.insert(0, str(src_path))
 
@@ -27,16 +28,19 @@ X_AXIS_TITLE = "pindala (kha)"
 Y_AXIS_TITLE = "vanusegrupp"
 SUBPLOT1_TITLE = "<b>1</b>:  aeglane kasv | kõrge raievanus"
 SUBPLOT2_TITLE = "<b>2</b>:  kiire kasv | madal raievanus"
-SUBPLOT3_TITLE = "<b>1 + 2</b>:  kombineeritud"
+SUBPLOT3_TITLE = "<b>1</b> + <b>2</b>:  kombineeritud"
 ANNOTATIONS = "<u>github.com/martroben/forest_analysis/tree/main/elf_smi/src/09_age_pyramid_example.py</u>  |  Mart Roben CC-BY"
 
 # Proportion of the remaining mature forest cut every year
 STANDARD_ANNUAL_MATURE_CUT_PROPORTION = 0.1
 # Average time between regeneration cutting and having a 1 year old forest
 STANDARD_RENEWAL_DELAY_YEARS = 3
+# X-axis range (same for all subplots)
+X_RANGE = (0, 3.5)
+# Age group aggregations (min, max): name
 AGE_GROUP_MAP = {
-    # Age group aggregations (min, max): name
-    (131, float("inf")):    "131..."
+    # Aggregate maximum age group (also sets y max)
+    (130, float("inf")):    "130+"
 }
 
 COLORSCALE = "Greys"
@@ -183,7 +187,12 @@ data1 = (
     .agg(
         AREA=col("AREA").sum(),
         UNIT=col("UNIT").first(),
-        SORTING_KEY=col("AGE").first()
+        SORTING_KEY=(
+            col("AGE_GROUP")
+            .str.split("...").list.get(0)
+            .str.split("+").list.get(0)
+            .cast(pl.Int16)
+        )
     )
     .sort(col("SORTING_KEY"))
     .drop(col("SORTING_KEY"))
@@ -210,7 +219,12 @@ data2 = (
     .agg(
         AREA=col("AREA").sum(),
         UNIT=col("UNIT").first(),
-        SORTING_KEY=col("AGE").first()
+        SORTING_KEY=(
+            col("AGE_GROUP")
+            .str.split("...").list.get(0)
+            .str.split("+").list.get(0)
+            .cast(pl.Int16)
+        )
     )
     .sort(col("SORTING_KEY"))
     .drop(col("SORTING_KEY"))
@@ -227,7 +241,12 @@ data3 = (
     .agg(
         AREA=col("AREA").sum(),
         UNIT=col("UNIT").first(),
-        SORTING_KEY=col("AGE_GROUP").str.split("...").list.get(0).cast(pl.Int16)
+        SORTING_KEY=(
+            col("AGE_GROUP")
+            .str.split("...").list.get(0)
+            .str.split("+").list.get(0)
+            .cast(pl.Int16)
+        )
     )
     .sort(col("SORTING_KEY"))
     .drop(col("SORTING_KEY"))
@@ -240,8 +259,10 @@ data3 = (
 
 # Offset starting colours towards darker for better contrast on plot
 offset_to_darker = len(set(age_group_map.values())) // 4
+# Create a divide between non mature age groups and mature age group colour
+max_age_offset = len(set(age_group_map.values())) // 3
 colours = plot.get_colours(
-    n=len(set(age_group_map.values())) + offset_to_darker,
+    n=len(set(age_group_map.values())) + offset_to_darker + max_age_offset,
     scale_name=COLORSCALE
 )
 colours = colours[offset_to_darker:]
@@ -437,8 +458,8 @@ figure = figure.update_layout(
         },
         "tickfont": {"size": 24},
         "range": [
-            0,
-            8.5
+            min(X_RANGE),
+            max(X_RANGE)
         ]
     },
     xaxis2={
@@ -449,8 +470,8 @@ figure = figure.update_layout(
         },
         "tickfont": {"size": 24},
         "range": [
-            0,
-            8.5
+            min(X_RANGE),
+            max(X_RANGE)
         ]
     },
     xaxis3={
@@ -461,8 +482,8 @@ figure = figure.update_layout(
         },
         "tickfont": {"size": 24},
         "range": [
-            0,
-            8.5
+            min(X_RANGE),
+            max(X_RANGE)
         ]
     },
     yaxis1={
