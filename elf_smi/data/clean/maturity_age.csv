@@ -1,0 +1,1141 @@
+YEAR,SPECIES,QUALITY_CLASS,MATURITY_AGE
+1993,pine,1A,90
+1993,pine,1,90
+1993,pine,2,100
+1993,pine,3,120
+1993,pine,4,130
+1993,pine,5,140
+1993,pine,5A,140
+1993,spruce,1A,70
+1993,spruce,1,80
+1993,spruce,2,90
+1993,spruce,3,100
+1993,spruce,4,100
+1993,spruce,5,100
+1993,spruce,5A,100
+1993,birch,1A,60
+1993,birch,1,70
+1993,birch,2,70
+1993,birch,3,80
+1993,birch,4,70
+1993,birch,5,70
+1993,birch,5A,70
+1993,aspen,1A,50
+1993,aspen,1,50
+1993,aspen,2,50
+1993,aspen,3,50
+1993,aspen,4,50
+1994,pine,1A,90
+1994,pine,1,90
+1994,pine,2,100
+1994,pine,3,120
+1994,pine,4,130
+1994,pine,5,140
+1994,pine,5A,140
+1994,spruce,1A,70
+1994,spruce,1,80
+1994,spruce,2,90
+1994,spruce,3,100
+1994,spruce,4,100
+1994,spruce,5,100
+1994,spruce,5A,100
+1994,birch,1A,60
+1994,birch,1,70
+1994,birch,2,70
+1994,birch,3,80
+1994,birch,4,70
+1994,birch,5,70
+1994,birch,5A,70
+1994,aspen,1A,50
+1994,aspen,1,50
+1994,aspen,2,50
+1994,aspen,3,50
+1994,aspen,4,50
+1995,pine,1A,90
+1995,pine,1,90
+1995,pine,2,100
+1995,pine,3,120
+1995,pine,4,130
+1995,pine,5,140
+1995,pine,5A,140
+1995,spruce,1A,70
+1995,spruce,1,80
+1995,spruce,2,90
+1995,spruce,3,100
+1995,spruce,4,100
+1995,spruce,5,100
+1995,spruce,5A,100
+1995,birch,1A,60
+1995,birch,1,70
+1995,birch,2,70
+1995,birch,3,80
+1995,birch,4,70
+1995,birch,5,70
+1995,birch,5A,70
+1995,aspen,1A,50
+1995,aspen,1,50
+1995,aspen,2,50
+1995,aspen,3,50
+1995,aspen,4,50
+1996,pine,1A,90
+1996,pine,1,90
+1996,pine,2,100
+1996,pine,3,120
+1996,pine,4,130
+1996,pine,5,140
+1996,pine,5A,140
+1996,spruce,1A,70
+1996,spruce,1,80
+1996,spruce,2,90
+1996,spruce,3,100
+1996,spruce,4,100
+1996,spruce,5,100
+1996,spruce,5A,100
+1996,birch,1A,60
+1996,birch,1,70
+1996,birch,2,70
+1996,birch,3,80
+1996,birch,4,70
+1996,birch,5,70
+1996,birch,5A,70
+1996,aspen,1A,50
+1996,aspen,1,50
+1996,aspen,2,50
+1996,aspen,3,50
+1996,aspen,4,50
+1997,pine,1A,90
+1997,pine,1,90
+1997,pine,2,100
+1997,pine,3,120
+1997,pine,4,130
+1997,pine,5,140
+1997,pine,5A,140
+1997,spruce,1A,70
+1997,spruce,1,80
+1997,spruce,2,90
+1997,spruce,3,100
+1997,spruce,4,100
+1997,spruce,5,100
+1997,spruce,5A,100
+1997,birch,1A,60
+1997,birch,1,70
+1997,birch,2,70
+1997,birch,3,80
+1997,birch,4,70
+1997,birch,5,70
+1997,birch,5A,70
+1997,aspen,1A,50
+1997,aspen,1,50
+1997,aspen,2,50
+1997,aspen,3,50
+1997,aspen,4,50
+1998,pine,1A,90
+1998,pine,1,90
+1998,pine,2,100
+1998,pine,3,120
+1998,pine,4,130
+1998,pine,5,140
+1998,pine,5A,140
+1998,spruce,1A,70
+1998,spruce,1,80
+1998,spruce,2,90
+1998,spruce,3,100
+1998,spruce,4,100
+1998,spruce,5,100
+1998,spruce,5A,100
+1998,birch,1A,60
+1998,birch,1,70
+1998,birch,2,70
+1998,birch,3,80
+1998,birch,4,70
+1998,birch,5,70
+1998,birch,5A,70
+1998,aspen,1A,50
+1998,aspen,1,50
+1998,aspen,2,50
+1998,aspen,3,50
+1998,aspen,4,50
+1999,pine,1A,100
+1999,pine,1,100
+1999,pine,2,100
+1999,pine,3,100
+1999,pine,4,100
+1999,pine,5,100
+1999,pine,5A,100
+1999,spruce,1A,80
+1999,spruce,1,80
+1999,spruce,2,80
+1999,spruce,3,80
+1999,spruce,4,80
+1999,spruce,5,80
+1999,spruce,5A,80
+1999,birch,1A,70
+1999,birch,1,70
+1999,birch,2,70
+1999,birch,3,70
+1999,birch,4,70
+1999,birch,5,70
+1999,birch,5A,70
+1999,hardwood,1A,100
+1999,hardwood,1,100
+1999,hardwood,2,100
+1999,hardwood,3,100
+1999,hardwood,4,100
+1999,hardwood,5,100
+1999,hardwood,5A,100
+2000,pine,1A,100
+2000,pine,1,100
+2000,pine,2,100
+2000,pine,3,100
+2000,pine,4,100
+2000,pine,5,100
+2000,pine,5A,100
+2000,spruce,1A,80
+2000,spruce,1,80
+2000,spruce,2,80
+2000,spruce,3,80
+2000,spruce,4,80
+2000,spruce,5,80
+2000,spruce,5A,80
+2000,birch,1A,70
+2000,birch,1,70
+2000,birch,2,70
+2000,birch,3,70
+2000,birch,4,70
+2000,birch,5,70
+2000,birch,5A,70
+2000,hardwood,1A,100
+2000,hardwood,1,100
+2000,hardwood,2,100
+2000,hardwood,3,100
+2000,hardwood,4,100
+2000,hardwood,5,100
+2000,hardwood,5A,100
+2001,pine,1A,100
+2001,pine,1,100
+2001,pine,2,100
+2001,pine,3,100
+2001,pine,4,100
+2001,pine,5,100
+2001,pine,5A,100
+2001,spruce,1A,80
+2001,spruce,1,80
+2001,spruce,2,80
+2001,spruce,3,80
+2001,spruce,4,80
+2001,spruce,5,80
+2001,spruce,5A,80
+2001,birch,1A,70
+2001,birch,1,70
+2001,birch,2,70
+2001,birch,3,70
+2001,birch,4,70
+2001,birch,5,70
+2001,birch,5A,70
+2001,hardwood,1A,100
+2001,hardwood,1,100
+2001,hardwood,2,100
+2001,hardwood,3,100
+2001,hardwood,4,100
+2001,hardwood,5,100
+2001,hardwood,5A,100
+2002,pine,1A,100
+2002,pine,1,100
+2002,pine,2,100
+2002,pine,3,100
+2002,pine,4,100
+2002,pine,5,100
+2002,pine,5A,100
+2002,spruce,1A,80
+2002,spruce,1,80
+2002,spruce,2,80
+2002,spruce,3,80
+2002,spruce,4,80
+2002,spruce,5,80
+2002,spruce,5A,80
+2002,birch,1A,70
+2002,birch,1,70
+2002,birch,2,70
+2002,birch,3,70
+2002,birch,4,70
+2002,birch,5,70
+2002,birch,5A,70
+2002,hardwood,1A,100
+2002,hardwood,1,100
+2002,hardwood,2,100
+2002,hardwood,3,100
+2002,hardwood,4,100
+2002,hardwood,5,100
+2002,hardwood,5A,100
+2003,pine,1A,100
+2003,pine,1,100
+2003,pine,2,100
+2003,pine,3,100
+2003,pine,4,100
+2003,pine,5,100
+2003,pine,5A,100
+2003,spruce,1A,80
+2003,spruce,1,80
+2003,spruce,2,80
+2003,spruce,3,80
+2003,spruce,4,80
+2003,spruce,5,80
+2003,spruce,5A,80
+2003,birch,1A,70
+2003,birch,1,70
+2003,birch,2,70
+2003,birch,3,70
+2003,birch,4,70
+2003,birch,5,70
+2003,birch,5A,70
+2003,hardwood,1A,100
+2003,hardwood,1,100
+2003,hardwood,2,100
+2003,hardwood,3,100
+2003,hardwood,4,100
+2003,hardwood,5,100
+2003,hardwood,5A,100
+2004,pine,1A,100
+2004,pine,1,100
+2004,pine,2,100
+2004,pine,3,100
+2004,pine,4,100
+2004,pine,5,100
+2004,pine,5A,100
+2004,spruce,1A,80
+2004,spruce,1,80
+2004,spruce,2,80
+2004,spruce,3,80
+2004,spruce,4,80
+2004,spruce,5,80
+2004,spruce,5A,80
+2004,birch,1A,70
+2004,birch,1,70
+2004,birch,2,70
+2004,birch,3,70
+2004,birch,4,70
+2004,birch,5,70
+2004,birch,5A,70
+2004,hardwood,1A,100
+2004,hardwood,1,100
+2004,hardwood,2,100
+2004,hardwood,3,100
+2004,hardwood,4,100
+2004,hardwood,5,100
+2004,hardwood,5A,100
+2005,pine,1A,100
+2005,pine,1,100
+2005,pine,2,100
+2005,pine,3,100
+2005,pine,4,100
+2005,pine,5,100
+2005,pine,5A,100
+2005,spruce,1A,80
+2005,spruce,1,80
+2005,spruce,2,80
+2005,spruce,3,80
+2005,spruce,4,80
+2005,spruce,5,80
+2005,spruce,5A,80
+2005,birch,1A,70
+2005,birch,1,70
+2005,birch,2,70
+2005,birch,3,70
+2005,birch,4,70
+2005,birch,5,70
+2005,birch,5A,70
+2005,hardwood,1A,100
+2005,hardwood,1,100
+2005,hardwood,2,100
+2005,hardwood,3,100
+2005,hardwood,4,100
+2005,hardwood,5,100
+2005,hardwood,5A,100
+2006,pine,1A,100
+2006,pine,1,100
+2006,pine,2,100
+2006,pine,3,100
+2006,pine,4,100
+2006,pine,5,100
+2006,pine,5A,100
+2006,spruce,1A,80
+2006,spruce,1,80
+2006,spruce,2,80
+2006,spruce,3,80
+2006,spruce,4,80
+2006,spruce,5,80
+2006,spruce,5A,80
+2006,birch,1A,70
+2006,birch,1,70
+2006,birch,2,70
+2006,birch,3,70
+2006,birch,4,70
+2006,birch,5,70
+2006,birch,5A,70
+2006,hardwood,1A,100
+2006,hardwood,1,100
+2006,hardwood,2,100
+2006,hardwood,3,100
+2006,hardwood,4,100
+2006,hardwood,5,100
+2006,hardwood,5A,100
+2007,pine,1A,90
+2007,pine,1,90
+2007,pine,2,90
+2007,pine,3,100
+2007,pine,4,110
+2007,pine,5,120
+2007,pine,5A,120
+2007,spruce,1A,80
+2007,spruce,1,80
+2007,spruce,2,80
+2007,spruce,3,90
+2007,spruce,4,90
+2007,spruce,5,90
+2007,spruce,5A,90
+2007,birch,1A,60
+2007,birch,1,60
+2007,birch,2,70
+2007,birch,3,70
+2007,birch,4,70
+2007,birch,5,70
+2007,birch,5A,70
+2007,aspen,1A,30
+2007,aspen,1,40
+2007,aspen,2,40
+2007,aspen,3,50
+2007,aspen,4,50
+2007,black alder,1A,60
+2007,black alder,1,60
+2007,black alder,2,60
+2007,black alder,3,60
+2007,black alder,4,60
+2007,black alder,5,60
+2007,black alder,5A,60
+2007,hardwood,1A,90
+2007,hardwood,1,90
+2007,hardwood,2,100
+2007,hardwood,3,110
+2007,hardwood,4,120
+2007,hardwood,5,130
+2007,hardwood,5A,130
+2008,pine,1A,90
+2008,pine,1,90
+2008,pine,2,90
+2008,pine,3,100
+2008,pine,4,110
+2008,pine,5,120
+2008,pine,5A,120
+2008,spruce,1A,80
+2008,spruce,1,80
+2008,spruce,2,80
+2008,spruce,3,90
+2008,spruce,4,90
+2008,spruce,5,90
+2008,spruce,5A,90
+2008,birch,1A,60
+2008,birch,1,60
+2008,birch,2,70
+2008,birch,3,70
+2008,birch,4,70
+2008,birch,5,70
+2008,birch,5A,70
+2008,aspen,1A,30
+2008,aspen,1,40
+2008,aspen,2,40
+2008,aspen,3,50
+2008,aspen,4,50
+2008,black alder,1A,60
+2008,black alder,1,60
+2008,black alder,2,60
+2008,black alder,3,60
+2008,black alder,4,60
+2008,black alder,5,60
+2008,black alder,5A,60
+2008,hardwood,1A,90
+2008,hardwood,1,90
+2008,hardwood,2,100
+2008,hardwood,3,110
+2008,hardwood,4,120
+2008,hardwood,5,130
+2008,hardwood,5A,130
+2009,pine,1A,90
+2009,pine,1,90
+2009,pine,2,90
+2009,pine,3,100
+2009,pine,4,110
+2009,pine,5,120
+2009,pine,5A,120
+2009,spruce,1A,80
+2009,spruce,1,80
+2009,spruce,2,80
+2009,spruce,3,90
+2009,spruce,4,90
+2009,spruce,5,90
+2009,spruce,5A,90
+2009,birch,1A,60
+2009,birch,1,60
+2009,birch,2,70
+2009,birch,3,70
+2009,birch,4,70
+2009,birch,5,70
+2009,birch,5A,70
+2009,aspen,1A,30
+2009,aspen,1,40
+2009,aspen,2,40
+2009,aspen,3,50
+2009,aspen,4,50
+2009,black alder,1A,60
+2009,black alder,1,60
+2009,black alder,2,60
+2009,black alder,3,60
+2009,black alder,4,60
+2009,black alder,5,60
+2009,black alder,5A,60
+2009,hardwood,1A,90
+2009,hardwood,1,90
+2009,hardwood,2,100
+2009,hardwood,3,110
+2009,hardwood,4,120
+2009,hardwood,5,130
+2009,hardwood,5A,130
+2010,pine,1A,90
+2010,pine,1,90
+2010,pine,2,90
+2010,pine,3,100
+2010,pine,4,110
+2010,pine,5,120
+2010,pine,5A,120
+2010,spruce,1A,80
+2010,spruce,1,80
+2010,spruce,2,80
+2010,spruce,3,90
+2010,spruce,4,90
+2010,spruce,5,90
+2010,spruce,5A,90
+2010,birch,1A,60
+2010,birch,1,60
+2010,birch,2,70
+2010,birch,3,70
+2010,birch,4,70
+2010,birch,5,70
+2010,birch,5A,70
+2010,aspen,1A,30
+2010,aspen,1,40
+2010,aspen,2,40
+2010,aspen,3,50
+2010,aspen,4,50
+2010,black alder,1A,60
+2010,black alder,1,60
+2010,black alder,2,60
+2010,black alder,3,60
+2010,black alder,4,60
+2010,black alder,5,60
+2010,black alder,5A,60
+2010,hardwood,1A,90
+2010,hardwood,1,90
+2010,hardwood,2,100
+2010,hardwood,3,110
+2010,hardwood,4,120
+2010,hardwood,5,130
+2010,hardwood,5A,130
+2011,pine,1A,90
+2011,pine,1,90
+2011,pine,2,90
+2011,pine,3,100
+2011,pine,4,110
+2011,pine,5,120
+2011,pine,5A,120
+2011,spruce,1A,80
+2011,spruce,1,80
+2011,spruce,2,80
+2011,spruce,3,90
+2011,spruce,4,90
+2011,spruce,5,90
+2011,spruce,5A,90
+2011,birch,1A,60
+2011,birch,1,60
+2011,birch,2,70
+2011,birch,3,70
+2011,birch,4,70
+2011,birch,5,70
+2011,birch,5A,70
+2011,aspen,1A,30
+2011,aspen,1,40
+2011,aspen,2,40
+2011,aspen,3,50
+2011,aspen,4,50
+2011,black alder,1A,60
+2011,black alder,1,60
+2011,black alder,2,60
+2011,black alder,3,60
+2011,black alder,4,60
+2011,black alder,5,60
+2011,black alder,5A,60
+2011,hardwood,1A,90
+2011,hardwood,1,90
+2011,hardwood,2,100
+2011,hardwood,3,110
+2011,hardwood,4,120
+2011,hardwood,5,130
+2011,hardwood,5A,130
+2012,pine,1A,90
+2012,pine,1,90
+2012,pine,2,90
+2012,pine,3,100
+2012,pine,4,110
+2012,pine,5,120
+2012,pine,5A,120
+2012,spruce,1A,80
+2012,spruce,1,80
+2012,spruce,2,80
+2012,spruce,3,90
+2012,spruce,4,90
+2012,spruce,5,90
+2012,spruce,5A,90
+2012,birch,1A,60
+2012,birch,1,60
+2012,birch,2,70
+2012,birch,3,70
+2012,birch,4,70
+2012,birch,5,70
+2012,birch,5A,70
+2012,aspen,1A,30
+2012,aspen,1,40
+2012,aspen,2,40
+2012,aspen,3,50
+2012,aspen,4,50
+2012,black alder,1A,60
+2012,black alder,1,60
+2012,black alder,2,60
+2012,black alder,3,60
+2012,black alder,4,60
+2012,black alder,5,60
+2012,black alder,5A,60
+2012,hardwood,1A,90
+2012,hardwood,1,90
+2012,hardwood,2,100
+2012,hardwood,3,110
+2012,hardwood,4,120
+2012,hardwood,5,130
+2012,hardwood,5A,130
+2013,pine,1A,90
+2013,pine,1,90
+2013,pine,2,90
+2013,pine,3,100
+2013,pine,4,110
+2013,pine,5,120
+2013,pine,5A,120
+2013,spruce,1A,80
+2013,spruce,1,80
+2013,spruce,2,80
+2013,spruce,3,90
+2013,spruce,4,90
+2013,spruce,5,90
+2013,spruce,5A,90
+2013,birch,1A,60
+2013,birch,1,60
+2013,birch,2,70
+2013,birch,3,70
+2013,birch,4,70
+2013,birch,5,70
+2013,birch,5A,70
+2013,aspen,1A,30
+2013,aspen,1,40
+2013,aspen,2,40
+2013,aspen,3,50
+2013,aspen,4,50
+2013,black alder,1A,60
+2013,black alder,1,60
+2013,black alder,2,60
+2013,black alder,3,60
+2013,black alder,4,60
+2013,black alder,5,60
+2013,black alder,5A,60
+2013,hardwood,1A,90
+2013,hardwood,1,90
+2013,hardwood,2,100
+2013,hardwood,3,110
+2013,hardwood,4,120
+2013,hardwood,5,130
+2013,hardwood,5A,130
+2014,pine,1A,90
+2014,pine,1,90
+2014,pine,2,90
+2014,pine,3,100
+2014,pine,4,110
+2014,pine,5,120
+2014,pine,5A,120
+2014,spruce,1A,80
+2014,spruce,1,80
+2014,spruce,2,80
+2014,spruce,3,90
+2014,spruce,4,90
+2014,spruce,5,90
+2014,spruce,5A,90
+2014,birch,1A,60
+2014,birch,1,60
+2014,birch,2,70
+2014,birch,3,70
+2014,birch,4,70
+2014,birch,5,70
+2014,birch,5A,70
+2014,aspen,1A,30
+2014,aspen,1,40
+2014,aspen,2,40
+2014,aspen,3,50
+2014,aspen,4,50
+2014,black alder,1A,60
+2014,black alder,1,60
+2014,black alder,2,60
+2014,black alder,3,60
+2014,black alder,4,60
+2014,black alder,5,60
+2014,black alder,5A,60
+2014,hardwood,1A,90
+2014,hardwood,1,90
+2014,hardwood,2,100
+2014,hardwood,3,110
+2014,hardwood,4,120
+2014,hardwood,5,130
+2014,hardwood,5A,130
+2015,pine,1A,90
+2015,pine,1,90
+2015,pine,2,90
+2015,pine,3,100
+2015,pine,4,110
+2015,pine,5,120
+2015,pine,5A,120
+2015,spruce,1A,80
+2015,spruce,1,80
+2015,spruce,2,80
+2015,spruce,3,90
+2015,spruce,4,90
+2015,spruce,5,90
+2015,spruce,5A,90
+2015,birch,1A,60
+2015,birch,1,60
+2015,birch,2,70
+2015,birch,3,70
+2015,birch,4,70
+2015,birch,5,70
+2015,birch,5A,70
+2015,aspen,1A,30
+2015,aspen,1,40
+2015,aspen,2,40
+2015,aspen,3,50
+2015,aspen,4,50
+2015,black alder,1A,60
+2015,black alder,1,60
+2015,black alder,2,60
+2015,black alder,3,60
+2015,black alder,4,60
+2015,black alder,5,60
+2015,black alder,5A,60
+2015,hardwood,1A,90
+2015,hardwood,1,90
+2015,hardwood,2,100
+2015,hardwood,3,110
+2015,hardwood,4,120
+2015,hardwood,5,130
+2015,hardwood,5A,130
+2016,pine,1A,90
+2016,pine,1,90
+2016,pine,2,90
+2016,pine,3,100
+2016,pine,4,110
+2016,pine,5,120
+2016,pine,5A,120
+2016,spruce,1A,80
+2016,spruce,1,80
+2016,spruce,2,80
+2016,spruce,3,90
+2016,spruce,4,90
+2016,spruce,5,90
+2016,spruce,5A,90
+2016,birch,1A,60
+2016,birch,1,60
+2016,birch,2,70
+2016,birch,3,70
+2016,birch,4,70
+2016,birch,5,70
+2016,birch,5A,70
+2016,aspen,1A,30
+2016,aspen,1,40
+2016,aspen,2,40
+2016,aspen,3,50
+2016,aspen,4,50
+2016,black alder,1A,60
+2016,black alder,1,60
+2016,black alder,2,60
+2016,black alder,3,60
+2016,black alder,4,60
+2016,black alder,5,60
+2016,black alder,5A,60
+2016,hardwood,1A,90
+2016,hardwood,1,90
+2016,hardwood,2,100
+2016,hardwood,3,110
+2016,hardwood,4,120
+2016,hardwood,5,130
+2016,hardwood,5A,130
+2017,pine,1A,90
+2017,pine,1,90
+2017,pine,2,90
+2017,pine,3,100
+2017,pine,4,110
+2017,pine,5,120
+2017,pine,5A,120
+2017,spruce,1A,80
+2017,spruce,1,80
+2017,spruce,2,80
+2017,spruce,3,90
+2017,spruce,4,90
+2017,spruce,5,90
+2017,spruce,5A,90
+2017,birch,1A,60
+2017,birch,1,60
+2017,birch,2,70
+2017,birch,3,70
+2017,birch,4,70
+2017,birch,5,70
+2017,birch,5A,70
+2017,aspen,1A,30
+2017,aspen,1,40
+2017,aspen,2,40
+2017,aspen,3,50
+2017,aspen,4,50
+2017,black alder,1A,60
+2017,black alder,1,60
+2017,black alder,2,60
+2017,black alder,3,60
+2017,black alder,4,60
+2017,black alder,5,60
+2017,black alder,5A,60
+2017,hardwood,1A,90
+2017,hardwood,1,90
+2017,hardwood,2,100
+2017,hardwood,3,110
+2017,hardwood,4,120
+2017,hardwood,5,130
+2017,hardwood,5A,130
+2018,pine,1A,90
+2018,pine,1,90
+2018,pine,2,90
+2018,pine,3,100
+2018,pine,4,110
+2018,pine,5,120
+2018,pine,5A,120
+2018,spruce,1A,60
+2018,spruce,1,70
+2018,spruce,2,80
+2018,spruce,3,90
+2018,spruce,4,90
+2018,spruce,5,90
+2018,spruce,5A,90
+2018,birch,1A,60
+2018,birch,1,60
+2018,birch,2,70
+2018,birch,3,70
+2018,birch,4,70
+2018,birch,5,70
+2018,birch,5A,70
+2018,aspen,1A,30
+2018,aspen,1,40
+2018,aspen,2,40
+2018,aspen,3,50
+2018,aspen,4,50
+2018,black alder,1A,60
+2018,black alder,1,60
+2018,black alder,2,60
+2018,black alder,3,60
+2018,black alder,4,60
+2018,black alder,5,60
+2018,black alder,5A,60
+2018,hardwood,1A,90
+2018,hardwood,1,90
+2018,hardwood,2,100
+2018,hardwood,3,110
+2018,hardwood,4,120
+2018,hardwood,5,130
+2018,hardwood,5A,130
+2019,pine,1A,90
+2019,pine,1,90
+2019,pine,2,90
+2019,pine,3,100
+2019,pine,4,110
+2019,pine,5,120
+2019,pine,5A,120
+2019,spruce,1A,60
+2019,spruce,1,70
+2019,spruce,2,80
+2019,spruce,3,90
+2019,spruce,4,90
+2019,spruce,5,90
+2019,spruce,5A,90
+2019,birch,1A,60
+2019,birch,1,60
+2019,birch,2,70
+2019,birch,3,70
+2019,birch,4,70
+2019,birch,5,70
+2019,birch,5A,70
+2019,aspen,1A,30
+2019,aspen,1,40
+2019,aspen,2,40
+2019,aspen,3,50
+2019,aspen,4,50
+2019,black alder,1A,60
+2019,black alder,1,60
+2019,black alder,2,60
+2019,black alder,3,60
+2019,black alder,4,60
+2019,black alder,5,60
+2019,black alder,5A,60
+2019,hardwood,1A,90
+2019,hardwood,1,90
+2019,hardwood,2,100
+2019,hardwood,3,110
+2019,hardwood,4,120
+2019,hardwood,5,130
+2019,hardwood,5A,130
+2020,pine,1A,90
+2020,pine,1,90
+2020,pine,2,90
+2020,pine,3,100
+2020,pine,4,110
+2020,pine,5,120
+2020,pine,5A,120
+2020,spruce,1A,60
+2020,spruce,1,70
+2020,spruce,2,80
+2020,spruce,3,90
+2020,spruce,4,90
+2020,spruce,5,90
+2020,spruce,5A,90
+2020,birch,1A,60
+2020,birch,1,60
+2020,birch,2,70
+2020,birch,3,70
+2020,birch,4,70
+2020,birch,5,70
+2020,birch,5A,70
+2020,aspen,1A,30
+2020,aspen,1,40
+2020,aspen,2,40
+2020,aspen,3,50
+2020,aspen,4,50
+2020,black alder,1A,60
+2020,black alder,1,60
+2020,black alder,2,60
+2020,black alder,3,60
+2020,black alder,4,60
+2020,black alder,5,60
+2020,black alder,5A,60
+2020,hardwood,1A,90
+2020,hardwood,1,90
+2020,hardwood,2,100
+2020,hardwood,3,110
+2020,hardwood,4,120
+2020,hardwood,5,130
+2020,hardwood,5A,130
+2021,pine,1A,90
+2021,pine,1,90
+2021,pine,2,90
+2021,pine,3,100
+2021,pine,4,110
+2021,pine,5,120
+2021,pine,5A,120
+2021,spruce,1A,60
+2021,spruce,1,70
+2021,spruce,2,80
+2021,spruce,3,90
+2021,spruce,4,90
+2021,spruce,5,90
+2021,spruce,5A,90
+2021,birch,1A,60
+2021,birch,1,60
+2021,birch,2,70
+2021,birch,3,70
+2021,birch,4,70
+2021,birch,5,70
+2021,birch,5A,70
+2021,aspen,1A,30
+2021,aspen,1,40
+2021,aspen,2,40
+2021,aspen,3,50
+2021,aspen,4,50
+2021,black alder,1A,60
+2021,black alder,1,60
+2021,black alder,2,60
+2021,black alder,3,60
+2021,black alder,4,60
+2021,black alder,5,60
+2021,black alder,5A,60
+2021,hardwood,1A,90
+2021,hardwood,1,90
+2021,hardwood,2,100
+2021,hardwood,3,110
+2021,hardwood,4,120
+2021,hardwood,5,130
+2021,hardwood,5A,130
+2022,pine,1A,90
+2022,pine,1,90
+2022,pine,2,90
+2022,pine,3,100
+2022,pine,4,110
+2022,pine,5,120
+2022,pine,5A,120
+2022,spruce,1A,60
+2022,spruce,1,70
+2022,spruce,2,80
+2022,spruce,3,90
+2022,spruce,4,90
+2022,spruce,5,90
+2022,spruce,5A,90
+2022,birch,1A,60
+2022,birch,1,60
+2022,birch,2,70
+2022,birch,3,70
+2022,birch,4,70
+2022,birch,5,70
+2022,birch,5A,70
+2022,aspen,1A,30
+2022,aspen,1,40
+2022,aspen,2,40
+2022,aspen,3,50
+2022,aspen,4,50
+2022,black alder,1A,60
+2022,black alder,1,60
+2022,black alder,2,60
+2022,black alder,3,60
+2022,black alder,4,60
+2022,black alder,5,60
+2022,black alder,5A,60
+2022,hardwood,1A,90
+2022,hardwood,1,90
+2022,hardwood,2,100
+2022,hardwood,3,110
+2022,hardwood,4,120
+2022,hardwood,5,130
+2022,hardwood,5A,130
+2023,pine,1A,90
+2023,pine,1,90
+2023,pine,2,90
+2023,pine,3,100
+2023,pine,4,110
+2023,pine,5,120
+2023,pine,5A,120
+2023,spruce,1A,60
+2023,spruce,1,70
+2023,spruce,2,80
+2023,spruce,3,90
+2023,spruce,4,90
+2023,spruce,5,90
+2023,spruce,5A,90
+2023,birch,1A,60
+2023,birch,1,60
+2023,birch,2,70
+2023,birch,3,70
+2023,birch,4,70
+2023,birch,5,70
+2023,birch,5A,70
+2023,aspen,1A,30
+2023,aspen,1,40
+2023,aspen,2,40
+2023,aspen,3,50
+2023,aspen,4,50
+2023,black alder,1A,60
+2023,black alder,1,60
+2023,black alder,2,60
+2023,black alder,3,60
+2023,black alder,4,60
+2023,black alder,5,60
+2023,black alder,5A,60
+2023,hardwood,1A,90
+2023,hardwood,1,90
+2023,hardwood,2,100
+2023,hardwood,3,110
+2023,hardwood,4,120
+2023,hardwood,5,130
+2023,hardwood,5A,130
+2024,pine,1A,90
+2024,pine,1,90
+2024,pine,2,90
+2024,pine,3,100
+2024,pine,4,110
+2024,pine,5,120
+2024,pine,5A,120
+2024,spruce,1A,60
+2024,spruce,1,70
+2024,spruce,2,80
+2024,spruce,3,90
+2024,spruce,4,90
+2024,spruce,5,90
+2024,spruce,5A,90
+2024,birch,1A,60
+2024,birch,1,60
+2024,birch,2,70
+2024,birch,3,70
+2024,birch,4,70
+2024,birch,5,70
+2024,birch,5A,70
+2024,aspen,1A,30
+2024,aspen,1,40
+2024,aspen,2,40
+2024,aspen,3,50
+2024,aspen,4,50
+2024,black alder,1A,60
+2024,black alder,1,60
+2024,black alder,2,60
+2024,black alder,3,60
+2024,black alder,4,60
+2024,black alder,5,60
+2024,black alder,5A,60
+2024,hardwood,1A,90
+2024,hardwood,1,90
+2024,hardwood,2,100
+2024,hardwood,3,110
+2024,hardwood,4,120
+2024,hardwood,5,130
+2024,hardwood,5A,130
+2025,pine,1A,90
+2025,pine,1,90
+2025,pine,2,90
+2025,pine,3,100
+2025,pine,4,110
+2025,pine,5,120
+2025,pine,5A,120
+2025,spruce,1A,60
+2025,spruce,1,70
+2025,spruce,2,80
+2025,spruce,3,90
+2025,spruce,4,90
+2025,spruce,5,90
+2025,spruce,5A,90
+2025,birch,1A,60
+2025,birch,1,60
+2025,birch,2,70
+2025,birch,3,70
+2025,birch,4,70
+2025,birch,5,70
+2025,birch,5A,70
+2025,aspen,1A,30
+2025,aspen,1,40
+2025,aspen,2,40
+2025,aspen,3,50
+2025,aspen,4,50
+2025,black alder,1A,60
+2025,black alder,1,60
+2025,black alder,2,60
+2025,black alder,3,60
+2025,black alder,4,60
+2025,black alder,5,60
+2025,black alder,5A,60
+2025,hardwood,1A,90
+2025,hardwood,1,90
+2025,hardwood,2,100
+2025,hardwood,3,110
+2025,hardwood,4,120
+2025,hardwood,5,130
+2025,hardwood,5A,130
