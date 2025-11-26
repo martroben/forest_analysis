@@ -4,17 +4,17 @@ from pathlib import Path
 import polars as pl
 
 
-##########
-# Inputs #
-##########
+#########
+# Input #
+#########
 
 ROOT_DIR_PATH = Path("elf_smi")
 SAVE_PATH = ROOT_DIR_PATH / "data" / "clean" / "maturity_age.csv"
 
 
-######################
-# Manual data inputs #
-######################
+#####################
+# Manual data input #
+#####################
 
 # http://www.zbi.ee/talkk/materjalid/TA%20LKK%20290508%20Rainer%20Kuuba.pdf p.28
 # ? Takseerkaardi täitmise juhend. Eesti Metsakorralduskeskus 1994
