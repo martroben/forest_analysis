@@ -210,7 +210,8 @@ input_for_05_plot_optimal_age_pyramid_3 = {
 }
 
 # 06
-years = list(range(1999, 2024 + 1))
+year_min = 1999
+year_max = 2024
 
 # Can be several comma separated values
 # spruce, pine, birch, aspen, grey_alder, black_alder, other
@@ -233,7 +234,7 @@ for species in species_combinations:
     else:
         species_title_name = "_".join([TRANSLATION_MAP[item.strip()] for item in species.split(",")])
 
-    for year in years:
+    for year in range(year_min, year_max + 1):
         inputs_for_06_plot_real_age_pyramid += [{
             "ROOT_DIR_PATH": ROOT_DIR_PATH,
             "AREA_BY_AGE_GROUP_DATA_PATH": "data/clean/area_by_age_group.csv",
