@@ -79,7 +79,9 @@ The analysis relies on several optimistic assumptions. Here's an incomplete list
 - When calculating the maturity age, only the dominant species is taken into account. If secondary species exist, the maturity age is actually a combination of the different species.
 - The analysis assumes that all areas of the same dominant species and quality class are interchangeable. However, they could have different volume (growing stock).
 - The optimal areas aggregation assumes that all quality classes are worth cutting.
-- Non-renewed proportion is taken to be the same across all quality classes and species.
+- Non-renewed proportion is assumed to be the same across all quality classes and species. It's most likely not.
+- The law also allows to establish maturity when trees reach a certain diameter. Here only ages are used.
+- Forest quality class can change after renewal cutting. Here, it is assumed to stay constant.
 - Optimal area assumes stable mature area each year, but not stable revenue. There could be periods of high and low wood prices.
 - The values of non-renewed proportion and annual mature cut proportion are eyeballed to match the age pyramid with all species across all years.
 - It is assumed that non-renewed areas are distributed proportionally across quality classes. There is no input data for the actual distribution.
