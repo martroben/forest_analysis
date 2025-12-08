@@ -66,7 +66,7 @@ YEAR = 2005
 ROOT_DIR_PATH = "age_pyramid"
 AREA_BY_AGE_GROUP_DATA_PATH = "data/clean/area_by_age_group.csv"
 OPTIMAL_AGE_PYRAMID_AREAS_DATA_PATH = "data/clean/optimal_age_pyramid_areas.csv"
-SAVE_PATH = "result/vanusepüramiid_kuusk_2005.png"
+SAVE_PATH = "result/kuusk/vanusepüramiid_kuusk_2005.png"
 
 # Can be several comma separated values
 # spruce, pine, birch, aspen, grey_alder, black_alder, other
@@ -186,6 +186,27 @@ def get_tick_values(x_min: float, x_max: float)-> list[float]:
         tick += nice_step
 
     return ticks
+
+
+def get_line_for_categorical_axis(x_values: list, y_values: list, line: dict) -> list[dict]:
+    """
+    Get a list of line shapes to show a line on categorical axis.
+    Normally plotly does not allow to draw a line on categorical axis - only dots.
+    This is a workaround, using the plotly.graph_object.Figure shapes attribute.
+    """
+    shapes = []
+    for i in range(len(x_values) - 1):
+        shape = {
+            "type": "line",
+            "x0": x_values[i],
+            "y0": y_values[i],
+            "x1": x_values[i + 1],
+            "y1": y_values[i + 1],
+            "line": line
+        }
+        shapes += [shape]
+    
+    return shapes
 
 
 #############
@@ -584,35 +605,32 @@ for data_point, colour in zip(plot_data_protected.to_dicts(), protected_colours)
 
 # Optimal pyramid
 traces += [
+    # Non-renewed optimal area as scatter plot marker
     plotly.graph_objects.Scatter(
         x=plot_data_optimal_pyramid_non_renewed["AREA"].to_list(),
         y=plot_data_optimal_pyramid_non_renewed["AGE_GROUP"].to_list(),
         showlegend=False,
         mode="markers",
         marker={
-            "symbol": "arrow-bar-right-open",
-            "size": 20,
+            "symbol": "line-ns-open",
+            "size": 25,
             "color": "#c6c6c6",
             "line": {
-                "width": 3
-            }
-        }
-    ),
-    plotly.graph_objects.Scatter(
-        x=plot_data_optimal_pyramid_renewed["AREA"].to_list(),
-        y=plot_data_optimal_pyramid_renewed["AGE_GROUP"].to_list(),
-        showlegend=False,
-        mode="markers",
-        marker={
-            "symbol": "arrow-bar-right-open",
-            "size": 20,
-            "color": "#c6c6c6",
-            "line": {
-                "width": 3
+                "width": 4
             }
         }
     )
 ]
+
+# Renewed optimal area as shapes to produce a line
+optimal_pyramid_line = get_line_for_categorical_axis(
+    x_values=plot_data_optimal_pyramid_renewed["AREA"],
+    y_values=plot_data_optimal_pyramid_renewed["AGE_GROUP"],
+    line={
+        "color": "#c6c6c6",
+        "width": 4
+    }
+)
 
 
 # Legend traces
@@ -642,14 +660,10 @@ traces += [
         x=[None], y=[None],
         name="Optimaalne vanusepüramiid",
         orientation="h",
-        mode="markers",
-        marker={
-            "symbol": "arrow-bar-right-open",
-            "size": 20,
+        mode="lines",
+        line={
             "color": "#c6c6c6",
-            "line": {
-                "width": 3
-            }
+            "width": 4
         },
         showlegend=True,
         legendrank=3
@@ -732,8 +746,9 @@ layout = plotly.graph_objects.Layout(
             "showarrow": False,
             "font": {"size": 32},
             "align": "center"
-        },
-    ]
+        }
+    ],
+    shapes=optimal_pyramid_line
 )
 
 
